@@ -7,6 +7,7 @@
     <Name>CCB 文明拓展 1.3 WIP</Name>
     <Description>中国特色新文明拓展模组，取代BBG Expand。</Description>
     <Authors>CCB制作组</Authors>
+    <Version>130</Version> <!--更新一定要把Version更新了 这是MPH检测版本号所需 by煎包-->
     <SpecialThanks>Alexxis, BBG Expand, BBG制作组, Cat, ChimpanG, Chrisy, Darth, DarthKyofu, Dray, Enigma, JFD, LeeS, Leugi, Relic, Sailor, SailorCat, SeelingCat, Senshidenshi, Sloth, Sukritact, TranquilSilence, Zebenji, Zharques, p0khiel (alphabetical order)</SpecialThanks>
     <CompatibleVersions>1.3,2.0</CompatibleVersions>
   </Properties>
