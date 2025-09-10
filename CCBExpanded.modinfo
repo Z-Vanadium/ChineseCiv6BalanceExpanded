@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- release version -->
-<!-- <Mod id="8af4fe8e-5406-7d72-d9d6-a8f5d1b66e30" version="130"> -->
+<!-- <Mod id="8af4fe8e-5406-7d72-d9d6-a8f5d1b66e30" version="103"> -->
 <!-- WIP version -->
-<Mod id="8af4fe8e-5406-7d72-d9d6-a8f5d1b66e34" version="130">
+<Mod id="8af4fe8e-5406-7d72-d9d6-a8f5d1b66e34" version="103">
   <Properties>
-    <Name>CCB 文明拓展 1.3 WIP</Name>
+    <Name>CCB 文明拓展 1.03 WIP</Name>
     <Description>中国特色新文明拓展模组，取代BBG Expand。</Description>
     <Authors>CCB制作组</Authors>
-    <Version>130</Version> <!--更新一定要把Version更新了 这是MPH检测版本号所需 by煎包-->
+    <Version>103</Version> <!--更新一定要把Version更新了 这是MPH检测版本号所需 by煎包-->
     <SpecialThanks>Alexxis, BBG Expand, BBG制作组, Cat, ChimpanG, Chrisy, Darth, DarthKyofu, Dray, Enigma, JFD, LeeS, Leugi, Relic, Sailor, SailorCat, SeelingCat, Senshidenshi, Sloth, Sukritact, TranquilSilence, Zebenji, Zharques, p0khiel (alphabetical order)</SpecialThanks>
-    <CompatibleVersions>1.3,2.0</CompatibleVersions>
+    <CompatibleVersions>1.2,2.0</CompatibleVersions>
   </Properties>
 <Dependencies>
     <Mod id="1B28771A-C749-434B-9053-D1380C553DE9" title="LOC_EXPANSION1_MOD_TITLE"/>
