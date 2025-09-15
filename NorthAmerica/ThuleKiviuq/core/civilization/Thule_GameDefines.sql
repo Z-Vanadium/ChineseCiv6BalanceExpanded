@@ -31,6 +31,7 @@ VALUES	('CIVILIZATION_LIME_THULE',										'KIND_CIVILIZATION'),
 		-------------------------------------------------------------------------------------
 		('TRAIT_CIVILIZATION_UNIT_LIME_THULE_DOGSLED',					'KIND_TRAIT'),
 		('UNIT_LIME_THULE_DOGSLED',										'KIND_UNIT'),
+		('UNIT_CCB_THULE_WHALEMAKER',									'KIND_UNIT'),
 		('ABIL_LIME_THULE_DOGSLED',										'KIND_ABILITY'),
 		-------------------------------------------------------------------------------------
 		('TRAIT_CIVILIZATION_IMPROVEMENT_LIME_THULE_WBH',				'KIND_TRAIT'),
@@ -229,6 +230,68 @@ INSERT INTO Units
 SELECT	'UNIT_LIME_THULE_DOGSLED',	BaseMoves,	Cost*0.75,	BaseSightRange,		ZoneOfControl,	Domain,		FormationClass,	'LOC_UNIT_LIME_THULE_DOGSLED_NAME',	'LOC_UNIT_LIME_THULE_DOGSLED_DESCRIPTION',		PurchaseYield,	MustPurchase,	PromotionClass,	Maintenance-1,	Combat,		'TECH_CONSTRUCTION',	'TRAIT_CIVILIZATION_UNIT_LIME_THULE_DOGSLED',	PrereqPopulation,	PopulationCost,	BuildCharges,	CanCapture,	CostProgressionModel,	CostProgressionParam1,	RangedCombat,	Range
 FROM Units
 	WHERE UnitType = 'UNIT_SKIRMISHER';
+
+INSERT INTO Units
+	(
+		UnitType,
+		Name,
+		Description,
+
+		TraitType,
+		PrereqTech,
+
+		Cost,
+		CostProgressionModel,
+		CostProgressionParam1,
+		Maintenance,
+		PurchaseYield,
+
+		BuildCharges,
+
+		BaseMoves,
+		BaseSightRange,
+		ZoneOfControl,
+
+		AdvisorType,
+
+		Domain,
+		FormationClass,
+		PromotionClass
+	)
+
+	SELECT
+		'UNIT_CCB_THULE_WHALEMAKER',
+		'LOC_UNIT_CCB_THULE_WHALEMAKER_NAME',
+		'LOC_UNIT_CCB_THULE_WHALEMAKER_DESCRIPTION',
+
+		NULL,
+		NULL,
+
+		1,
+		'COST_PROGRESSION_GAME_PROGRESS',
+		400,
+		0,
+		NULL,
+
+		1,
+
+		2,
+		3,
+		0,
+
+		'ADVISOR_GENERIC',
+
+		Domain,
+		'FORMATION_CLASS_SUPPORT',
+		'PROMOTION_CLASS_SUPPORT'
+
+	FROM Units WHERE UnitType = 'UNIT_GALLEY';
+		
+
+INSERT INTO Improvement_ValidBuildUnits
+		(ImprovementType,							UnitType)
+VALUES	('IMPROVEMENT_LIME_THULE_WHALESPERM',		'UNIT_CCB_THULE_WHALEMAKER');
+
 -------------------------------------------------------------------
 -- UnitAIInfos
 -------------------------------------------------------------------
