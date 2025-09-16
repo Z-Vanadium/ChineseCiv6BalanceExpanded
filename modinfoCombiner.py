@@ -18,6 +18,7 @@ def get_mod_folders():
         'Meso/MayaTeKinichII',
         'Meso/TheoticuanasTeotihuacan',
         'NorthAmerica/ThuleKiviuq',
+        'NorthAmerica/CCBThuleWhalemaker',
     ]
 
 def combine_modinfo_files():
@@ -108,7 +109,7 @@ def combine_modinfo_files():
         #         newFileStr += f'item'
         # newFileStr += f'</{key}>\n'
     newFileStr += '</Mod>'
-    with open('CCBExpanded.modinfo', 'w') as file:
+    with open('CCBExpanded.modinfo', 'w', encoding='utf-8') as file:
         file.write(newFileStr)
 
 if __name__ == "__main__":

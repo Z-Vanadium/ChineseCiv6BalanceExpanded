@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="a94faf82-c9b0-4d2b-b926-ea816300bd9c" version="1">
+  <Properties>
+    <Name>CCB Thule Whalemaker</Name>
+    <Description>This is a brief description of the mod.</Description>
+    <Created>1758028221</Created>
+    <Teaser>This is a brief description of the mod.</Teaser>
+    <Authors>Vanadium</Authors>
+    <CompatibleVersions>1.2,2.0</CompatibleVersions>
+  </Properties>
+  <FrontEndActions>
+    <UpdateDatabase id="NewAction">
+      <File>GameData.sql</File>
+    </UpdateDatabase>
+    <UpdateColors id="NewAction">
+      <File>Color.sql</File>
+    </UpdateColors>
+    <UpdateText id="NewAction">
+      <File>Text.xml</File>
+    </UpdateText>
+    <UpdateDatabase id="NewAction">
+      <File>Config.sql</File>
+    </UpdateDatabase>
+    <UpdateArt id="NewAction">
+      <File>CCB Thule Whalemaker.dep</File>
+    </UpdateArt>
+    <UpdateIcons id="NewAction">
+      <File>Icons.xml</File>
+    </UpdateIcons>
+  </FrontEndActions>
+  <InGameActions>
+    <UpdateDatabase id="NewAction">
+      <File>GameData.sql</File>
+    </UpdateDatabase>
+    <UpdateColors id="NewAction">
+      <File>Color.sql</File>
+    </UpdateColors>
+    <UpdateText id="NewAction">
+      <File>Text.xml</File>
+    </UpdateText>
+    <UpdateArt id="NewAction">
+      <File>CCB Thule Whalemaker.dep</File>
+    </UpdateArt>
+    <UpdateIcons id="NewAction">
+      <File>Icons.xml</File>
+    </UpdateIcons>
+  </InGameActions>
+  <Files>
+    <File>ArtDefs/Units.artdef</File>
+    <File>CCB Thule Whalemaker.dep</File>
+    <File>Color.sql</File>
+    <File>Config.sql</File>
+    <File>GameData.sql</File>
+    <File>Icons.xml</File>
+    <File>Platforms/MacOS/BLPs/CCB.blp</File>
+    <File>Platforms/Windows/BLPs/CCB.blp</File>
+    <File>Text.xml</File>
+  </Files>
+</Mod>
