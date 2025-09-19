@@ -92,9 +92,9 @@ def combine_modinfo_files():
     for key, value in extraDependencies.items():
         dependenciesStr += f'    <Mod id="{key}" title="{value}"/>\n'
     newFileStr = f'''<?xml version="1.0" encoding="UTF-8"?>
-<Mod id="8af4fe8e-5406-7d72-d9d6-a8f5d1b66e34" version="1041">
+<Mod id="8af4fe8e-5406-7d72-d9d6-a8f5d1b66e34" version="1042">
   <Properties>
-    <Name>CCB 文明拓展 1.0.4a WIP</Name>
+    <Name>CCB 文明拓展 1.0.4b WIP</Name>
     <Description>中国特色新文明拓展模组，取代BBG Expand。</Description>
     <Authors>{', '.join(sorted_authors)} (alphabetical order)</Authors>
     <SpecialThanks>{', '.join(sorted_special_thanks)} (alphabetical order)</SpecialThanks>
