@@ -1,0 +1,17 @@
+Event	ID	Name			Wwise Object Path	Notes
+	279072095	Start_Music_SUK_SWAHILI			\Music\Start_Music_SUK_SWAHILI	
+	665150151	Play_Music_SUK_SWAHILI			\Music\Play_Music_SUK_SWAHILI	
+	841348873	Stop_Music_SUK_SWAHILI			\Music\Stop_Music_SUK_SWAHILI	
+	2454863163	Stop_Leader_Music_SUK_SWAHILI			\Music\Stop_Leader_Music_SUK_SWAHILI	
+	3003751665	Pause_Music_SUK_SWAHILI			\Music\Pause_Music_SUK_SWAHILI	
+	3389744629	Play_Leader_Music_SUK_SWAHILI			\Music\Play_Leader_Music_SUK_SWAHILI	
+	3937490028	Resume_Music_SUK_SWAHILI			\Music\Resume_Music_SUK_SWAHILI	
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	373350295	Game_Location			\Default Work Unit\Game_Location	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	197883300	Swahili(The Medieval Era)	D:\UserData\Documents\WwiseProjects\Swahili\.cache\Windows\SFX\Swahili(The Medieval Era)_EE79F7FB.wem		\Interactive Music Hierarchy\Default Work Unit\SwahiliMusic\PlayList02\Segment02_01\Swahili(The Medieval Era)		3615667
+	419369886	Swahili(The Industrial Era)	D:\UserData\Documents\WwiseProjects\Swahili\.cache\Windows\SFX\Swahili(The Industrial Era)_EE79F7FB.wem		\Interactive Music Hierarchy\Default Work Unit\SwahiliMusic\PlayList03\Segment03_01\Swahili(The Industrial Era)		6361054
+	733512572	Swahili(Ancient Era)	D:\UserData\Documents\WwiseProjects\Swahili\.cache\Windows\SFX\Swahili(Ancient Era)_EE79F7FB.wem		\Interactive Music Hierarchy\Default Work Unit\SwahiliMusic\PlayList01\Segment01_01\Swahili(Ancient Era)		2278936
+

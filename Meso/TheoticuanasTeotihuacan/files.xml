@@ -102,62 +102,6 @@
     <File>ArtDefs/Overlay.artdef</File>
     <File>ArtDefs/SV.artdef</File>
     <File>ArtDefs/Units.artdef</File>
-    <File>Platforms/MacOS/BLPs/landmarks/tilebases.blp</File>
-    <File>Platforms/MacOS/BLPs/LeaderFallbacks.blp</File>
-    <File>Platforms/MacOS/BLPs/LensAssets.blp</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_Burn_BaseColor</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_Burn_G</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_Decals_Parts_Ancient_01_B</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_Decals_Parts_Ancient_01_FOW</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_Decals_Parts_Ancient_01_H</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_Decals_Parts_Industrial_01_B</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_Decals_Parts_Industrial_01_FOW</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_Decals_Parts_Industrial_01_H</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_DiffuseTint_Decals_Parts_Ancient_01_B_null</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_DiffuseTint_Decals_Parts_Industrial_01_B_null</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_DiffuseTint_DIS_CTY_AW_Grounds_B_null</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_DiffuseTint_DIS_ENC_Ikanda_B_null</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_DiffuseTint_DIS_ENC_Ikanda_FINAL_null</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_DiffuseTint_DIS_TOL_Base_FINAL_null</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_DiffuseTint_eaglewarriorbase_null</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_DiffuseTint_Ruin_Debris_Decal_Light_null</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_DiffuseTint_Ruin_Debris_Decal_null</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_DiffuseTint_Tree_Jungle_B_null</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_DIS_CTY_AW_Grounds_G</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_DIS_CTY_AW_Grounds_N0</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_DIS_CTY_AW_Grounds_N1</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_DIS_CTY_RE_BaseA_A</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_DIS_CTY_RSA_Base_G</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_DIS_CTY_RSA_Base_M</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_DIS_CTY_RSA_Base_N0</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_DIS_CTY_RSA_Base_N1</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_DIS_CTY_RSA_E</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_DIS_ENC_Ikanda_AO</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_DIS_ENC_Ikanda_E</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_DIS_ENC_Ikanda_G</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_DIS_ENC_Ikanda_N0</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_DIS_ENC_Ikanda_N1</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_DIS_ENC_Ikanda_O</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_eaglewarrior_AO</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_eaglewarrior_G</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_eaglewarrior_M</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_eaglewarrior_N0</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_eaglewarrior_N1</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_FOW_Ruin_Debris_Decal</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_FOW_Ruin_Debris_Decal_Light</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_LimeTeo_LoyaltyOverlay</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_LimeTeo_LoyaltyPressure</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_ProceduralNoiseTexture2D_0x304656c5</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_Ruin_Debris_Decal</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_Ruin_Debris_Decal_H</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_Ruin_Debris_Decal_Light</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_Tree_Jungle_G</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_Tree_Jungle_N0</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_Tree_Jungle_N1</File>
-    <File>Platforms/MacOS/BLPs/strategicview/strategicview_districts.blp</File>
-    <File>Platforms/MacOS/BLPs/UILeaders.blp</File>
-    <File>Platforms/MacOS/BLPs/UI/Icons.blp</File>
-    <File>Platforms/MacOS/BLPs/units/units.blp</File>
     <File>Platforms/Windows/BLPs/landmarks/tilebases.blp</File>
     <File>Platforms/Windows/BLPs/LeaderFallbacks.blp</File>
     <File>Platforms/Windows/BLPs/LensAssets.blp</File>

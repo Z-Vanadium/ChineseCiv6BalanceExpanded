@@ -50,7 +50,6 @@
         <LoadOrder>10</LoadOrder>
       </Properties>
       <File>Core/MacedonOlympias_GameDefines.sql</File>
-      <File>Core/MacedonOlympias_ModSupport.sql</File>
     </UpdateDatabase>
     <UpdateText id="UpdateText">
       <File>Core/MacedonOlympias_GameText.xml</File>
@@ -79,35 +78,7 @@
     <File>Credits.txt</File>
     <File>JFD's Macedon - Olympias.dep</File>
     <File>Lua/JFD_MacedonOlympias_Functions.lua</File>
-    <File>Platforms/MacOS/BLPs/LeaderFallbacks.blp</File>
-    <File>Platforms/MacOS/BLPs/UI/Icons.blp</File>
     <File>Platforms/Windows/BLPs/LeaderFallbacks.blp</File>
     <File>Platforms/Windows/BLPs/UI/Icons.blp</File>
-    <File>Textures/FALLBACK_NEUTRAL_JFD_OLYMPIAS.dds</File>
-    <File>Textures/FALLBACK_NEUTRAL_JFD_OLYMPIAS.tex</File>
-    <File>Textures/JFD_OLYMPIAS_1.dds</File>
-    <File>Textures/JFD_OLYMPIAS_1.tex</File>
-    <File>Textures/JFD_OLYMPIAS_4.dds</File>
-    <File>Textures/JFD_OLYMPIAS_4.tex</File>
-    <File>Textures/LEADER_JFD_OLYMPIAS_NEUTRAL.dds</File>
-    <File>Textures/LEADER_JFD_OLYMPIAS_NEUTRAL.tex</File>
-    <File>Textures/Olympias256.dds</File>
-    <File>Textures/Olympias256.tex</File>
-    <File>Textures/Olympias32.dds</File>
-    <File>Textures/Olympias32.tex</File>
-    <File>Textures/Olympias45.dds</File>
-    <File>Textures/Olympias45.tex</File>
-    <File>Textures/Olympias48.dds</File>
-    <File>Textures/Olympias48.tex</File>
-    <File>Textures/Olympias50.dds</File>
-    <File>Textures/Olympias50.tex</File>
-    <File>Textures/Olympias55.dds</File>
-    <File>Textures/Olympias55.tex</File>
-    <File>Textures/Olympias64.dds</File>
-    <File>Textures/Olympias64.tex</File>
-    <File>Textures/Olympias80.dds</File>
-    <File>Textures/Olympias80.tex</File>
-    <File>XLPs/Icons.xlp</File>
-    <File>XLPs/LeaderFallbacks.xlp</File>
   </Files>
 </Mod>

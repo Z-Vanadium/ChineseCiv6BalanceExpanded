@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="10" SoundbankVersion="113">
+	<RootPaths>
+		<ProjectRoot>D:\UserData\Documents\WwiseProjects\Swahili\</ProjectRoot>
+		<SourceFilesRoot>D:\UserData\Documents\WwiseProjects\Swahili\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>D:\UserData\Documents\WwiseProjects\Swahili\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>D:\UserData\Documents\WwiseProjects\Swahili\GeneratedSoundBanks\Windows\</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX">
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="2506763460" Language="SFX">
+			<ShortName>SWAHILI_SB</ShortName>
+			<Path>SWAHILI_SB.bnk</Path>
+			<IncludedEvents>
+				<Event Id="3003751665" Name="Pause_Music_SUK_SWAHILI"/>
+				<Event Id="3389744629" Name="Play_Leader_Music_SUK_SWAHILI"/>
+				<Event Id="665150151" Name="Play_Music_SUK_SWAHILI"/>
+				<Event Id="3937490028" Name="Resume_Music_SUK_SWAHILI"/>
+				<Event Id="279072095" Name="Start_Music_SUK_SWAHILI"/>
+				<Event Id="2454863163" Name="Stop_Leader_Music_SUK_SWAHILI"/>
+				<Event Id="841348873" Name="Stop_Music_SUK_SWAHILI"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="197883300" Language="SFX">
+					<ShortName>Swahili(The Medieval Era).wav</ShortName>
+					<Path>SFX\Swahili(The Medieval Era)_EE79F7FB.wem</Path>
+				</File>
+				<File Id="419369886" Language="SFX">
+					<ShortName>Swahili(The Industrial Era).wav</ShortName>
+					<Path>SFX\Swahili(The Industrial Era)_EE79F7FB.wem</Path>
+				</File>
+				<File Id="733512572" Language="SFX">
+					<ShortName>Swahili(Ancient Era).wav</ShortName>
+					<Path>SFX\Swahili(Ancient Era)_EE79F7FB.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

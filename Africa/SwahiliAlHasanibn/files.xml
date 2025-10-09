@@ -122,6 +122,12 @@
       <Criteria>Suk_AlHasan</Criteria>
       <File>Core/Config/Suk_Al_Hasan_Color.sql</File>
     </UpdateColors>
+    <UpdateAudio id="UpdateAudio">
+      <Properties>
+        <LoadOrder>101</LoadOrder>
+      </Properties>
+      <File>Platforms/Windows/audio/SWAHILI_Audio.ini</File>
+    </UpdateAudio>
   </InGameActions>
   <Files>
     <File>ArtDefs/Buildings.artdef</File>
@@ -147,68 +153,6 @@
     <File>Core/Localisation/Suk_Al_Hasan_LeaderText.sql</File>
     <File>Lua/Suk_AdjacencyHandlerItem_CoralConstructionBonus.lua</File>
     <File>Lua/Suk_Al_Hasan_CoreFunctions.lua</File>
-    <File>Platforms/MacOS/BLPs/landmarks/hero_buildings.blp</File>
-    <File>Platforms/MacOS/BLPs/LeaderFallbacks.blp</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/ANIMATION_Suk_Jahazi_Death</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/ANIMATION_Suk_Jahazi_Idle</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/ANIMATION_Suk_Jahazi_RunA</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/ANIMATION_Suk_Jahazi_RunStop</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_Burn_BaseColor</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_Burn_G</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_Decals_Parts_Ancient_01_B</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_Decals_Parts_Ancient_01_FOW</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_Decals_Parts_Ancient_01_H</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_Decals_Parts_Classical_01_B</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_Decals_Parts_Classical_01_H</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_Decals_Parts_Industrial_01_FOW</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_DiffuseTint_Decals_Parts_Ancient_01_B_null</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_DiffuseTint_Decals_Parts_Classical_01_B_null</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_DiffuseTint_DIS_CTY_AW_Grounds_B_null</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_DiffuseTint_DIS_CTY_Suk_PillarTomb_B_null</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_DiffuseTint_Foliage_Bld_B_null</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_DiffuseTint_Foundation_Ancient_Cobblestones_B_null</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_DiffuseTint_Foundation_Brick_Gray_B_null</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_DiffuseTint_Pillage_Construction_01_B_null</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_DiffuseTint_Sail_a_Sail_t</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_DiffuseTint_Suk_Jahazi_Boat_B_Suk_Jahazi_Boat_T</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_DIS_CTY_AW_Grounds_G</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_DIS_CTY_AW_Grounds_N0</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_DIS_CTY_AW_Grounds_N1</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_DIS_CTY_RE_BaseA_A</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_DIS_CTY_Suk_PillarTomb_Baked_ao</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_DIS_CTY_Suk_PillarTomb_E</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_DIS_CTY_Suk_PillarTomb_G</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_DIS_CTY_Suk_PillarTomb_M</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_DIS_CTY_Suk_PillarTomb_N0</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_DIS_CTY_Suk_PillarTomb_N1</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_Foliage_Bld_G</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_Foliage_Bld_N0</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_Foliage_Bld_N1</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_Foundation_Ancient_Cobblestones_G</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_Foundation_Ancient_Cobblestones_N0</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_Foundation_Ancient_Cobblestones_N1</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_Foundation_Brick_Gray_G</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_Foundation_Brick_Gray_N0</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_Foundation_Brick_Gray_N1</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_Pillage_Construction_01_G</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_Pillage_Construction_01_N0</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_Pillage_Construction_01_N1</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_Pillage_Construction_01_O</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_ProceduralNoiseTexture2D_0x304656c5</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_Sail_ao</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_Sail_g</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_Sail_m</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_Sail_n0</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_Sail_n1</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_Suk_Jahazi_Boat_A</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_Suk_Jahazi_Boat_G</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_Suk_Jahazi_Boat_N0</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_Suk_Jahazi_Boat_N1</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_Suk_Swahili_LoyaltyWarning</File>
-    <File>Platforms/MacOS/BLPs/SHARED_DATA/TEXTURE_Suk_Swahili_Pressure</File>
-    <File>Platforms/MacOS/BLPs/UILensAssets.blp</File>
-    <File>Platforms/MacOS/BLPs/UITextures.blp</File>
-    <File>Platforms/MacOS/BLPs/units/units.blp</File>
     <File>Platforms/Windows/BLPs/landmarks/hero_buildings.blp</File>
     <File>Platforms/Windows/BLPs/LeaderFallbacks.blp</File>
     <File>Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_Suk_Jahazi_Death</File>
@@ -271,6 +215,11 @@
     <File>Platforms/Windows/BLPs/UILensAssets.blp</File>
     <File>Platforms/Windows/BLPs/UITextures.blp</File>
     <File>Platforms/Windows/BLPs/units/units.blp</File>
+    <File>Platforms/Windows/audio/SWAHILI_Audio.ini</File>
+    <File>Platforms/Windows/audio/SWAHILI_SB.bnk</File>
+    <File>Platforms/Windows/audio/SWAHILI_SB.txt</File>
+    <File>Platforms/Windows/audio/PluginInfo.xml</File>
+    <File>Platforms/Windows/audio/SoundbanksInfo.xml</File>
     <File>Sukritact's Swahili Al Hasan ibn Sulaiman.dep</File>
   </Files>
 </Mod>
