@@ -19,6 +19,7 @@ def get_mod_folders():
         'Meso/TheoticuanasTeotihuacan',
         'NorthAmerica/ThuleKiviuq',
         'NorthAmerica/CCBThuleWhalemaker',
+        'Platforms',
     ]
 
 def combine_modinfo_files():
@@ -58,7 +59,7 @@ def combine_modinfo_files():
             load_order_tags = Bs_data.find_all("LoadOrder")
             # Append the string in each File tag with the mod folder name
             for b in load_order_tags:
-                b.string = f'{9-mod_cnt}{b.string}'
+                b.string = f'{12-mod_cnt}{b.string}'
                 
             author_tags = Bs_data.find_all("Authors")
             for tag in author_tags:

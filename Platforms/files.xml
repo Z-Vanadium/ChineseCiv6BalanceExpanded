@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod>
+  <InGameActions>
+    <UpdateAudio id="UpdateAudio">
+      <Properties>
+        <LoadOrder>101</LoadOrder>
+      </Properties>
+      <File>Windows/audio/CCBE_Audio.ini</File>
+    </UpdateAudio>
+  </InGameActions>
+  <Files>
+    <File>Windows/audio/CCBE_Audio.ini</File>
+    <File>Windows/audio/SWAHILI_SB.bnk</File>
+    <File>Windows/audio/SWAHILI_SB.txt</File>
+    <File>Windows/audio/PluginInfo.xml</File>
+    <File>Windows/audio/SoundbanksInfo.xml</File>
+  </Files>
+</Mod>

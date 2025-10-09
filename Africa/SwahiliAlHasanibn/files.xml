@@ -122,12 +122,6 @@
       <Criteria>Suk_AlHasan</Criteria>
       <File>Core/Config/Suk_Al_Hasan_Color.sql</File>
     </UpdateColors>
-    <UpdateAudio id="UpdateAudio">
-      <Properties>
-        <LoadOrder>101</LoadOrder>
-      </Properties>
-      <File>Platforms/Windows/audio/SWAHILI_Audio.ini</File>
-    </UpdateAudio>
   </InGameActions>
   <Files>
     <File>ArtDefs/Buildings.artdef</File>
@@ -215,11 +209,6 @@
     <File>Platforms/Windows/BLPs/UILensAssets.blp</File>
     <File>Platforms/Windows/BLPs/UITextures.blp</File>
     <File>Platforms/Windows/BLPs/units/units.blp</File>
-    <File>Platforms/Windows/audio/SWAHILI_Audio.ini</File>
-    <File>Platforms/Windows/audio/SWAHILI_SB.bnk</File>
-    <File>Platforms/Windows/audio/SWAHILI_SB.txt</File>
-    <File>Platforms/Windows/audio/PluginInfo.xml</File>
-    <File>Platforms/Windows/audio/SoundbanksInfo.xml</File>
     <File>Sukritact's Swahili Al Hasan ibn Sulaiman.dep</File>
   </Files>
 </Mod>
