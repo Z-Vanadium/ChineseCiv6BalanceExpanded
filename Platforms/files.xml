@@ -10,8 +10,14 @@
   </InGameActions>
   <Files>
     <File>Windows/audio/CCBE_Audio.ini</File>
+    <File>Windows/audio/TEOTIHUACAN_SB.bnk</File>
+    <File>Windows/audio/TEOTIHUACAN_SB.txt</File>
     <File>Windows/audio/SWAHILI_SB.bnk</File>
     <File>Windows/audio/SWAHILI_SB.txt</File>
+    <File>Windows/audio/THULE_SB.bnk</File>
+    <File>Windows/audio/THULE_SB.txt</File>
+    <File>Windows/audio/TUBO_SB.bnk</File>
+    <File>Windows/audio/TUBO_SB.txt</File>
     <File>Windows/audio/PluginInfo.xml</File>
     <File>Windows/audio/SoundbanksInfo.xml</File>
   </Files>
