@@ -1,17 +1,14 @@
 Event	ID	Name			Wwise Object Path	Notes
-	16551588	Stop_Leader_Music_LIME_THULE			\Music\Stop_Leader_Music_LIME_THULE	
-	379919038	Stop_Music_LIME_THULE			\Music\Stop_Music_LIME_THULE	
-	735470888	Play_Music_LIME_THULE			\Music\Play_Music_LIME_THULE	
-	980039126	Pause_Music_LIME_THULE			\Music\Pause_Music_LIME_THULE	
-	1198772825	Resume_Music_LIME_THULE			\Music\Resume_Music_LIME_THULE	
-	2105738896	Start_Music_LIME_THULE			\Music\Start_Music_LIME_THULE	
-	4235992450	Play_Leader_Music_LIME_THULE			\Music\Play_Leader_Music_LIME_THULE	
-
-Game Parameter	ID	Name			Wwise Object Path	Notes
-	373350295	Game_Location			\Default Work Unit\Game_Location	
+	16551588	Stop_Leader_Music_LIME_THULE			\Default Work Unit\Music\Stop_Leader_Music_LIME_THULE	
+	379919038	Stop_Music_LIME_THULE			\Default Work Unit\Music\Stop_Music_LIME_THULE	
+	735470888	Play_Music_LIME_THULE			\Default Work Unit\Music\Play_Music_LIME_THULE	
+	980039126	Pause_Music_LIME_THULE			\Default Work Unit\Music\Pause_Music_LIME_THULE	
+	1198772825	Resume_Music_LIME_THULE			\Default Work Unit\Music\Resume_Music_LIME_THULE	
+	2105738896	Start_Music_LIME_THULE			\Default Work Unit\Music\Start_Music_LIME_THULE	
+	4235992450	Play_Leader_Music_LIME_THULE			\Default Work Unit\Music\Play_Leader_Music_LIME_THULE	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	550032058	Thule(Ancient Era)	D:\UserData\Documents\WwiseProjects\Tule\.cache\Windows\SFX\Thule(Ancient Era)_EE79F7FB.wem		\Interactive Music Hierarchy\Default Work Unit\TuleMusic\PlayList01\Segment01_01\Thule(Ancient Era)		2382434
-	1004588966	Thule(Medieval Era)	D:\UserData\Documents\WwiseProjects\Tule\.cache\Windows\SFX\Thule(Medieval Era)_EE79F7FB.wem		\Interactive Music Hierarchy\Default Work Unit\TuleMusic\PlayList02\Segment02_01\Thule(Medieval Era)		3988759
-	1040931833	Thule(Industrial Era)	D:\UserData\Documents\WwiseProjects\Tule\.cache\Windows\SFX\Thule(Industrial Era)_EE79F7FB.wem		\Interactive Music Hierarchy\Default Work Unit\TuleMusic\PlayList04\Segment04_01\Thule(Industrial Era)		5856917
+	79794969	Thule(Industrial Era)	D:\UserData\Documents\WwiseProjects\Tule\.cache\Windows\SFX\Thule(Industrial Era)_5E5FEB08.wem		\Interactive Music Hierarchy\TuleBackgroundMusic\CivilizationMusic_Tule\SwahiliCiv_Industrial\Thule(Industrial Era)\Thule(Industrial Era)		5856917
+	382571150	Thule(Ancient Era)	D:\UserData\Documents\WwiseProjects\Tule\.cache\Windows\SFX\Thule(Ancient Era)_5E5FEB08.wem		\Interactive Music Hierarchy\TuleBackgroundMusic\CivilizationMusic_Tule\SwahiliCiv_Ancient\Thule(Ancient Era)\Thule(Ancient Era)		2382434
+	561346006	Thule(Medieval Era)	D:\UserData\Documents\WwiseProjects\Tule\.cache\Windows\SFX\Thule(Medieval Era)_5E5FEB08.wem		\Interactive Music Hierarchy\TuleBackgroundMusic\CivilizationMusic_Tule\SwahiliCiv_Medieval\Thule(Medieval Era)\Thule(Medieval Era)		3988759
 
