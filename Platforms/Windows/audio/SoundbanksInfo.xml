@@ -11,9 +11,9 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1012380651" Language="SFX">
-			<ShortName>TUBO_SB</ShortName>
-			<Path>TUBO_SB.bnk</Path>
+		<SoundBank Id="2619906852" Language="SFX">
+			<ShortName>BOD_SB</ShortName>
+			<Path>BOD_SB.bnk</Path>
 			<IncludedEvents>
 				<Event Id="4264451288" Name="Pause_Music_SUK_TIBET"/>
 				<Event Id="1033738340" Name="Play_Leader_Music_SUK_TIBET"/>
@@ -24,17 +24,17 @@
 				<Event Id="54452960" Name="Stop_Music_SUK_TIBET"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
-				<File Id="393961181" Language="SFX">
+				<File Id="14812735" Language="SFX">
 					<ShortName>Bod(The Industrial Era).wav</ShortName>
-					<Path>SFX\Bod(The Industrial Era)_EE79F7FB.wem</Path>
+					<Path>SFX\Bod(The Industrial Era)_5E5FEB08.wem</Path>
 				</File>
-				<File Id="916204709" Language="SFX">
-					<ShortName>Bod(Ancient Era).wav</ShortName>
-					<Path>SFX\Bod(Ancient Era)_EE79F7FB.wem</Path>
-				</File>
-				<File Id="946332928" Language="SFX">
+				<File Id="316199182" Language="SFX">
 					<ShortName>Bod(Medieval Era).wav</ShortName>
-					<Path>SFX\Bod(Medieval Era)_EE79F7FB.wem</Path>
+					<Path>SFX\Bod(Medieval Era)_5E5FEB08.wem</Path>
+				</File>
+				<File Id="559910905" Language="SFX">
+					<ShortName>Bod(Ancient Era).wav</ShortName>
+					<Path>SFX\Bod(Ancient Era)_5E5FEB08.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
@@ -51,17 +51,17 @@
 				<Event Id="841348873" Name="Stop_Music_SUK_SWAHILI"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
-				<File Id="447107310" Language="SFX">
-					<ShortName>Swahili(The Medieval Era).wav</ShortName>
-					<Path>SFX\Swahili(The Medieval Era)_5E5FEB08.wem</Path>
-				</File>
-				<File Id="753137904" Language="SFX">
+				<File Id="187152977" Language="SFX">
 					<ShortName>Swahili(Ancient Era).wav</ShortName>
 					<Path>SFX\Swahili(Ancient Era)_5E5FEB08.wem</Path>
 				</File>
-				<File Id="957239381" Language="SFX">
+				<File Id="442802939" Language="SFX">
 					<ShortName>Swahili(The Industrial Era).wav</ShortName>
 					<Path>SFX\Swahili(The Industrial Era)_5E5FEB08.wem</Path>
+				</File>
+				<File Id="634274409" Language="SFX">
+					<ShortName>Swahili(The Medieval Era).wav</ShortName>
+					<Path>SFX\Swahili(The Medieval Era)_5E5FEB08.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
@@ -78,17 +78,17 @@
 				<Event Id="924513219" Name="Stop_Music_LIME_TEOTIHUACAN"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
-				<File Id="13853673" Language="SFX">
-					<ShortName>Teotihuacan(Ancient Era).wav</ShortName>
-					<Path>SFX\Teotihuacan(Ancient Era)_EE79F7FB.wem</Path>
-				</File>
-				<File Id="58118531" Language="SFX">
-					<ShortName>Teotihuacan(Industrial Era).wav</ShortName>
-					<Path>SFX\Teotihuacan(Industrial Era)_EE79F7FB.wem</Path>
-				</File>
-				<File Id="387597312" Language="SFX">
+				<File Id="88990233" Language="SFX">
 					<ShortName>Teotihuacan(Medieval Era).wav</ShortName>
-					<Path>SFX\Teotihuacan(Medieval Era)_EE79F7FB.wem</Path>
+					<Path>SFX\Teotihuacan(Medieval Era)_5E5FEB08.wem</Path>
+				</File>
+				<File Id="477598499" Language="SFX">
+					<ShortName>Teotihuacan(Ancient Era).wav</ShortName>
+					<Path>SFX\Teotihuacan(Ancient Era)_5E5FEB08.wem</Path>
+				</File>
+				<File Id="902232623" Language="SFX">
+					<ShortName>Teotihuacan(Industrial Era).wav</ShortName>
+					<Path>SFX\Teotihuacan(Industrial Era)_5E5FEB08.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>

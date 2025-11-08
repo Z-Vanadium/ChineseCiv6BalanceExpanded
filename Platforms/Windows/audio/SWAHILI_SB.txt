@@ -8,7 +8,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	3937490028	Resume_Music_SUK_SWAHILI			\Default Work Unit\Music\Resume_Music_SUK_SWAHILI	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	447107310	Swahili(The Medieval Era)	D:\UserData\Documents\WwiseProjects\Wwise\Yuni\.cache\Windows\SFX\Swahili(The Medieval Era)_5E5FEB08.wem		\Interactive Music Hierarchy\LandsolBackgroundMusic\CivilizationMusic_Swahili\SwahiliCiv_Medieval\Swahili(The Medieval Era)\Swahili(The Medieval Era)		3615667
-	753137904	Swahili(Ancient Era)	D:\UserData\Documents\WwiseProjects\Wwise\Yuni\.cache\Windows\SFX\Swahili(Ancient Era)_5E5FEB08.wem		\Interactive Music Hierarchy\LandsolBackgroundMusic\CivilizationMusic_Swahili\SwahiliCiv_Ancient\Swahili(Ancient Era)\Swahili(Ancient Era)		2278936
-	957239381	Swahili(The Industrial Era)	D:\UserData\Documents\WwiseProjects\Wwise\Yuni\.cache\Windows\SFX\Swahili(The Industrial Era)_5E5FEB08.wem		\Interactive Music Hierarchy\LandsolBackgroundMusic\CivilizationMusic_Swahili\SwahiliCiv_Industrial\Swahili(The Industrial Era)\Swahili(The Industrial Era)		6361054
+	187152977	Swahili(Ancient Era)	D:\UserData\Documents\WwiseProjects\Swxl\.cache\Windows\SFX\Swahili(Ancient Era)_5E5FEB08.wem		\Interactive Music Hierarchy\SwxlBackgroundMusic\CivilizationMusic_swxl\swxlCiv_Ancient\Swahili(Ancient Era)\Swahili(Ancient Era)		2278936
+	442802939	Swahili(The Industrial Era)	D:\UserData\Documents\WwiseProjects\Swxl\.cache\Windows\SFX\Swahili(The Industrial Era)_5E5FEB08.wem		\Interactive Music Hierarchy\SwxlBackgroundMusic\CivilizationMusic_swxl\swxlCiv_Industrial\Swahili(The Industrial Era)\Swahili(The Industrial Era)		6361054
+	634274409	Swahili(The Medieval Era)	D:\UserData\Documents\WwiseProjects\Swxl\.cache\Windows\SFX\Swahili(The Medieval Era)_5E5FEB08.wem		\Interactive Music Hierarchy\SwxlBackgroundMusic\CivilizationMusic_swxl\swxlCiv_Medieval\Swahili(The Medieval Era)\Swahili(The Medieval Era)		3615667
 

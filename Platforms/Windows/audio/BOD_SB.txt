@@ -1,0 +1,14 @@
+Event	ID	Name			Wwise Object Path	Notes
+	54452960	Stop_Music_SUK_TIBET			\Default Work Unit\Music\Stop_Music_SUK_TIBET	
+	1033738340	Play_Leader_Music_SUK_TIBET			\Default Work Unit\Music\Play_Leader_Music_SUK_TIBET	
+	1468373790	Stop_Leader_Music_SUK_TIBET			\Default Work Unit\Music\Stop_Leader_Music_SUK_TIBET	
+	1766796933	Resume_Music_SUK_TIBET			\Default Work Unit\Music\Resume_Music_SUK_TIBET	
+	2935386938	Start_Music_SUK_TIBET			\Default Work Unit\Music\Start_Music_SUK_TIBET	
+	3023241490	Play_Music_SUK_TIBET			\Default Work Unit\Music\Play_Music_SUK_TIBET	
+	4264451288	Pause_Music_SUK_TIBET			\Default Work Unit\Music\Pause_Music_SUK_TIBET	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	14812735	Bod(The Industrial Era)	D:\UserData\Documents\WwiseProjects\Bod\.cache\Windows\SFX\Bod(The Industrial Era)_5E5FEB08.wem		\Interactive Music Hierarchy\BodBackgroundMusic\ThemeMusic_Bod\Bod(The Industrial Era)\Bod(The Industrial Era)		3965425
+	316199182	Bod(Medieval Era)	D:\UserData\Documents\WwiseProjects\Bod\.cache\Windows\SFX\Bod(Medieval Era)_5E5FEB08.wem		\Interactive Music Hierarchy\BodBackgroundMusic\ThemeMusic_Bod\Bod(Medieval Era)\Bod(Medieval Era)		3789182
+	559910905	Bod(Ancient Era)	D:\UserData\Documents\WwiseProjects\Bod\.cache\Windows\SFX\Bod(Ancient Era)_5E5FEB08.wem		\Interactive Music Hierarchy\BodBackgroundMusic\ThemeMusic_Bod\Bod(Ancient Era)\Bod(Ancient Era)		1586583
+

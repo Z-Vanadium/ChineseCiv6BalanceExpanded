@@ -1,17 +1,14 @@
 Event	ID	Name			Wwise Object Path	Notes
-	368780215	Play_Leader_Music_LIME_TEOTIHUACAN			\Music\Play_Leader_Music_LIME_TEOTIHUACAN	
-	924513219	Stop_Music_LIME_TEOTIHUACAN			\Music\Stop_Music_LIME_TEOTIHUACAN	
-	1312482508	Resume_Music_LIME_TEOTIHUACAN			\Music\Resume_Music_LIME_TEOTIHUACAN	
-	2035080121	Start_Music_LIME_TEOTIHUACAN			\Music\Start_Music_LIME_TEOTIHUACAN	
-	2114116845	Stop_Leader_Music_LIME_TEOTIHUACAN			\Music\Stop_Leader_Music_LIME_TEOTIHUACAN	
-	3608075355	Pause_Music_LIME_TEOTIHUACAN			\Music\Pause_Music_LIME_TEOTIHUACAN	
-	3824328113	Play_Music_LIME_TEOTIHUACAN			\Music\Play_Music_LIME_TEOTIHUACAN	
-
-Game Parameter	ID	Name			Wwise Object Path	Notes
-	373350295	Game_Location			\Default Work Unit\Game_Location	
+	368780215	Play_Leader_Music_LIME_TEOTIHUACAN			\Default Work Unit\Music\Play_Leader_Music_LIME_TEOTIHUACAN	
+	924513219	Stop_Music_LIME_TEOTIHUACAN			\Default Work Unit\Music\Stop_Music_LIME_TEOTIHUACAN	
+	1312482508	Resume_Music_LIME_TEOTIHUACAN			\Default Work Unit\Music\Resume_Music_LIME_TEOTIHUACAN	
+	2035080121	Start_Music_LIME_TEOTIHUACAN			\Default Work Unit\Music\Start_Music_LIME_TEOTIHUACAN	
+	2114116845	Stop_Leader_Music_LIME_TEOTIHUACAN			\Default Work Unit\Music\Stop_Leader_Music_LIME_TEOTIHUACAN	
+	3608075355	Pause_Music_LIME_TEOTIHUACAN			\Default Work Unit\Music\Pause_Music_LIME_TEOTIHUACAN	
+	3824328113	Play_Music_LIME_TEOTIHUACAN			\Default Work Unit\Music\Play_Music_LIME_TEOTIHUACAN	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	13853673	Teotihuacan(Ancient Era)	D:\UserData\Documents\WwiseProjects\Teotihuacan\.cache\Windows\SFX\Teotihuacan(Ancient Era)_EE79F7FB.wem		\Interactive Music Hierarchy\Default Work Unit\TeotihuacanMusic\PlayList01\Segment01_01\Teotihuacan(Ancient Era)		1909769
-	58118531	Teotihuacan(Industrial Era)	D:\UserData\Documents\WwiseProjects\Teotihuacan\.cache\Windows\SFX\Teotihuacan(Industrial Era)_EE79F7FB.wem		\Interactive Music Hierarchy\Default Work Unit\TeotihuacanMusic\PlayList04\Segment04_01\Teotihuacan(Industrial Era)		4337010
-	387597312	Teotihuacan(Medieval Era)	D:\UserData\Documents\WwiseProjects\Teotihuacan\.cache\Windows\SFX\Teotihuacan(Medieval Era)_EE79F7FB.wem		\Interactive Music Hierarchy\Default Work Unit\TeotihuacanMusic\PlayList02\Segment02_01\Teotihuacan(Medieval Era)		3500296
+	88990233	Teotihuacan(Medieval Era)	D:\UserData\Documents\WwiseProjects\TEOTIHUACAN_SB\.cache\Windows\SFX\Teotihuacan(Medieval Era)_5E5FEB08.wem		\Interactive Music Hierarchy\TeotihuacanBackgroundMusic\CivilizationMusic_Teotihuacan\TeotihuacanCiv_Medieval\Teotihuacan(Medieval Era)\Teotihuacan(Medieval Era)		3500296
+	477598499	Teotihuacan(Ancient Era)	D:\UserData\Documents\WwiseProjects\TEOTIHUACAN_SB\.cache\Windows\SFX\Teotihuacan(Ancient Era)_5E5FEB08.wem		\Interactive Music Hierarchy\TeotihuacanBackgroundMusic\CivilizationMusic_Teotihuacan\TeotihuacanCiv_Ancient\Teotihuacan(Ancient Era)\Teotihuacan(Ancient Era)		1909769
+	902232623	Teotihuacan(Industrial Era)	D:\UserData\Documents\WwiseProjects\TEOTIHUACAN_SB\.cache\Windows\SFX\Teotihuacan(Industrial Era)_5E5FEB08.wem		\Interactive Music Hierarchy\TeotihuacanBackgroundMusic\CivilizationMusic_Teotihuacan\TeotihuacanCiv_Industrial\Teotihuacan(Industrial Era)\Teotihuacan(Industrial Era)		4337010
 
