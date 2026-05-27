@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Ed Beach (Firaxis Games) -->
+<GameData>
+	<LocalizedText>
+		<Row Tag="LOC_LEADER_MER_MANNERHEIM_NAME" Language="en_US">
+			<Text>Mannerheim</Text>
+		</Row>
+		<!--Traits-->
+		<Row Tag="LOC_TRAIT_LEADER_MER_OUR_HOMES_OUR_FAITH_OUR_COUNTRY_NAME" Language="en_US">
+			<Text>Our Homes, Our Faith, and Our Country</Text>
+		</Row>
+		<Row Tag="LOC_TRAIT_LEADER_MER_OUR_HOMES_OUR_FAITH_OUR_COUNTRY_DESCRIPTION" Language="en_US">
+			<Text>All Military Units in friendly territory receive a bonus to [ICON_Strength] Combat Strength based on tile appeal, +3 in Average, +4 in Charming, and +5 in Breathtaking.</Text>
+		</Row>
+		<Row Tag="LOC_MODIFIER_MER_OUR_HOMES_OUR_FAITH_OUR_COUNTRY_AVERAGE_STRENGTH_DESC" Language="en_US">
+			<Text>+3 [ICON_Strength] Combat Strength bonus from fighting on Average Appeal.</Text>
+		</Row>
+		<Row Tag="LOC_MODIFIER_MER_OUR_HOMES_OUR_FAITH_OUR_COUNTRY_CHARMING_STRENGTH_DESC" Language="en_US">
+			<Text>+4 [ICON_Strength] Combat Strength bonus from fighting on Charming Appeal.</Text>
+		</Row>
+		<Row Tag="LOC_MODIFIER_MER_OUR_HOMES_OUR_FAITH_OUR_COUNTRY_BREATHTAKING_STRENGTH_DESC" Language="en_US">
+			<Text>+5 [ICON_Strength] Combat Strength bonus from fighting on Charming Appeal.</Text>
+		</Row>
+		<Row Tag="LOC_TRAIT_CIVILIZATION_MER_KALEVALA_NAME" Language="en_US">
+			<Text>Kalevala</Text>
+		</Row>
+		<Row Tag="LOC_TRAIT_CIVILIZATION_MER_KALEVALA_DESCRIPTION" Language="en_US">
+			<Text>Cities on the [ICON_Capital] Capital's continent receive +1 Loyalty per turn. Cities at maximum Loyalty receive an additional +10% [ICON_Culture] Culture and +10% [ICON_Production] Production. Unimproved Woods and Lake tiles yield +1 [ICON_Culture] Culture and +1 [ICON_Production] Production. </Text>
+		</Row> 
+		<Row Tag="LOC_TRAIT_CIVILIZATION_UNIT_MER_SISSI_NAME" Language="en_US">
+			<Text>Sissi</Text>
+		</Row>
+		<Row Tag="LOC_TRAIT_CIVILIZATION_UNIT_MER_SISSI_DESCRIPTION" Language="en_US">
+			<Text>A unique land unit</Text>
+		</Row>
+		<Row Tag="LOC_UNIT_MER_SISSI_NAME" Language="en_US">
+			<Text>Sissi</Text>
+		</Row>
+		<Row Tag="LOC_UNIT_MER_SISSI_DESCRIPTION" Language="en_US">
+			<Text>Finnish unique unit replacing Infantry. 2x flanking bonus. Has a ranged attack with [ICON_Range] Range 1 and 75 [ICON_Ranged] Ranged Strength. Lower Melee Combat Strength (72 vs. 75). No strategic resource requirement.</Text>
+		</Row>
+		<Row Tag="LOC_ABILITY_MER_SISSI_NAME" Language="en_US">
+			<Text>Motti</Text>
+		</Row>
+		<Row Tag="LOC_ABILITY_MER_SISSI_DESCRIPTION" Language="en_US">
+			<Text>2x flanking bonus.</Text>
+		</Row>
+		<Row Tag="LOC_TRAIT_CIVILIZATION_IMPROVEMENT_MER_SAUNA_NAME" Language="en_US">
+			<Text>Sauna</Text>
+		</Row>
+		<Row Tag="LOC_TRAIT_CIVILIZATION_IMPROVEMENT_MER_SAUNA_DESCRIPTION" Language="en_US">
+			<Text>A unique improvement</Text>
+		</Row>
+		<Row Tag="LOC_IMPROVEMENT_MER_SAUNA_NAME" Language="en_US">
+			<Text>Sauna</Text>
+		</Row>
+		<Row Tag="LOC_IMPROVEMENT_MER_SAUNA_DESCRIPTION" Language="en_US">
+			<Text>Finnish unique improvement. +1 Appeal and +0.5 [ICON_Housing] Housing. +1 [ICON_Culture] Culture and +1 [ICON_Production] Production. Additional +1 [ICON_Culture] Culture for every 2 adjacent Woods and +1 [ICON_Production] Production from adjacent Camps. +1 [ICON_Amenities] Amenity when adjacent to a river. Can be built on Grass, Plains, Tundra, Snow, Woods or Marsh, but not adjacent to another Sauna. Provides [ICON_Tourism] Tourism equal to the tile's Appeal after Flight.</Text>
+		</Row>
+		<Row Tag="LOC_CIVILIZATION_MER_FINLAND_NAME" Language="en_US">
+			<Text>Finland</Text>
+		</Row>
+		<Row Tag="LOC_CIVILIZATION_MER_FINLAND_DESCRIPTION" Language="en_US">
+			<Text>Finland</Text>
+		</Row>
+		<Row Tag="LOC_CIVILIZATION_MER_FINLAND_DESCRIPTION_JFD_CIVILIZATION" Language="en_US">
+			<Text>Finnish Civilization</Text>
+		</Row>
+		<Row Tag="LOC_CIVILIZATION_MER_FINLAND_ADJECTIVE"	  Language="en_US">
+			<Text>Finnish</Text>
+		</Row>
+		<Row Tag="LOC_CITY_NAME_MER_FINLAND_1" Language="en_US">
+			<Text>Helsinki</Text>
+		</Row>
+		<Row Tag="LOC_CITY_NAME_MER_FINLAND_2" Language="en_US">
+			<Text>Espoo</Text>
+		</Row>
+		<Row Tag="LOC_CITY_NAME_MER_FINLAND_3" Language="en_US">
+			<Text>Tampere</Text>
+		</Row>
+		<Row Tag="LOC_CITY_NAME_MER_FINLAND_4" Language="en_US">
+			<Text>Vantaa</Text>
+		</Row>
+		<Row Tag="LOC_CITY_NAME_MER_FINLAND_5" Language="en_US">
+			<Text>Oulu</Text>
+		</Row>
+		<Row Tag="LOC_CITY_NAME_MER_FINLAND_6" Language="en_US">
+			<Text>Turku</Text>
+		</Row>
+		<Row Tag="LOC_CITY_NAME_MER_FINLAND_7" Language="en_US">
+			<Text>Jyväskylä</Text>
+		</Row>
+		<Row Tag="LOC_CITY_NAME_MER_FINLAND_8" Language="en_US">
+			<Text>Lahti</Text>
+		</Row>
+		<Row Tag="LOC_CITY_NAME_MER_FINLAND_9" Language="en_US">
+			<Text>Kuopio</Text>
+		</Row>
+		<Row Tag="LOC_CITY_NAME_MER_FINLAND_10" Language="en_US">
+			<Text>Pori</Text>
+		</Row>
+		<Row Tag="LOC_CITY_NAME_MER_FINLAND_11" Language="en_US">
+			<Text>Kouvola</Text>
+		</Row>
+		<Row Tag="LOC_CITY_NAME_MER_FINLAND_12" Language="en_US">
+			<Text>Joensuu</Text>
+		</Row>
+		<Row Tag="LOC_CITY_NAME_MER_FINLAND_13" Language="en_US">
+			<Text>Lappeenranta</Text>
+		</Row>
+		<Row Tag="LOC_CITY_NAME_MER_FINLAND_14" Language="en_US">
+			<Text>Hämeenlinna</Text>
+		</Row>
+		<Row Tag="LOC_CITY_NAME_MER_FINLAND_15" Language="en_US">
+			<Text>Vaasa</Text>
+		</Row>
+		<Row Tag="LOC_CITY_NAME_MER_FINLAND_16" Language="en_US">
+			<Text>Seinäjoki</Text>
+		</Row>
+		<Row Tag="LOC_CITY_NAME_MER_FINLAND_17" Language="en_US">
+			<Text>Rovaniemi</Text>
+		</Row>
+		<Row Tag="LOC_CITY_NAME_MER_FINLAND_18" Language="en_US">
+			<Text>Mikkel</Text>
+		</Row>
+		<Row Tag="LOC_CITY_NAME_MER_FINLAND_19" Language="en_US">
+			<Text>Salo</Text>
+		</Row>
+		<Row Tag="LOC_CITY_NAME_MER_FINLAND_20" Language="en_US">
+			<Text>Porvoo</Text>
+		</Row>
+		<Row Tag="LOC_CITY_NAME_MER_FINLAND_21" Language="en_US">
+			<Text>Kokkola</Text>
+		</Row>
+		<Row Tag="LOC_CITY_NAME_MER_FINLAND_22" Language="en_US">
+			<Text>Lohja</Text>
+		</Row>
+		<Row Tag="LOC_CITY_NAME_MER_FINLAND_23" Language="en_US">
+			<Text>Hyvinkää</Text>
+		</Row>
+		<Row Tag="LOC_CITY_NAME_MER_FINLAND_24" Language="en_US">
+			<Text>Järvenpää</Text>
+		</Row>
+		<Row Tag="LOC_CITY_NAME_MER_FINLAND_25" Language="en_US">
+			<Text>Rauma</Text>
+		</Row>
+		<Row Tag="LOC_CITY_NAME_MER_FINLAND_26" Language="en_US">
+			<Text>Kajaani</Text>
+		</Row>
+		<Row Tag="LOC_CITY_NAME_MER_FINLAND_27" Language="en_US">
+			<Text>Kerava</Text>
+		</Row>
+		<Row Tag="LOC_CITY_NAME_MER_FINLAND_28" Language="en_US">
+			<Text>Savonlinna</Text>
+		</Row>
+		<Row Tag="LOC_CITY_NAME_MER_FINLAND_29" Language="en_US">
+			<Text>Nokia</Text>
+		</Row>
+		<Row Tag="LOC_CITY_NAME_MER_FINLAND_30" Language="en_US">
+			<Text>Kaarina</Text>
+		</Row>
+		<!--Citizens-->
+		<Row Tag="LOC_CITIZEN_MER_FINLAND_MALE_1" Language="en_US">
+			<Text>Aku</Text>
+		</Row>
+		<Row Tag="LOC_CITIZEN_MER_FINLAND_MALE_2" Language="en_US">
+			<Text>Armo</Text>
+		</Row>
+		<Row Tag="LOC_CITIZEN_MER_FINLAND_MALE_3" Language="en_US">
+			<Text>Jere</Text>
+		</Row>
+		<Row Tag="LOC_CITIZEN_MER_FINLAND_MALE_4" Language="en_US">
+			<Text>Tapio</Text>
+		</Row>
+		<Row Tag="LOC_CITIZEN_MER_FINLAND_MALE_5" Language="en_US">
+			<Text>Kauko</Text>
+		</Row>
+		<Row Tag="LOC_CITIZEN_MER_FINLAND_MALE_6" Language="en_US">
+			<Text>Aapo</Text>
+		</Row>
+		<Row Tag="LOC_CITIZEN_MER_FINLAND_MALE_7" Language="en_US">
+			<Text>Aatami</Text>
+		</Row>
+		<Row Tag="LOC_CITIZEN_MER_FINLAND_MALE_8" Language="en_US">
+			<Text>Elias</Text>
+		</Row>
+		<Row Tag="LOC_CITIZEN_MER_FINLAND_MALE_9" Language="en_US">
+			<Text>Aimo</Text>
+		</Row>
+		<Row Tag="LOC_CITIZEN_MER_FINLAND_MALE_10" Language="en_US">
+			<Text>Twain</Text>
+		</Row>
+		<Row Tag="LOC_CITIZEN_MER_FINLAND_MODERN_MALE_1" Language="en_US">
+			<Text>Janne</Text>
+		</Row>
+		<Row Tag="LOC_CITIZEN_MER_FINLAND_MODERN_MALE_2" Language="en_US">
+			<Text>Jarkko</Text>
+		</Row>
+		<Row Tag="LOC_CITIZEN_MER_FINLAND_MODERN_MALE_3" Language="en_US">
+			<Text>Eino</Text>
+		</Row>
+		<Row Tag="LOC_CITIZEN_MER_FINLAND_MODERN_MALE_4" Language="en_US">
+			<Text>Joel</Text>
+		</Row>
+		<Row Tag="LOC_CITIZEN_MER_FINLAND_MODERN_MALE_5" Language="en_US">
+			<Text>Eemili</Text>
+		</Row>
+		<Row Tag="LOC_CITIZEN_MER_FINLAND_MODERN_MALE_6" Language="en_US">
+			<Text>Edvard</Text>
+		</Row>
+		<Row Tag="LOC_CITIZEN_MER_FINLAND_MODERN_MALE_7" Language="en_US">
+			<Text>Kimi</Text>
+		</Row>
+		<Row Tag="LOC_CITIZEN_MER_FINLAND_MODERN_MALE_8" Language="en_US">
+			<Text>Kristian</Text>
+		</Row>
+		<Row Tag="LOC_CITIZEN_MER_FINLAND_MODERN_MALE_9" Language="en_US">
+			<Text>Lassi</Text>
+		</Row>
+		<Row Tag="LOC_CITIZEN_MER_FINLAND_MODERN_MALE_10" Language="en_US">
+			<Text>Luukas</Text>
+		</Row>
+		<Row Tag="LOC_CITIZEN_MER_FINLAND_FEMALE_1" Language="en_US">
+			<Text>Leena</Text>
+		</Row>
+		<Row Tag="LOC_CITIZEN_MER_FINLAND_FEMALE_2" Language="en_US">
+			<Text>Ansa</Text>
+		</Row>
+		<Row Tag="LOC_CITIZEN_MER_FINLAND_FEMALE_3" Language="en_US">
+			<Text>Inari</Text>
+		</Row>
+		<Row Tag="LOC_CITIZEN_MER_FINLAND_FEMALE_4" Language="en_US">
+			<Text>Anneli</Text>
+		</Row>
+		<Row Tag="LOC_CITIZEN_MER_FINLAND_FEMALE_5" Language="en_US">
+			<Text>Milla</Text>
+		</Row>
+		<Row Tag="LOC_CITIZEN_MER_FINLAND_FEMALE_6" Language="en_US">
+			<Text>Inka</Text>
+		</Row>
+		<Row Tag="LOC_CITIZEN_MER_FINLAND_FEMALE_7" Language="en_US">
+			<Text>Katja</Text>
+		</Row>
+		<Row Tag="LOC_CITIZEN_MER_FINLAND_FEMALE_8" Language="en_US">
+			<Text>Sanna</Text>
+		</Row>
+		<Row Tag="LOC_CITIZEN_MER_FINLAND_FEMALE_9" Language="en_US">
+			<Text>Marja</Text>
+		</Row>
+		<Row Tag="LOC_CITIZEN_MER_FINLAND_FEMALE_10" Language="en_US">
+			<Text>Aada</Text>
+		</Row>
+		<Row Tag="LOC_CITIZEN_MER_FINLAND_MODERN_FEMALE_1" Language="en_US">
+			<Text>Aallotar</Text>
+		</Row>
+		<Row Tag="LOC_CITIZEN_MER_FINLAND_MODERN_FEMALE_2" Language="en_US">
+			<Text>Aina</Text>
+		</Row>
+		<Row Tag="LOC_CITIZEN_MER_FINLAND_MODERN_FEMALE_3" Language="en_US">
+			<Text>Aino</Text>
+		</Row>
+		<Row Tag="LOC_CITIZEN_MER_FINLAND_MODERN_FEMALE_4" Language="en_US">
+			<Text>Aleksandra</Text>
+		</Row>
+		<Row Tag="LOC_CITIZEN_MER_FINLAND_MODERN_FEMALE_5" Language="en_US">
+			<Text>Annikki</Text>
+		</Row>
+		<Row Tag="LOC_CITIZEN_MER_FINLAND_MODERN_FEMALE_6" Language="en_US">
+			<Text>Eeva</Text>
+		</Row>
+		<Row Tag="LOC_CITIZEN_MER_FINLAND_MODERN_FEMALE_7" Language="en_US">
+			<Text>Eevi</Text>
+		</Row>
+		<Row Tag="LOC_CITIZEN_MER_FINLAND_MODERN_FEMALE_8" Language="en_US">
+			<Text>Hanna</Text>
+		</Row>
+		<Row Tag="LOC_CITIZEN_MER_FINLAND_MODERN_FEMALE_9" Language="en_US">
+			<Text>Jenna</Text>
+		</Row>
+		<Row Tag="LOC_CITIZEN_MER_FINLAND_MODERN_FEMALE_10" Language="en_US">
+			<Text>Kaisu</Text>
+		</Row>
+		<!--Terrain Names-->
+		<Row Tag="LOC_NAMED_MOUNTAIN_HALTI_NAME"	Language="en_US">
+			<Text>Halti</Text>
+		</Row>
+		<Row Tag="LOC_NAMED_MOUNTAIN_RIDNITSOHKKA_NAME"	Language="en_US">
+			<Text>Ridnitsohkka</Text>
+		</Row>
+		<Row Tag="LOC_NAMED_MOUNTAIN_KOVDDSOSKAISI_NAME"	Language="en_US">
+			<Text>Kovddoskaisi</Text>
+		</Row>
+		<Row Tag="LOC_NAMED_MOUNTAIN_KIEDDITSOHKKA_NAME"	Language="en_US">
+			<Text>Kiedditsohkka</Text>
+		</Row>
+		<Row Tag="LOC_NAMED_MOUNTAIN_RUVDNAOAIVI_NAME"	Language="en_US">
+			<Text>Ruvdnaoivi</Text>
+		</Row>
+		<Row Tag="LOC_NAMED_RIVER_TORNIONJOKI_NAME"	Language="en_US">
+			<Text>Tornionjoki</Text>
+		</Row>
+		<Row Tag="LOC_NAMED_RIVER_KEMIJOKI_NAME"	Language="en_US">
+			<Text>Kemijoki</Text>
+		</Row>
+		<Row Tag="LOC_NAMED_RIVER_IIJOKI_NAME"	Language="en_US">
+			<Text>Iijoki</Text>
+		</Row>
+		<Row Tag="LOC_NAMED_RIVER_OULUJOKI_NAME"	Language="en_US">
+			<Text>Oulujoki</Text>
+		</Row>
+		<Row Tag="LOC_NAMED_RIVER_SIMOJOKI_NAME"	Language="en_US">
+			<Text>Simojoki</Text>
+		</Row>
+	</LocalizedText>
+</GameData>

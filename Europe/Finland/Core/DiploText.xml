@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- DiploText -->
+<!-- Author: Richard -->
+<!-- DateCreated: 12/3/2017 6:10:28 PM -->
+<GameData>
+	<LocalizedText>
+	<!--Pedia-->
+		<Row Tag="LOC_CIVINFO_MER_FINLAND_LOCATION" Language="en_US">
+			<Text>Finland</Text>
+		</Row>
+		<Row Tag="LOC_PEDIA_CIVILIZATIONS_PAGE_CIVILIZATION_MER_FINLAND_CHAPTER_HISTORY_PARA_1" Language="en_US">
+			<Text>Finland is a sovereign state in Northern Europe. The country has land borders with Sweden to the northwest, Norway to the north, and Russia to the east. To the south is the Gulf of Finland with Estonia on the opposite side. Finland is a Nordic country and, together with Scandinavia, is situated in the geographical region of Fennoscandia.</Text>
+		</Row>
+		<Row Tag="LOC_PEDIA_CIVILIZATIONS_PAGE_CIVILIZATION_MER_FINLAND_CHAPTER_HISTORY_PARA_2" Language="en_US">
+			<Text>Finland was inhabited when the last ice age ended, approximately 9000 BCE. The first settlers left behind artifacts that present characteristics shared with those found in Estonia, Russia, and Norway. The earliest people were hunter-gatherers, using stone tools. The first pottery appeared in 5200 BCE, when the Comb Ceramic culture was introduced. The arrival of the Corded Ware culture in southern coastal Finland between 3000 and 2500 BCE may have coincided with the start of agriculture. The Bronze Age and Iron Age were characterised by extensive contacts with other cultures in the Fennoscandian and Baltic regions and the sedentary farming inhabitation increased towards the end of Iron Age. At the time Finland had three main cultural areas, Southwest Finland, Tavastia and Karelia, as reflected in contemporary jewellery.</Text>
+		</Row>
+		<Row Tag="LOC_PEDIA_CIVILIZATIONS_PAGE_CIVILIZATION_MER_FINLAND_CHAPTER_HISTORY_PARA_3" Language="en_US">
+			<Text>From the late 13th century, Finland gradually became an integral part of Sweden through the crusades and the Swedish part-colonisation of coastal Finland, a legacy reflected in the prevalence of the Swedish language and its official status. In 1809, Finland was incorporated into the Russian Empire as the autonomous Grand Duchy of Finland. Following the 1917 Russian Revolution, Finland declared itself independent. In 1918, the fledgling state was divided by civil war, with the Bolshevik-leaning Red Guard supported by the equally new Soviet Russia, fighting the White Guard, supported by the German Empire. After a brief attempt to establish a kingdom, the country became a republic. During World War II, the Soviet Union sought repeatedly to occupy Finland, with Finland losing parts of Karelia, Salla, Kuusamo, Petsamo and some islands, but retaining independence.</Text>
+		</Row>
+		<Row Tag="LOC_PEDIA_CIVILIZATIONS_PAGE_CIVILIZATION_MER_FINLAND_CHAPTER_HISTORY_PARA_4" Language="en_US">
+			<Text>Finland was a relative latecomer to industrialisation, remaining a largely agrarian country until the 1950s. After World War II, the Soviet Union demanded war reparations from Finland not only in money but also in material, such as ships and machinery. This forced Finland to industrialise. It rapidly developed an advanced economy while building an extensive welfare state based on the Nordic model, resulting in widespread prosperity and one of the highest per capita incomes in the world.</Text>
+		</Row>
+		<Row Tag="LOC_PEDIA_CIVILIZATIONS_PAGE_CIVILIZATION_MER_FINLAND_CHAPTER_HISTORY_PARA_5" Language="en_US">
+			<Text>The culture of Finland combines indigenous heritage, as represented for example by the country's Uralic national language Finnish and the sauna, with common Nordic, Russian and European culture. Because of its history and geographic location Finland has been influenced by the adjacent areas, various Finnic and Baltic peoples as well as the former dominant powers of Sweden and Russia.</Text>
+		</Row>
+	<!--DOM-->
+	<Row Tag="LOC_LOADING_INFO_LEADER_MER_MANNERHEIM" Language="en_US">
+		<Text>And so we look to you again, Carl Mannerheim, to lead the Finnish people in brave defense of our homelands. Bolster the loyalty of your citizens and outwit the schemes of your enemies with superior military intelligence. Your tenacity will remind both friend and foe how great our love for Finland's many beauties and pleasures is, and the length to which we will protect her!</Text>
+	</Row>
+	<!--Agenda-->
+	<Row Tag="LOC_AGENDA_MER_MARSHAL_OF_FINLAND_NAME" Language="en_US">
+		<Text>Marshal of Finland</Text>
+	</Row>
+	<Row Tag="LOC_AGENDA_MER_MARSHAL_OF_FINLAND_DESCRIPTION" Language="en_US">
+		<Text>Favors civilizations with the same type of government and that keep a large standing army. Dislikes civilizations with different governments that keep large standing armies.</Text>
+	</Row>
+	<Row Tag="LOC_DIPLO_KUDOS_LEADER_MER_MANNERHEIM_REASON_SAME_GOVERNMENT" Language="en_US">
+		<Text>(You share a government type and keep a large standing army)</Text>
+	</Row>
+	<Row Tag="LOC_DIPLO_MODIFIER_MER_MANNERHEIM_MARSHAL_OF_FINLAND_SAME_GOVERNMENT" Language="en_US">
+		<Text>Mannerheim is happy you share his government type and keep a large standing army</Text>
+	</Row>
+	<Row Tag="LOC_DIPLO_WARNING_LEADER_MER_MANNERHEIM_REASON_DIFF_GOVERNMENT" Language="en_US">
+		<Text>(You have a different government type and keep a large standing army)</Text>
+	</Row>
+	<Row Tag="LOC_DIPLO_MODIFIER_MER_MANNERHEIM_MARSHAL_OF_FINLAND_DIFF_GOVERNMENT" Language="en_US">
+		<Text>Mannerheim is concerned by your government and standing army.</Text>
+	</Row>
+	<!--Civilopedia-->
+	<Row Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_MER_MANNERHEIM_TITLE" Language="en_US">
+		<Text>Mannerheim</Text>
+	</Row>
+	<Row Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_MER_MANNERHEIM_SUBTITLE" Language="en_US">
+		<Text>Marshal of Finland</Text>
+	</Row>
+	<Row Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_MER_MANNERHEIM_QUOTE" Language="en_US">
+		<Text>Fortifications, artillery, foreign aid - will be of no value, unless the ordinary soldier knows that it is HE guarding his country</Text>
+	</Row>
+	<Row Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_MER_MANNERHEIM_CHAPTER_HISTORY_PARA_1" Language="en_US">
+		<Text>Baron Carl Gustaf Emil Mannerheim was a Finnish military leader and statesman. Mannerheim served as the military leader of the Whites in the Finnish Civil War, Regent of Finland (1918–1919), commander-in-chief of Finland's defence forces during World War II, Marshal of Finland, and the sixth president of Finland (1944–1946).</Text>
+	</Row>
+	<Row Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_MER_MANNERHEIM_CHAPTER_HISTORY_PARA_2" Language="en_US">
+		<Text>Mannerheim made a career in the Imperial Russian Army, rising to the rank of lieutenant general. He also had a prominent place in the ceremonies for Tsar Nicholas II's coronation and later had several private meetings with the Russian Tsar. After the Bolshevik revolution, Finland declared its independence but was soon embroiled in civil war between the pro-Bolshevik "Reds" and the "Whites", who were the troops of the Senate of Finland, supported by troops of the German Empire. Mannerheim was appointed the military chief of the Whites. Twenty years later, when Finland was twice at war with the Soviet Union from November 1939 until September 1944, Mannerheim successfully led the defence of Finland as commander-in-chief of the country's armed forces. In 1944, when the prospect of Germany's defeat in World War II became clear, Mannerheim was elected President of Finland and oversaw peace negotiations with the Soviet Union and the United Kingdom. He resigned the presidency in 1946 and died in 1951.</Text>
+	</Row>
+	<Row Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_MER_MANNERHEIM_CHAPTER_CAPSULE_BODY" Language="en_US">
+		<Text>Mannerheim's Finland has a strong defense. By maintaining your Civilization's natural beauty you will receive strong bonuses to loyalty and combat strength.</Text>
+	</Row>
+	<Row Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_MER_MANNERHEIM_CHAPTER_DETAILED_BODY" Language="en_US">
+		<Text>Finland relies on the natural beauty of it's land and the unwavering loyalty of it's people to gain bonuses towards culture and faith.</Text>
+	</Row>
+	<!--Diplomacy-->
+	<!--FIRST MEET-->
+	<!--First AI line-->
+	<Row Tag="LOC_DIPLO_FIRST_MEET_LEADER_MER_MANNERHEIM_ANY" Language="en_US">
+		<Text>Greetings from the Finns. We value loyalty above all else and do not fear military might, for who is more mighty than a man who loves his country?</Text>
+	</Row>
+	<!--AI invitation to visit nearby City-->
+	<Row Tag="LOC_DIPLO_FIRST_MEET_VISIT_RECIPIENT_LEADER_MER_MANNERHEIM_ANY" Language="en_US">
+		<Text>You should visit our beautiful lands, a land every Finn is proud to call home.</Text>
+	</Row>
+	<!--AI accepts Human invitation-->
+	<Row Tag="LOC_DIPLO_FIRST_MEET_NEAR_INITIATOR_POSITIVE_LEADER_MER_MANNERHEIM_ANY" Language="en_US">
+		<Text>I gladly accept your invitation.</Text>
+	</Row>
+	<!--AI invitation to exchange Capital Information-->
+	<Row Tag="LOC_DIPLO_FIRST_MEET_NO_MANS_INFO_EXCHANGE_LEADER_MER_MANNERHEIM_ANY" Language="en_US">
+		<Text>We should exchange information.</Text>
+	</Row>
+	<!--GREETINGS-->
+	<Row Tag="LOC_DIPLO_GREETING_LEADER_MER_MANNERHEIM_ANY" Language="en_US">
+		<Text>Welcome back.</Text>
+	</Row>
+	<!--DELEGATION-->
+	<!--AI Accepts-->
+	<Row Tag="LOC_DIPLO_ACCEPT_DELEGATION_FROM_HUMAN_LEADER_MER_MANNERHEIM_ANY" Language="en_US">
+		<Text>Your delegation is more welcome, we shall treat them as we treat our own.</Text>
+	</Row>
+	<!--AI Rejects-->
+	<Row Tag="LOC_DIPLO_REJECT_DELEGATION_FROM_HUMAN_LEADER_MER_MANNERHEIM_ANY" Language="en_US">
+		<Text>I cannot accept.</Text>
+	</Row>
+	<!--AI Requests-->
+	<Row Tag="LOC_DIPLO_DELEGATION_FROM_AI_LEADER_MER_MANNERHEIM_ANY" Language="en_US">
+		<Text>I have sent a delegation to your land with Karelian pasties and some of our finest literature. Enjoy them both.</Text>
+	</Row>
+	<!--OPEN BORDERS-->
+	<!--AI accepts from human-->
+	<Row Tag="LOC_DIPLO_ACCEPT_OPEN_BORDERS_FROM_HUMAN_LEADER_MER_MANNERHEIM_ANY" Language="en_US">
+		<Text>I agree to these terms.</Text>
+	</Row>
+	<!--AI rejects from human-->
+	<Row Tag="LOC_DIPLO_REJECT_OPEN_BORDERS_FROM_HUMAN_LEADER_MER_MANNERHEIM_ANY" Language="en_US">
+		<Text>I cannot accept these terms, not in good mind.</Text>
+	</Row>
+	<!--AI requests from human-->
+	<Row Tag="LOC_DIPLO_OPEN_BORDERS_FROM_AI_LEADER_MER_MANNERHEIM_ANY" Language="en_US">
+		<Text>I hope you can accept these terms.</Text>
+	</Row>
+	<!--DECLARE FRIENDSHIP-->
+	<!--AI accepts from human-->
+	<Row Tag="LOC_DIPLO_ACCEPT_DECLARE_FRIEND_FROM_HUMAN_LEADER_MER_MANNERHEIM_ANY" Language="en_US">
+		<Text>I look forward to our future as friends.</Text>
+	</Row>
+	<!--AI Rejects from human-->
+	<Row Tag="LOC_DIPLO_REJECT_DECLARE_FRIEND_FROM_HUMAN_LEADER_MER_MANNERHEIM_ANY" Language="en_US">
+		<Text>Let us keep our relations purely formal in nature.</Text>
+	</Row>
+	<!--AI Requests friendship from human-->
+	<Row Tag="LOC_DIPLO_DECLARE_FRIEND_FROM_AI_LEADER_MER_MANNERHEIM_ANY" Language="en_US">
+		<Text>Our people have a shared connection which should be formalised for it to grow.</Text>
+	</Row>
+	<!--Human accepts AI requests, AI responds-->
+	<Row Tag="LOC_DIPLO_ACCEPT_DECLARE_FRIEND_FROM_AI_LEADER_MER_MANNERHEIM_ANY" Language="en_US">
+		<Text>I look forward to our people's futures together, as friends.</Text>
+	</Row>
+	<!--Human rejects AI requests, AI responds-->
+	<Row Tag="LOC_DIPLO_REJECT_DECLARE_FRIEND_FROM_AI_LEADER_MER_MANNERHEIM_ANY" Language="en_US">
+		<Text>You will be left weaker by your choice.</Text>
+	</Row>
+	<!--ALLIANCE-->
+	<!--AI Requests an alliance from human-->
+	<Row Tag="LOC_DIPLO_MAKE_ALLIANCE_FROM_AI_LEADER_MER_MANNERHEIM_ANY" Language="en_US">
+		<Text>You have shown great valor and wisdom in your leadership and i would ask we formalise our friendship and strengthen our nations.</Text>
+	</Row>
+	<!--KUDOS & WARNINGS-->
+	<!--AI Kudos-->
+	<Row Tag="LOC_DIPLO_KUDO_EXIT_LEADER_MER_MANNERHEIM_ANY" Language="en_US">
+		<Text>A nation is truly strong when each man sees himself as one who will defend his home and his faith unto death itself, against even death itself.</Text>
+	</Row>
+	<!--AI Warnings-->
+	<Row Tag="LOC_DIPLO_WARNING_EXIT_LEADER_MER_MANNERHEIM_ANY" Language="en_US">
+		<Text>Fortifications, artillery, foreign aid -- how will these be of value, unless the ordinary soldier knows that it is HE guarding his country?</Text>
+	</Row>
+	<!--AI warns player for border troops-->
+	<Row Tag="LOC_DIPLO_WARNING_TOO_MANY_TROOPS_NEAR_ME_LEADER_MER_MANNERHEIM_ANY" Language="en_US">
+		<Text>Brave Finns stand ready to repel any attack, you'd be wise to remember that.</Text>
+	</Row>
+	<!--TRADE-->
+	<!--AI Accepts Deal-->
+	<Row Tag="LOC_DIPLO_ACCEPT_MAKE_DEAL_FROM_AI_LEADER_MER_MANNERHEIM_ANY" Language="en_US">
+		<Text>{LOC_DIPLO_ACCEPT_DECLARE_FRIEND_FROM_AI_LEADER_MER_MANNERHEIM_ANY}</Text>
+	</Row>
+	<!-- AI Rejects Deal -->
+	<Row Tag="LOC_DIPLO_REJECT_MAKE_DEAL_FROM_AI_LEADER_MER_MANNERHEIM_ANY" Language="en_US">
+		<Text>{LOC_DIPLO_REJECT_DECLARE_FRIEND_FROM_AI_LEADER_MER_MANNERHEIM_ANY}</Text>
+	</Row>
+	<!--DENOUNCE-->
+	<!--From Human-->
+	<Row Tag="LOC_DIPLO_DENOUNCE_FROM_HUMAN_LEADER_MER_MANNERHEIM_ANY" Language="en_US">
+		<Text>I will make you pay for this. I swear by the Lord, you will pay!</Text>
+	</Row>
+	<!--From AI-->
+	<Row Tag="LOC_DIPLO_DENOUNCE_FROM_AI_LEADER_MER_MANNERHEIM_ANY" Language="en_US">
+		<Text>How could anyone follow a leader such as yourself? Your people's loyalty is misguided, if they even have any loyalty towards you. (Denounces You).</Text>
+	</Row>
+	<!--Rationale-->
+	<Row Tag="LOC_DIPLO_DENOUNCE_REASON_FROM_AI_LEADER_ANY_REASON_MER_MANNERHEIM_MARSHAL_OF_FINLAND_SAME_CONTINENT" Language="en_US">
+		<Text>(You have low loyalty)</Text>
+	</Row>
+	<!--DECLARE WAR-->
+	<!--Human Declares War-->
+	<Row Tag="LOC_DIPLO_DECLARE_WAR_FROM_HUMAN_LEADER_MER_MANNERHEIM_ANY" Language="en_US">
+		<Text>You will find my soldiers have the utmost confidence in my leadership, and will not waiver in their duty to fight for their home, faith and country.</Text>
+	</Row>
+	<!--AI Declares War-->
+	<Row Tag="LOC_DIPLO_DECLARE_WAR_FROM_AI_LEADER_MER_MANNERHEIM_ANY" Language="en_US">
+		<Text>I had not wanted to undertake such a responsibility as leadership during war, but you have forced my hand.</Text>
+	</Row>
+	<!--MAKE PEACE-->
+	<!--AI accepts from human-->
+	<Row Tag="LOC_DIPLO_MAKE_PEACE_AI_ACCEPT_DEAL_LEADER_MER_MANNERHEIM_ANY" Language="en_US">
+		<Text>I tire of this war, so i accept.</Text>
+	</Row>
+	<!--AI refuses human-->
+	<Row Tag="LOC_DIPLO_MAKE_PEACE_AI_REFUSE_DEAL_LEADER_MER_MANNERHEIM_ANY" Language="en_US">
+		<Text>I cannot stand aside.</Text>
+	</Row>
+	<!--AI requests from human-->
+	<Row Tag="LOC_DIPLO_MAKE_PEACE_FROM_AI_LEADER_MER_MANNERHEIM_ANY" Language="en_US">
+		<Text>I tire of this war, surely you must to?</Text>
+	</Row>
+	<!--DEFEAT-->
+	<!--AI is Defeated-->
+	<Row Tag="LOC_DIPLO_DEFEAT_FROM_AI_LEADER_MER_MANNERHEIM_ANY" Language="en_US">
+		<Text>I have fought many wars in my lifetime and the responsibility has weighed heavily on me and Finland. Brave Finns, you have fought your best but now it ends.</Text>
+	</Row>
+	<!--Human is Defeated (will see this in hotseat)-->
+	<Row Tag="LOC_DIPLO_DEFEAT_FROM_HUMAN_LEADER_MER_MANNERHEIM_ANY" Language="en_US">
+		<Text>I saw that i had to uphold responsibility as commander, and defend the Finns from a tyranny such as yours.</Text>
+	</Row>
+	</LocalizedText>
+</GameData>

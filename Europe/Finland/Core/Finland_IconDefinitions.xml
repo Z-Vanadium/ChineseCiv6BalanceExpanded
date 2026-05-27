@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameInfo>
+	<IconTextureAtlases>
+		<Row Name="ICON_ATLAS_MER_FINLAND" 		  IconSize="22" 	IconsPerRow="1" IconsPerColumn="1" Filename="finland_civalpha_22.dds"/>
+		<Row Name="ICON_ATLAS_MER_FINLAND" 		  IconSize="30" 	IconsPerRow="1" IconsPerColumn="1" Filename="finland_civalpha_30.dds"/>
+		<Row Name="ICON_ATLAS_MER_FINLAND" 		  IconSize="32" 	IconsPerRow="1" IconsPerColumn="1" Filename="finland_civalpha_32.dds"/>
+		<Row Name="ICON_ATLAS_MER_FINLAND" 		  IconSize="36" 	IconsPerRow="1" IconsPerColumn="1" Filename="finland_civalpha_36.dds"/>
+		<Row Name="ICON_ATLAS_MER_FINLAND" 		  IconSize="44" 	IconsPerRow="1" IconsPerColumn="1" Filename="finland_civalpha_44.dds"/>
+		<Row Name="ICON_ATLAS_MER_FINLAND"		  IconSize="45" 	IconsPerRow="1" IconsPerColumn="1" Filename="finland_civcolourmannerheim_45.dds"/>
+		<Row Name="ICON_ATLAS_MER_FINLAND" 		  IconSize="48" 	IconsPerRow="1" IconsPerColumn="1" Filename="finland_civalpha_48.dds"/>
+		<Row Name="ICON_ATLAS_MER_FINLAND" 		  IconSize="50" 	IconsPerRow="1" IconsPerColumn="1" Filename="finland_civalpha_50.dds"/>
+		<Row Name="ICON_ATLAS_MER_FINLAND" 		  IconSize="64" 	IconsPerRow="1" IconsPerColumn="1" Filename="finland_civalpha_64.dds"/>
+		<Row Name="ICON_ATLAS_MER_FINLAND" 		  IconSize="80" 	IconsPerRow="1" IconsPerColumn="1" Filename="finland_civalpha_80.dds"/>
+		<Row Name="ICON_ATLAS_MER_FINLAND" 		  IconSize="128" 	IconsPerRow="1" IconsPerColumn="1" Filename="finland_civalpha_128.dds"/>
+		<Row Name="ICON_ATLAS_MER_FINLAND" 		  IconSize="200" 	IconsPerRow="1" IconsPerColumn="1" Filename="finland_civalpha_200.dds"/>
+		<Row Name="ICON_ATLAS_MER_FINLAND" 		  IconSize="256" 	IconsPerRow="1" IconsPerColumn="1" Filename="finland_civalpha_256.dds"/>
+		<Row Name="ICON_ATLAS_MER_MANNERHEIM" 		  IconSize="32" 	IconsPerRow="1" IconsPerColumn="1" Filename="mannerheim_alpha_32.dds"/>
+		<Row Name="ICON_ATLAS_MER_MANNERHEIM" 		  IconSize="45" 	IconsPerRow="1" IconsPerColumn="1" Filename="mannerheim_alpha_45.dds"/>
+		<Row Name="ICON_ATLAS_MER_MANNERHEIM" 		  IconSize="48" 	IconsPerRow="1" IconsPerColumn="1" Filename="mannerheim_alpha_48.dds"/>
+		<Row Name="ICON_ATLAS_MER_MANNERHEIM" 		  IconSize="50" 	IconsPerRow="1" IconsPerColumn="1" Filename="mannerheim_alpha_50.dds"/>
+		<Row Name="ICON_ATLAS_MER_MANNERHEIM" 		  IconSize="55" 	IconsPerRow="1" IconsPerColumn="1" Filename="mannerheim_alpha_55.dds"/>
+		<Row Name="ICON_ATLAS_MER_MANNERHEIM" 		  IconSize="64" 	IconsPerRow="1" IconsPerColumn="1" Filename="mannerheim_alpha_64.dds"/>
+		<Row Name="ICON_ATLAS_MER_MANNERHEIM" 		  IconSize="80" 	IconsPerRow="1" IconsPerColumn="1" Filename="mannerheim_alpha_80.dds"/>
+		<Row Name="ICON_ATLAS_MER_MANNERHEIM" 		  IconSize="256" 	IconsPerRow="1" IconsPerColumn="1" Filename="mannerheim_alpha_256.dds"/>
+		<Row Name="ICON_ATLAS_MER_SISSI" 	  IconSize="32" 	IconsPerRow="1" IconsPerColumn="1" Filename="finland_sissiflag_32.dds"/>
+		<Row Name="ICON_ATLAS_MER_SISSI" 	  IconSize="38" 	IconsPerRow="1" IconsPerColumn="1" Filename="finland_sissiflag_38.dds"/>
+		<Row Name="ICON_ATLAS_MER_SISSI" 	  IconSize="50" 	IconsPerRow="1" IconsPerColumn="1" Filename="finland_sissiflag_50.dds"/>
+		<Row Name="ICON_ATLAS_MER_SISSI" 	  IconSize="80" 	IconsPerRow="1" IconsPerColumn="1" Filename="finland_sissiflag_80.dds"/>
+		<Row Name="ICON_ATLAS_MER_SISSI" 	  IconSize="256" 	IconsPerRow="1" IconsPerColumn="1" Filename="finland_sissiflag_256.dds"/>
+		<Row Name="ICON_ATLAS_MER_SAUNA" 		  IconSize="38" 	IconsPerRow="1" IconsPerColumn="1" Filename="Improvements_Mer_Sauna_38.dds"/>
+		<Row Name="ICON_ATLAS_MER_SAUNA" 		  IconSize="40" 	IconsPerRow="1" IconsPerColumn="1" Filename="Improvements_Mer_Sauna_40.dds"/>
+		<Row Name="ICON_ATLAS_MER_SAUNA" 		  IconSize="50" 	IconsPerRow="1" IconsPerColumn="1" Filename="Improvements_Mer_Sauna_50.dds"/>
+		<Row Name="ICON_ATLAS_MER_SAUNA" 		  IconSize="80" 	IconsPerRow="1" IconsPerColumn="1" Filename="Improvements_Mer_Sauna_80.dds"/>
+		<Row Name="ICON_ATLAS_MER_SAUNA" 		  IconSize="200" 	IconsPerRow="1" IconsPerColumn="1" Filename="Improvements_Mer_Sauna_200.dds"/>
+		<Row Name="ICON_ATLAS_MER_SAUNA" 		  IconSize="256" 	IconsPerRow="1" IconsPerColumn="1" Filename="Improvements_Mer_Sauna_256.dds"/>
+		<Row Name="PORTRAIT_ATLAS_MER_SISSI" 		  IconSize="256" 	IconsPerRow="1" IconsPerColumn="1" Filename="SissiUnitPortrait256.dds"/>
+	</IconTextureAtlases>
+	<IconDefinitions>
+		<Row Name="ICON_CIVILIZATION_MER_FINLAND" 		 Atlas="ICON_ATLAS_MER_FINLAND" 		Index="0"/>
+		<Row Name="ICON_UNIT_MER_SISSI" 				 Atlas="ICON_ATLAS_MER_SISSI" 		Index="0"/>
+		<Row Name="ICON_UNIT_MER_SISSI_PORTRAIT" 		 Atlas="PORTRAIT_ATLAS_MER_SISSI" 		Index="0"/>
+		<Row Name="ICON_IMPROVEMENT_MER_SAUNA" 		 Atlas="ICON_ATLAS_MER_SAUNA" 		Index="0"/>
+		<Row Name="ICON_LEADER_MER_MANNERHEIM" 			 Atlas="ICON_ATLAS_MER_MANNERHEIM" 		Index="0"/>
+	</IconDefinitions>
+</GameInfo>

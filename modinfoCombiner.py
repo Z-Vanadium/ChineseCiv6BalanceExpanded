@@ -3,6 +3,13 @@ import xml.etree.ElementTree as ET
 import os
 import re
 from xml.dom import minidom
+
+"""
+	<Mod id="8af4fe8e-5406-7d72-d9d6-a8f5d1b66e30" title="CCB Expanded Release"/>
+	<Mod id="8af4fe8e-5406-7d72-d9d6-a8f5d1b66e34" title="CCB Expanded WIP"/>
+	<Mod id="8af4fe8e-5406-7d72-d9d6-a8f5d1b66e38" title="CCB Expanded beta"/>
+"""
+
 def get_mod_folders():
     """
     Returns a list of all folders in the current directory whose names start with 'Mod'.
@@ -12,9 +19,14 @@ def get_mod_folders():
         'Asia/TibetTrisongDetsen',
         'CIVITASResources',
         'DistrictIcons',
+        'Europe/AlfredEscher',
+        'Europe/Denmark',
+        'Europe/Finland',
         'Europe/GaulVercingetorix',
+        'Europe/Switzerland',
         'Mediterranean/MacedonOlympias',
         'Mediterranean/PhoeniciaAhiram',
+        'Meso/Argentina',
         'Meso/MayaTeKinichII',
         'Meso/TheoticuanasTeotihuacan',
         'NorthAmerica/ThuleKiviuq',
@@ -59,7 +71,7 @@ def combine_modinfo_files():
             load_order_tags = Bs_data.find_all("LoadOrder")
             # Append the string in each File tag with the mod folder name
             for b in load_order_tags:
-                b.string = f'{12-mod_cnt}{b.string}'
+                b.string = f'{99-mod_cnt}{b.string}'
                 
             author_tags = Bs_data.find_all("Authors")
             for tag in author_tags:
@@ -93,10 +105,10 @@ def combine_modinfo_files():
     for key, value in extraDependencies.items():
         dependenciesStr += f'    <Mod id="{key}" title="{value}"/>\n'
     newFileStr = f'''<?xml version="1.0" encoding="UTF-8"?>
-<Mod id="8af4fe8e-5406-7d72-d9d6-a8f5d1b66e30" version="1200">
+<Mod id="8af4fe8e-5406-7d72-d9d6-a8f5d1b66e34" version="2000">
   <Properties>
-    <Name>CCB 文明拓展 1.2.0</Name>
-    <Version>1200</Version>
+    <Name>CCB 文明拓展 WIP 2.0</Name>
+    <Version>2000</Version>
     <Description>中国特色新文明拓展模组，取代BBG Expand。</Description>
     <Authors>{', '.join(sorted_authors)} (alphabetical order)</Authors>
     <SpecialThanks>{', '.join(sorted_special_thanks)} (alphabetical order)</SpecialThanks>

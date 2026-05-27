@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- FINLAND_Uniques -->
+<!-- DateCreated: 3/9/2017 10:58:04 PM -->
+<GameData>
+	<Types>
+		<Row Type="UNIT_MER_SISSI" Kind="KIND_UNIT"/>
+	</Types>
+	<Units>
+		<Row UnitType="UNIT_MER_SISSI" 
+			 BaseMoves="2" 
+			 Cost="430" 
+			 AdvisorType="ADVISOR_CONQUEST" 
+			 BaseSightRange="2" 
+			 ZoneOfControl="false" 
+			 Domain="DOMAIN_LAND" 
+			 FormationClass="FORMATION_CLASS_LAND_COMBAT" 
+			 Name="LOC_UNIT_MER_SISSI_NAME" 
+			 Description="LOC_UNIT_MER_SISSI_DESCRIPTION" 
+			 PurchaseYield="YIELD_GOLD" 
+			 PromotionClass="PROMOTION_CLASS_MELEE" 
+			 Maintenance="6" 
+			 Combat="72" 
+			 RangedCombat="75" 
+			 Range="1" 
+			 PrereqTech="TECH_REPLACEABLE_PARTS"
+			 TraitType="TRAIT_CIVILIZATION_UNIT_MER_SISSI">
+		</Row>
+	</Units>
+	<UnitUpgrades>
+		<Row Unit="UNIT_MER_SISSI" UpgradeUnit="UNIT_MECHANIZED_INFANTRY"/>
+	</UnitUpgrades>
+	<UnitReplaces>
+		<Row CivUniqueUnitType="UNIT_MER_SISSI" ReplacesUnitType="UNIT_INFANTRY"/>
+	</UnitReplaces>
+	<UnitAiInfos>
+		<Row UnitType="UNIT_MER_SISSI" AiType="UNITTYPE_LAND_COMBAT"/>
+		<Row UnitType="UNIT_MER_SISSI" AiType="UNITTYPE_RANGED"/>
+	</UnitAiInfos>
+	<TypeTags>
+		<Row Type="UNIT_MER_SISSI" Tag="CLASS_MELEE"/>
+		<Row Type="UNIT_MER_SISSI" Tag="CLASS_RANGED"/>
+		<Row Type="UNIT_MER_SISSI" Tag="CLASS_MER_SISSI"/>
+		<Row Type="ABILITY_MER_SISSI" Tag="CLASS_MER_SISSI"/>
+	</TypeTags>
+	<Tags>
+		<Row Tag="CLASS_MER_SISSI" Vocabulary="ABILITY_CLASS"/>
+	</Tags>
+	<Types>
+		<Row Type="ABILITY_MER_SISSI" Kind="KIND_ABILITY"/>
+	</Types>
+	<UnitAbilities>
+		<Row UnitAbilityType="ABILITY_MER_SISSI" Name="LOC_ABILITY_MER_SISSI_NAME" Description="LOC_ABILITY_MER_SISSI_DESCRIPTION"/>
+	</UnitAbilities>
+	<UnitAbilityModifiers>
+		<Row UnitAbilityType="ABILITY_MER_SISSI" ModifierId="MER_SISSI_FLANKING" />
+	</UnitAbilityModifiers>
+	<Modifiers>
+		<Row ModifierId="MER_SISSI_FLANKING" ModifierType="MODIFIER_PLAYER_UNIT_ADJUST_FLANKING_BONUS_MODIFIER"/>
+	</Modifiers>
+	<ModifierArguments>
+		<Row>
+			<ModifierId>MER_SISSI_FLANKING</ModifierId>
+			<Name>Percent</Name>
+			<Value>100</Value>
+		</Row>
+	</ModifierArguments>
+	<ModifierStrings>
+		<Row ModifierId="MER_SISSI_FLANKING" Context="Preview" Text="LOC_ABILITY_MER_SISSI_DESCRIPTION"/>
+	</ModifierStrings>
+
+	<Types>
+		<!--Unique Improvements -->
+		<Row Type="IMPROVEMENT_MER_SAUNA" Kind="KIND_IMPROVEMENT"/>
+	</Types>
+	<Improvements>
+		<Row ImprovementType="IMPROVEMENT_MER_SAUNA"
+			 Name="LOC_IMPROVEMENT_MER_SAUNA_NAME"
+			 Description="LOC_IMPROVEMENT_MER_SAUNA_DESCRIPTION"
+			 Icon="ICON_IMPROVEMENT_MER_SAUNA"
+			 PlunderType="PLUNDER_CULTURE"
+			 PlunderAmount="50"
+			 PrereqCivic="CIVIC_GAMES_RECREATION"
+			 Buildable="true"
+			 SameAdjacentValid="false"
+			 Appeal="1"
+			 Housing="0.5"
+			 TraitType="TRAIT_CIVILIZATION_IMPROVEMENT_MER_SAUNA"/>
+	</Improvements>
+	<Improvement_ValidTerrains>
+		<Row ImprovementType="IMPROVEMENT_MER_SAUNA" TerrainType="TERRAIN_TUNDRA"/>
+		<Row ImprovementType="IMPROVEMENT_MER_SAUNA" TerrainType="TERRAIN_GRASS"/>
+		<Row ImprovementType="IMPROVEMENT_MER_SAUNA" TerrainType="TERRAIN_SNOW"/>
+		<Row ImprovementType="IMPROVEMENT_MER_SAUNA" TerrainType="TERRAIN_PLAINS"/>
+		<Row ImprovementType="IMPROVEMENT_MER_SAUNA" TerrainType="TERRAIN_TUNDRA_HILLS"/>
+		<Row ImprovementType="IMPROVEMENT_MER_SAUNA" TerrainType="TERRAIN_GRASS_HILLS"/>
+		<Row ImprovementType="IMPROVEMENT_MER_SAUNA" TerrainType="TERRAIN_PLAINS_HILLS"/>
+		<Row ImprovementType="IMPROVEMENT_MER_SAUNA" TerrainType="TERRAIN_SNOW_HILLS"/>
+	</Improvement_ValidTerrains>
+	<Improvement_ValidFeatures>
+		<Row ImprovementType="IMPROVEMENT_MER_SAUNA" FeatureType="FEATURE_FOREST"/>
+		<Row ImprovementType="IMPROVEMENT_MER_SAUNA" FeatureType="FEATURE_MARSH"/>
+	</Improvement_ValidFeatures>
+	<Improvement_Adjacencies>
+		<Row ImprovementType="IMPROVEMENT_MER_SAUNA" YieldChangeId="Sauna_Woods"/>
+		<Row ImprovementType="IMPROVEMENT_MER_SAUNA" YieldChangeId="Sauna_Camp"/>
+	</Improvement_Adjacencies>
+	<Adjacency_YieldChanges>
+		<Row ID="Sauna_Woods" Description="Placeholder" YieldType="YIELD_CULTURE" YieldChange="1" TilesRequired="2" AdjacentFeature="FEATURE_FOREST"/>
+		<Row ID="Sauna_Camp" Description="Placeholder" YieldType="YIELD_PRODUCTION" YieldChange="1" TilesRequired="1" AdjacentImprovement="IMPROVEMENT_CAMP"/>
+	</Adjacency_YieldChanges>
+	<Improvement_ValidBuildUnits>
+		<Row ImprovementType="IMPROVEMENT_MER_SAUNA" UnitType="UNIT_BUILDER"/>
+	</Improvement_ValidBuildUnits>
+	<Improvement_YieldChanges>
+		<Row ImprovementType="IMPROVEMENT_MER_SAUNA" YieldType="YIELD_CULTURE" YieldChange="1"/>
+		<Row ImprovementType="IMPROVEMENT_MER_SAUNA" YieldType="YIELD_PRODUCTION" YieldChange="1"/>
+	</Improvement_YieldChanges>
+	<Improvement_Tourism>
+		<Row ImprovementType="IMPROVEMENT_MER_SAUNA" TourismSource="TOURISMSOURCE_APPEAL" PrereqTech="TECH_FLIGHT" ScalingFactor="100"/>
+	</Improvement_Tourism>
+
+	<ImprovementModifiers>
+		<Row>
+			<ImprovementType>IMPROVEMENT_MER_SAUNA</ImprovementType>
+			<ModifierId>MER_SAUNA_RIVERADJACENCY_AMENITY</ModifierId>
+		</Row>
+	</ImprovementModifiers>
+
+	<Modifiers>
+		<Row>
+			<ModifierId>MER_SAUNA_RIVERADJACENCY_AMENITY</ModifierId>
+			<ModifierType>MODIFIER_SINGLE_CITY_ADJUST_IMPROVEMENT_AMENITY</ModifierType>
+			<SubjectRequirementSetId>PLOT_ADJACENT_TO_RIVER_REQUIREMENTS</SubjectRequirementSetId>
+		</Row>
+	</Modifiers>
+	<ModifierArguments>
+		<Row>
+			<ModifierId>MER_SAUNA_RIVERADJACENCY_AMENITY</ModifierId>
+			<Name>Amount</Name>
+			<Value>1</Value>
+		</Row>
+	</ModifierArguments>
+
+
+</GameData>

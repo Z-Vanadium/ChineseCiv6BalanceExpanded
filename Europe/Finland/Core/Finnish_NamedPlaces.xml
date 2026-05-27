@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Austria_NamedPlaces -->
+<!-- Author: Richard -->
+<!-- DateCreated: 2/15/2019 11:35:53 PM -->
+<GameData>
+	<Types>
+		<!-- Named River -->
+		<Row Type="NAMED_RIVER_TORNIONJOKI" Kind="KIND_NAMED_RIVER"/>
+		<Row Type="NAMED_RIVER_KEMIJOKI" Kind="KIND_NAMED_RIVER"/>
+		<Row Type="NAMED_RIVER_SIMOJOKI" Kind="KIND_NAMED_RIVER"/>
+		<Row Type="NAMED_RIVER_IIJOKI" Kind="KIND_NAMED_RIVER"/>
+		<Row Type="NAMED_RIVER_OULUJOKI" Kind="KIND_NAMED_RIVER"/>
+		<!-- Named Mountains -->
+		<Row Type="NAMED_MOUNTAIN_HALTI" Kind="KIND_NAMED_MOUNTAIN"/>
+		<Row Type="NAMED_MOUNTAIN_RIDNITSOHKKA" Kind="KIND_NAMED_MOUNTAIN"/>
+		<Row Type="NAMED_MOUNTAIN_KOVDDSOSKAISI" Kind="KIND_NAMED_MOUNTAIN"/>
+		<Row Type="NAMED_MOUNTAIN_KIEDDITSOHKKA" Kind="KIND_NAMED_MOUNTAIN"/>
+		<Row Type="NAMED_MOUNTAIN_RUVDNAOAIVI" Kind="KIND_NAMED_MOUNTAIN"/>
+	</Types>
+	<NamedRivers>
+		<Row NamedRiverType="NAMED_RIVER_TORNIONJOKI" Name="LOC_NAMED_RIVER_TORNIONJOKI_NAME"/>
+		<Row NamedRiverType="NAMED_RIVER_KEMIJOKI" Name="LOC_NAMED_RIVER_KEMKIJOKI_NAME"/>
+		<Row NamedRiverType="NAMED_RIVER_SIMOJOKI" Name="LOC_NAMED_RIVER_SIMOJOKI_NAME"/>
+		<Row NamedRiverType="NAMED_RIVER_IIJOKI" Name="LOC_NAMED_RIVER_IIJOKI_NAME"/>
+		<Row NamedRiverType="NAMED_RIVER_OULUJOKI" Name="LOC_NAMED_RIVER_OULUJOKI_NAME"/>
+	</NamedRivers>
+	<NamedMountains>
+		<Row NamedMountainType="NAMED_MOUNTAIN_HALTI" Name="LOC_NAMED_MOUNTAIN_HALTI_NAME"/>
+		<Row NamedMountainType="NAMED_MOUNTAIN_RIDNITSOHKKA" Name="LOC_NAMED_MOUNTAIN_RIDNITSOHKKA_NAME"/>
+		<Row NamedMountainType="NAMED_MOUNTAIN_KOVDDSOSKAISI" Name="LOC_NAMED_MOUNTAIN_KOVDDSOSKAISI_NAME"/>
+		<Row NamedMountainType="NAMED_MOUNTAIN_KIEDDITSOHKKA" Name="LOC_NAMED_MOUNTAIN_KIEDDITSOHKKA_NAME"/>
+		<Row NamedMountainType="NAMED_MOUNTAIN_RUVDNAOAIVI" Name="LOC_NAMED_MOUNTAIN_RUVDNAOAIVI_NAME"/>
+	</NamedMountains>
+	<NamedRiverCivilizations>
+		<Row NamedRiverType="NAMED_RIVER_TORNIONJOKI" CivilizationType="CIVILIZATION_MER_FINLAND"/>
+		<Row NamedRiverType="NAMED_RIVER_KEMIJOKI" CivilizationType="CIVILIZATION_MER_FINLAND"/>
+		<Row NamedRiverType="NAMED_RIVER_SIMOJOKI" CivilizationType="CIVILIZATION_MER_FINLAND"/>
+		<Row NamedRiverType="NAMED_RIVER_IIJOKI" CivilizationType="CIVILIZATION_MER_FINLAND"/>
+		<Row NamedRiverType="NAMED_RIVER_OULUJOKI" CivilizationType="CIVILIZATION_MER_FINLAND"/>
+	</NamedRiverCivilizations>
+	<NamedMountainCivilizations>
+		<Row NamedMountainType="NAMED_MOUNTAIN_HALTI" CivilizationType="CIVILIZATION_MER_FINLAND"/>
+		<Row NamedMountainType="NAMED_MOUNTAIN_RIDNITSOHKKA" CivilizationType="CIVILIZATION_MER_FINLAND"/>
+		<Row NamedMountainType="NAMED_MOUNTAIN_KOVDDSOSKAISI" CivilizationType="CIVILIZATION_MER_FINLAND"/>
+		<Row NamedMountainType="NAMED_MOUNTAIN_KIEDDITSOHKKA" CivilizationType="CIVILIZATION_MER_FINLAND"/>
+		<Row NamedMountainType="NAMED_MOUNTAIN_RUVDNAOAIVI" CivilizationType="CIVILIZATION_MER_FINLAND"/>
+	</NamedMountainCivilizations>
+	
+</GameData>

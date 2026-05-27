@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Players>
+		<Row>
+			<Domain>Players:Expansion2_Players</Domain>
+			<CivilizationType>CIVILIZATION_MER_FINLAND</CivilizationType>
+			<LeaderType>LEADER_MER_MANNERHEIM</LeaderType>
+			<CivilizationName>LOC_CIVILIZATION_MER_FINLAND_NAME</CivilizationName>
+			<CivilizationIcon>ICON_CIVILIZATION_MER_FINLAND</CivilizationIcon>
+			<LeaderName>LOC_LEADER_MER_MANNERHEIM_NAME</LeaderName>
+			<LeaderIcon>ICON_LEADER_MER_MANNERHEIM</LeaderIcon>
+			<CivilizationAbilityName>LOC_TRAIT_CIVILIZATION_MER_KALEVALA_NAME</CivilizationAbilityName>
+			<CivilizationAbilityDescription>LOC_TRAIT_CIVILIZATION_MER_KALEVALA_DESCRIPTION</CivilizationAbilityDescription>
+			<CivilizationAbilityIcon>ICON_CIVILIZATION_MER_FINLAND</CivilizationAbilityIcon>
+			<LeaderAbilityName>LOC_TRAIT_LEADER_MER_OUR_HOMES_OUR_FAITH_OUR_COUNTRY_NAME</LeaderAbilityName>
+			<LeaderAbilityDescription>LOC_TRAIT_LEADER_MER_OUR_HOMES_OUR_FAITH_OUR_COUNTRY_DESCRIPTION</LeaderAbilityDescription>
+			<LeaderAbilityIcon>ICON_LEADER_MER_MANNERHEIM</LeaderAbilityIcon>
+			<Portrait>LEADER_MER_MANNERHEIM_NEUTRAL.dds</Portrait>
+			<PortraitBackground>LEADER_HOJO_BACKGROUND</PortraitBackground>
+		</Row>
+	</Players>
+	<PlayerItems>
+		<Row>
+			<Domain>Players:Expansion2_Players</Domain>
+			<CivilizationType>CIVILIZATION_MER_FINLAND</CivilizationType>
+			<LeaderType>LEADER_MER_MANNERHEIM</LeaderType>
+			<Type>IMPROVEMENT_MER_SAUNA</Type>
+			<Name>LOC_IMPROVEMENT_MER_SAUNA_NAME</Name>
+			<Description>LOC_IMPROVEMENT_MER_SAUNA_DESCRIPTION</Description>
+			<Icon>ICON_IMPROVEMENT_MER_SAUNA</Icon>
+			<SortIndex>20</SortIndex>
+		</Row>
+		<Row>
+			<Domain>Players:Expansion2_Players</Domain>
+			<CivilizationType>CIVILIZATION_MER_FINLAND</CivilizationType>
+			<LeaderType>LEADER_MER_MANNERHEIM</LeaderType>
+			<Type>UNIT_MER_SISSI</Type>
+			<Name>LOC_UNIT_MER_SISSI_NAME</Name>
+			<Description>LOC_UNIT_MER_SISSI_DESCRIPTION</Description>
+			<Icon>ICON_UNIT_MER_SISSI</Icon>
+			<SortIndex>30</SortIndex>
+		</Row>
+	</PlayerItems>
+</GameData>
+
+
