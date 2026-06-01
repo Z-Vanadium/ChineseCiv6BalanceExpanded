@@ -16,11 +16,13 @@ def get_mod_folders():
     """
     return [
         'Africa/SwahiliAlHasanibn',
+        'Asia/Iskandar',
+        'Asia/Malaysia',
         'Asia/TibetTrisongDetsen',
         'CIVITASResources',
         'DistrictIcons',
         'Europe/AlfredEscher',
-        # 'Europe/Denmark',
+        'Europe/Bohemia',
         'Europe/Finland',
         'Europe/GaulVercingetorix',
         'Europe/Switzerland',
