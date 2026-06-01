@@ -401,6 +401,12 @@
 			</Properties>
 			<File>Mediterranean/PhoeniciaAhiram/Lime_Phoenicia_Ahiram.dep</File>
 		</UpdateArt>
+		<UpdateColors id="UpdateColors">
+			<Properties>
+				<LoadOrder>8650</LoadOrder>
+			</Properties>
+			<File>Meso/Argentina/sql/Color.sql</File>
+		</UpdateColors>
 		<UpdateDatabase id="Config">
 			<Properties>
 				<LoadOrder>8650</LoadOrder>
@@ -1090,6 +1096,12 @@
 			</Properties>
 			<File>Mediterranean/PhoeniciaAhiram/core/Ahiram - Icons.sql</File>
 		</UpdateIcons>
+		<UpdateColors id="UpdateColors">
+			<Properties>
+				<LoadOrder>8650</LoadOrder>
+			</Properties>
+			<File>Meso/Argentina/sql/Color.sql</File>
+		</UpdateColors>
 		<UpdateDatabase id="Gameplay">
 			<Properties>
 				<LoadOrder>8650</LoadOrder>
@@ -2226,6 +2238,7 @@
 		<File>Mediterranean/PhoeniciaAhiram/Platforms/Windows/BLPs/strategicview/strategicview_buildings.blp</File>
 		<File>Mediterranean/PhoeniciaAhiram/Platforms/Windows/BLPs/UILeaders.blp</File>
 		<File>Mediterranean/PhoeniciaAhiram/Platforms/Windows/BLPs/UI/Icons.blp</File>
+		<File>Meso/Argentina/sql/Color.sql</File>
 		<File>Meso/Argentina/ArtDefs/Civilizations.artdef</File>
 		<File>Meso/Argentina/ArtDefs/Cultures.artdef</File>
 		<File>Meso/Argentina/ArtDefs/Districts.artdef</File>

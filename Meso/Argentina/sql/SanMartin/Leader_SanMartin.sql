@@ -19,14 +19,14 @@ VALUES	('LEADER_LEU_SANMARTIN',		'LEADER_LEU_SANMARTIN.dds',		0,						'LEADER_HO
 --==========================================================================================================================
 -- PlayerColors
 -------------------------------------	
-INSERT INTO PlayerColors	
-		(Type,					Usage,			PrimaryColor, 									SecondaryColor,								TextColor)
-VALUES	('LEADER_LEU_SANMARTIN',	'Unique',		'COLOR_PLAYER_LEUGI_LEU_SANMARTIN_BACKGROUND',		'COLOR_PLAYER_LEUGI_LEU_SANMARTIN_FOREGROUND', 	'COLOR_PLAYER_WHITE_TEXT');	
+-- INSERT INTO PlayerColors	
+-- 		(Type,					Usage,			PrimaryColor, 									SecondaryColor,								TextColor)
+-- VALUES	('LEADER_LEU_SANMARTIN',	'Unique',		'COLOR_PLAYER_LEUGI_LEU_SANMARTIN_BACKGROUND',		'COLOR_PLAYER_LEUGI_LEU_SANMARTIN_FOREGROUND', 	'COLOR_PLAYER_WHITE_TEXT');	
 
-INSERT INTO Colors 
-		(Type, 											Red, 	Green, 	Blue, 	Alpha)
-VALUES	('COLOR_PLAYER_LEUGI_LEU_SANMARTIN_BACKGROUND',	0.19,	0.64,	0.73,	1),
-		('COLOR_PLAYER_LEUGI_LEU_SANMARTIN_FOREGROUND',	1.00,	0.88,	0.88,	1);
+-- INSERT INTO Colors 
+-- 		(Type, 											Red, 	Green, 	Blue, 	Alpha)
+-- VALUES	('COLOR_PLAYER_LEUGI_LEU_SANMARTIN_BACKGROUND',	0.19,	0.64,	0.73,	1),
+-- 		('COLOR_PLAYER_LEUGI_LEU_SANMARTIN_FOREGROUND',	1.00,	0.88,	0.88,	1);
 --==========================================================================================================================
 -- LEADERS
 --==========================================================================================================================

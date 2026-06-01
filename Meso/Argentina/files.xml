@@ -13,6 +13,12 @@
     </Criteria>
   </ActionCriteria>
   <FrontEndActions>
+    <UpdateColors id="UpdateColors">
+      <Properties>
+        <LoadOrder>50</LoadOrder>
+      </Properties>
+      <File>sql/Color.sql</File>
+    </UpdateColors>
     <UpdateDatabase id="Config">
       <Properties>
         <LoadOrder>50</LoadOrder>
@@ -54,6 +60,12 @@
     </UpdateArt>
   </FrontEndActions>
   <InGameActions>
+    <UpdateColors id="UpdateColors">
+      <Properties>
+        <LoadOrder>50</LoadOrder>
+      </Properties>
+      <File>sql/Color.sql</File>
+    </UpdateColors>
     <UpdateDatabase id="Gameplay">
       <Properties>
         <LoadOrder>50</LoadOrder>
@@ -114,6 +126,7 @@
     </AddGameplayScripts>
   </InGameActions>
   <Files>
+    <File>sql/Color.sql</File>
     <File>ArtDefs/Civilizations.artdef</File>
     <File>ArtDefs/Cultures.artdef</File>
     <File>ArtDefs/Districts.artdef</File>

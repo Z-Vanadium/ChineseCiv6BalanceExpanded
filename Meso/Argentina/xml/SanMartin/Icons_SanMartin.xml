@@ -13,6 +13,6 @@
 	</IconTextureAtlases>
 	<IconDefinitions>
 		<Row Name="ICON_LEADER_LEU_SANMARTIN" Atlas="ICON_ATLAS_LEU_SANMARTIN" Index="0"/>
-		<Row Name="ICON_LEADER_LEU_SANMARTIN_CIV" Atlas="ICON_ATLAS_LEU_SANMARTIN_CIV" Index="0"/>
+		<Row Name="ICON_LEADER_LEU_SANMARTIN_CIV" Atlas="ICON_ATLAS_CIVILIZATIONS" Index="22"/>
 	</IconDefinitions>
 </GameData>

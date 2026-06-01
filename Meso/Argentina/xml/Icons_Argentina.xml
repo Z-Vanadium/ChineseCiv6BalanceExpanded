@@ -35,10 +35,9 @@
 
 	</IconTextureAtlases>
 	<IconDefinitions>
-		<Row Name="ICON_CIVILIZATION_BUENOS_AIRES"				Atlas="ICON_ATLAS_B_LEU_ARGENTINA" Index="1"/>
+		<!-- <Row Name="ICON_CIVILIZATION_BUENOS_AIRES"				Atlas="ICON_ATLAS_B_LEU_ARGENTINA" Index="1"/> -->
 
 		<Row Name="ICON_CIVILIZATION_LEU_ARGENTINA"				Atlas="ICON_ATLAS_B_LEU_ARGENTINA" Index="0"/>
-
 
 		<Row Name="ICON_DISTRICT_LEU_ARRABAL"    	               		Atlas="ICON_ATLAS_LEU_ARRABAL" Index="0"/>
 
