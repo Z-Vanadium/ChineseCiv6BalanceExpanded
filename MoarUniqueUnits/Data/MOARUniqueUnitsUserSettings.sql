@@ -85,4 +85,11 @@ INSERT INTO EnabledUniqueUnits (OwnerType, Type, Enabled, DefaultReplaces, Defau
 
 CREATE TABLE UnitsToDelete (Type VARCHAR);
 
-INSERT INTO UnitsToDelete VALUES ('UNIT_ENGLISH_SEADOG');
+-- INSERT INTO UnitsToDelete VALUES ('UNIT_ENGLISH_SEADOG');
+
+UPDATE EnabledUniqueUnits SET Enabled = 0;
+
+UPDATE EnabledUniqueUnits SET Enabled = 1 WHERE Type IN ('UNIT_GERMAN_PANZER');
+UPDATE EnabledUniqueUnits SET OwnerType='LEADER_GEDEMO_BISMARK' WHERE Type='UNIT_GERMAN_PANZER';
+
+INSERT INTO LeaderTraits (LeaderType, TraitType) SELECT OwnerType, 'TRAIT_CIVILIZATION_'||Type FROM EnabledUniqueUnits WHERE Enabled = 1;

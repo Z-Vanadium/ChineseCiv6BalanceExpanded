@@ -85,4 +85,9 @@ INSERT INTO ConfigEnabledUniqueUnits (OwnerType, Type, Enabled, SortIndex) VALUE
 
 CREATE TABLE UnitsToDelete (Type VARCHAR);
 
-INSERT INTO UnitsToDelete VALUES ('UNIT_ENGLISH_SEADOG');
+-- INSERT INTO UnitsToDelete VALUES ('UNIT_ENGLISH_SEADOG');
+
+UPDATE ConfigEnabledUniqueUnits SET Enabled = 0;
+
+UPDATE ConfigEnabledUniqueUnits SET Enabled = 1 WHERE Type IN ('UNIT_GERMAN_PANZER');
+UPDATE ConfigEnabledUniqueUnits SET OwnerType='LEADER_GEDEMO_BISMARK' WHERE Type='UNIT_GERMAN_PANZER';

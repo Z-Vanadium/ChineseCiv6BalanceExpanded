@@ -14,7 +14,7 @@ DELETE FROM Improvement_ValidBuildUnits WHERE UnitType IN (SELECT Type FROM Unit
 
 DELETE FROM UnitUpgrades WHERE Unit IN (SELECT Type FROM UnitsToDelete);
 
-DELETE FROM UnitReplaces WHERE CivUniqueUnitType IN (SELECT Type FROM UnitsToDelete);
+DELETE FROM UnitIGNOREs WHERE CivUniqueUnitType IN (SELECT Type FROM UnitsToDelete);
 
 DELETE FROM Units WHERE UnitType IN (SELECT Type FROM UnitsToDelete);
 
@@ -40,9 +40,9 @@ INSERT INTO Traits (TraitType, Name) SELECT 'TRAIT_CIVILIZATION_'||Type, 'LOC_'|
 --Traits
 INSERT INTO CivilizationTraits (CivilizationType, TraitType) SELECT OwnerType, 'TRAIT_CIVILIZATION_' || Type FROM EnabledUniqueUnits WHERE Enabled = 1 AND OwnerType LIKE 'CIVILIZATION_%';
 
-INSERT INTO LeaderTraits (LeaderType, TraitType) SELECT OwnerType, 'TRAIT_CIVILIZATION_'||Type FROM EnabledUniqueUnits WHERE Enabled = 1 AND OwnerType = 'LEADER_ELEANOR_ENGLAND';
+-- INSERT INTO LeaderTraits (LeaderType, TraitType) SELECT OwnerType, 'TRAIT_CIVILIZATION_'||Type FROM EnabledUniqueUnits WHERE Enabled = 1 AND OwnerType = 'LEADER_ELEANOR_ENGLAND';
 
-INSERT INTO LeaderTraits (LeaderType, TraitType) SELECT 'LEADER_ELEANOR_FRANCE', 'TRAIT_CIVILIZATION_'||Type FROM EnabledUniqueUnits WHERE Enabled = 1 AND OwnerType = 'LEADER_ELEANOR_ENGLAND';
+-- INSERT INTO LeaderTraits (LeaderType, TraitType) SELECT 'LEADER_ELEANOR_FRANCE', 'TRAIT_CIVILIZATION_'||Type FROM EnabledUniqueUnits WHERE Enabled = 1 AND OwnerType = 'LEADER_ELEANOR_ENGLAND';
 
 --Units_XP2
 CREATE TABLE IF NOT EXISTS Units_XP2 (UnitType VARCHAR, ResourceMaintenanceAmount INTEGER, ResourceCost INTEGER, ResourceMaintenanceType VARCHAR, TourismBomb INTEGER, CanEarnExperience BOOLEAN, TourismBombPossible BOOLEAN, CanFormMilitaryFormation BOOLEAN, MajorCivOnly BOOLEAN);
@@ -277,7 +277,7 @@ INSERT INTO Units_XP2 (UnitType, ResourceMaintenanceAmount, ResourceCost, Resour
 SELECT 'UNIT_AMERICAN_AH64_APACHE', ResourceMaintenanceAmount, ResourceCost, ResourceMaintenanceType, TourismBomb, CanEarnExperience, TourismBombPossible, CanFormMilitaryFormation, MajorCivOnly
 FROM Units_XP2, EnabledUniqueUnits
 WHERE EnabledUniqueUnits.Type = 'UNIT_AMERICAN_AH64_APACHE'
-AND   Units_XP2.UnitType = EnabledUniqueUnits.DefaultReplaces
+AND   Units_XP2.UnitType = EnabledUniqueUnits.DefaultIGNOREs
 AND   EnabledUniqueUnits.Enabled = 1;
 
 
@@ -422,14 +422,14 @@ INSERT INTO Units (UnitType, Name, BaseSightRange, BaseMoves, Combat, RangedComb
 SELECT EnabledUniqueUnits.Type, 'LOC_'||EnabledUniqueUnits.Type||'_NAME', BaseSightRange, BaseMoves, Combat, RangedCombat, Range, Bombard, Domain, FormationClass, Cost, PopulationCost, FoundCity, FoundReligion, MakeTradeRoute, EvangelizeBelief, LaunchInquisition, RequiresInquisition, BuildCharges, ReligiousStrength, ReligionEvictPercent, SpreadCharges, ReligiousHealCharges, ExtractsArtifacts, 'LOC_'||EnabledUniqueUnits.Type||'_DESCRIPTION', Flavor, CanCapture, CanRetreatWhenCaptured, 'TRAIT_CIVILIZATION_'||EnabledUniqueUnits.Type, AllowBarbarians, CostProgressionModel, CostProgressionParam1, PromotionClass, InitialLevel, NumRandomChoices, PrereqTech, PrereqCivic, PrereqDistrict, PrereqPopulation, LeaderType, CanTrain, StrategicResource, PurchaseYield, MustPurchase, Maintenance, Stackable, AirSlots, CanTargetAir, PseudoYieldType, ZoneOfControl, AntiAirCombat, Spy, WMDCapable, ParkCharges, IgnoreMoves, TeamVisibility, ObsoleteTech, ObsoleteCivic, MandatoryObsoleteTech, MandatoryObsoleteCivic, AdvisorType, EnabledByReligion, TrackReligion
 FROM Units, EnabledUniqueUnits
 WHERE EnabledUniqueUnits.Type = 'UNIT_CANADA_HMCS_HAIDA'
-AND   Units.UnitType = EnabledUniqueUnits.DefaultReplaces
+AND   Units.UnitType = EnabledUniqueUnits.DefaultIGNOREs
 AND   EnabledUniqueUnits.Enabled = 1;
 
 INSERT INTO Units_XP2 (UnitType, ResourceMaintenanceAmount, ResourceCost, ResourceMaintenanceType, TourismBomb, CanEarnExperience, TourismBombPossible, CanFormMilitaryFormation, MajorCivOnly)
 SELECT EnabledUniqueUnits.Type, ResourceMaintenanceAmount, ResourceCost, ResourceMaintenanceType, TourismBomb, CanEarnExperience, TourismBombPossible, CanFormMilitaryFormation, MajorCivOnly
 FROM Units_XP2, EnabledUniqueUnits
 WHERE EnabledUniqueUnits.Type = 'UNIT_CANADA_HMCS_HAIDA'
-AND   Units_XP2.UnitType = EnabledUniqueUnits.DefaultReplaces
+AND   Units_XP2.UnitType = EnabledUniqueUnits.DefaultIGNOREs
 AND   EnabledUniqueUnits.Enabled = 1;
 
 
@@ -437,14 +437,14 @@ INSERT INTO Units (UnitType, Name, BaseSightRange, BaseMoves, Combat, RangedComb
 SELECT EnabledUniqueUnits.Type, 'LOC_'||EnabledUniqueUnits.Type||'_NAME', BaseSightRange, BaseMoves + 2, Combat, RangedCombat, Range, Bombard, Domain, FormationClass, Cost, PopulationCost, FoundCity, FoundReligion, MakeTradeRoute, EvangelizeBelief, LaunchInquisition, RequiresInquisition, BuildCharges, ReligiousStrength, ReligionEvictPercent, SpreadCharges, ReligiousHealCharges, ExtractsArtifacts, 'LOC_'||EnabledUniqueUnits.Type||'_DESCRIPTION', Flavor, CanCapture, CanRetreatWhenCaptured, 'TRAIT_CIVILIZATION_'||EnabledUniqueUnits.Type, AllowBarbarians, CostProgressionModel, CostProgressionParam1, PromotionClass, InitialLevel, NumRandomChoices, PrereqTech, PrereqCivic, PrereqDistrict, PrereqPopulation, LeaderType, CanTrain, StrategicResource, PurchaseYield, MustPurchase, Maintenance, Stackable, AirSlots, CanTargetAir, PseudoYieldType, ZoneOfControl, AntiAirCombat, Spy, WMDCapable, ParkCharges, IgnoreMoves, TeamVisibility, ObsoleteTech, ObsoleteCivic, MandatoryObsoleteTech, MandatoryObsoleteCivic, AdvisorType, EnabledByReligion, TrackReligion
 FROM Units, EnabledUniqueUnits
 WHERE EnabledUniqueUnits.Type = 'UNIT_HUNGARY_KALANDOZO'
-AND   Units.UnitType = EnabledUniqueUnits.DefaultReplaces
+AND   Units.UnitType = EnabledUniqueUnits.DefaultIGNOREs
 AND   EnabledUniqueUnits.Enabled = 1;
 
 INSERT INTO Units_XP2 (UnitType, ResourceMaintenanceAmount, ResourceCost, ResourceMaintenanceType, TourismBomb, CanEarnExperience, TourismBombPossible, CanFormMilitaryFormation, MajorCivOnly)
 SELECT EnabledUniqueUnits.Type, ResourceMaintenanceAmount, ResourceCost, ResourceMaintenanceType, TourismBomb, CanEarnExperience, TourismBombPossible, CanFormMilitaryFormation, MajorCivOnly
 FROM Units_XP2, EnabledUniqueUnits
 WHERE EnabledUniqueUnits.Type = 'UNIT_HUNGARY_KALANDOZO'
-AND   Units_XP2.UnitType = EnabledUniqueUnits.DefaultReplaces
+AND   Units_XP2.UnitType = EnabledUniqueUnits.DefaultIGNOREs
 AND   EnabledUniqueUnits.Enabled = 1;
 
 
@@ -452,14 +452,14 @@ INSERT INTO Units (UnitType, Name, BaseSightRange, BaseMoves, Combat, RangedComb
 SELECT EnabledUniqueUnits.Type, 'LOC_'||EnabledUniqueUnits.Type||'_NAME', BaseSightRange, BaseMoves + 1, Combat, RangedCombat, Range, Bombard, Domain, FormationClass, Cost, PopulationCost, FoundCity, FoundReligion, MakeTradeRoute, EvangelizeBelief, LaunchInquisition, RequiresInquisition, BuildCharges, ReligiousStrength, ReligionEvictPercent, SpreadCharges, ReligiousHealCharges, ExtractsArtifacts, 'LOC_'||EnabledUniqueUnits.Type||'_DESCRIPTION', Flavor, CanCapture, CanRetreatWhenCaptured, 'TRAIT_CIVILIZATION_'||EnabledUniqueUnits.Type, AllowBarbarians, CostProgressionModel, CostProgressionParam1, PromotionClass, InitialLevel, NumRandomChoices, PrereqTech, PrereqCivic, PrereqDistrict, PrereqPopulation, LeaderType, CanTrain, StrategicResource, PurchaseYield, MustPurchase, Maintenance, Stackable, AirSlots, CanTargetAir, PseudoYieldType, ZoneOfControl, AntiAirCombat, Spy, WMDCapable, ParkCharges, IgnoreMoves, TeamVisibility, ObsoleteTech, ObsoleteCivic, MandatoryObsoleteTech, MandatoryObsoleteCivic, AdvisorType, EnabledByReligion, TrackReligion
 FROM Units, EnabledUniqueUnits
 WHERE EnabledUniqueUnits.Type = 'UNIT_INCA_CHASQUI'
-AND   Units.UnitType = EnabledUniqueUnits.DefaultReplaces
+AND   Units.UnitType = EnabledUniqueUnits.DefaultIGNOREs
 AND   EnabledUniqueUnits.Enabled = 1;
 
 INSERT INTO Units_XP2 (UnitType, ResourceMaintenanceAmount, ResourceCost, ResourceMaintenanceType, TourismBomb, CanEarnExperience, TourismBombPossible, CanFormMilitaryFormation, MajorCivOnly)
 SELECT EnabledUniqueUnits.Type, ResourceMaintenanceAmount, ResourceCost, ResourceMaintenanceType, TourismBomb, CanEarnExperience, TourismBombPossible, CanFormMilitaryFormation, MajorCivOnly
 FROM Units_XP2, EnabledUniqueUnits
 WHERE EnabledUniqueUnits.Type = 'UNIT_INCA_CHASQUI'
-AND   Units_XP2.UnitType = EnabledUniqueUnits.DefaultReplaces
+AND   Units_XP2.UnitType = EnabledUniqueUnits.DefaultIGNOREs
 AND   EnabledUniqueUnits.Enabled = 1;
 
 
@@ -467,14 +467,14 @@ INSERT INTO Units (UnitType, Name, BaseSightRange, BaseMoves, Combat, RangedComb
 SELECT EnabledUniqueUnits.Type, 'LOC_'||EnabledUniqueUnits.Type||'_NAME', BaseSightRange, BaseMoves, Combat, RangedCombat, Range, Bombard, Domain, FormationClass, Cost, PopulationCost, FoundCity, FoundReligion, MakeTradeRoute, EvangelizeBelief, LaunchInquisition, RequiresInquisition, BuildCharges, ReligiousStrength, ReligionEvictPercent, SpreadCharges, ReligiousHealCharges, ExtractsArtifacts, 'LOC_'||EnabledUniqueUnits.Type||'_DESCRIPTION', Flavor, CanCapture, CanRetreatWhenCaptured, 'TRAIT_CIVILIZATION_'||EnabledUniqueUnits.Type, AllowBarbarians, CostProgressionModel, CostProgressionParam1, PromotionClass, InitialLevel, NumRandomChoices, PrereqTech, PrereqCivic, PrereqDistrict, PrereqPopulation, LeaderType, CanTrain, StrategicResource, PurchaseYield, MustPurchase, Maintenance, Stackable, AirSlots, CanTargetAir, PseudoYieldType, ZoneOfControl, AntiAirCombat, Spy, WMDCapable, ParkCharges, IgnoreMoves, TeamVisibility, ObsoleteTech, ObsoleteCivic, MandatoryObsoleteTech, MandatoryObsoleteCivic, AdvisorType, EnabledByReligion, TrackReligion
 FROM Units, EnabledUniqueUnits
 WHERE EnabledUniqueUnits.Type = 'UNIT_MALI_SOFA'
-AND   Units.UnitType = EnabledUniqueUnits.DefaultReplaces
+AND   Units.UnitType = EnabledUniqueUnits.DefaultIGNOREs
 AND   EnabledUniqueUnits.Enabled = 1;
 
 INSERT INTO Units_XP2 (UnitType, ResourceMaintenanceAmount, ResourceCost, ResourceMaintenanceType, TourismBomb, CanEarnExperience, TourismBombPossible, CanFormMilitaryFormation, MajorCivOnly)
 SELECT EnabledUniqueUnits.Type, ResourceMaintenanceAmount, ResourceCost, ResourceMaintenanceType, TourismBomb, CanEarnExperience, TourismBombPossible, CanFormMilitaryFormation, MajorCivOnly
 FROM   Units_XP2, EnabledUniqueUnits
 WHERE  EnabledUniqueUnits.Type = 'UNIT_MALI_SOFA'
-AND    Units_XP2.UnitType = EnabledUniqueUnits.DefaultReplaces
+AND    Units_XP2.UnitType = EnabledUniqueUnits.DefaultIGNOREs
 AND    EnabledUniqueUnits.Enabled = 1;
 
 
@@ -482,14 +482,14 @@ INSERT INTO Units (UnitType, Name, BaseSightRange, BaseMoves, Combat, RangedComb
 SELECT EnabledUniqueUnits.Type, 'LOC_'||EnabledUniqueUnits.Type||'_NAME', BaseSightRange, BaseMoves, Combat, RangedCombat - 5, Range, Bombard, Domain, FormationClass, Cost, PopulationCost, FoundCity, FoundReligion, MakeTradeRoute, EvangelizeBelief, LaunchInquisition, RequiresInquisition, BuildCharges, ReligiousStrength, ReligionEvictPercent, SpreadCharges, ReligiousHealCharges, ExtractsArtifacts, 'LOC_'||EnabledUniqueUnits.Type||'_DESCRIPTION', Flavor, CanCapture, CanRetreatWhenCaptured, 'TRAIT_CIVILIZATION_'||EnabledUniqueUnits.Type, AllowBarbarians, CostProgressionModel, CostProgressionParam1, PromotionClass, InitialLevel, NumRandomChoices, PrereqTech, PrereqCivic, PrereqDistrict, PrereqPopulation, LeaderType, CanTrain, StrategicResource, PurchaseYield, MustPurchase, Maintenance, Stackable, AirSlots, CanTargetAir, PseudoYieldType, ZoneOfControl, AntiAirCombat, Spy, WMDCapable, ParkCharges, IgnoreMoves, TeamVisibility, ObsoleteTech, ObsoleteCivic, MandatoryObsoleteTech, MandatoryObsoleteCivic, AdvisorType, EnabledByReligion, TrackReligion
 FROM Units, EnabledUniqueUnits
 WHERE EnabledUniqueUnits.Type = 'UNIT_MAORI_TUPARA'
-AND   Units.UnitType = EnabledUniqueUnits.DefaultReplaces
+AND   Units.UnitType = EnabledUniqueUnits.DefaultIGNOREs
 AND   EnabledUniqueUnits.Enabled = 1;
 
 INSERT INTO Units_XP2 (UnitType, ResourceMaintenanceAmount, ResourceCost, ResourceMaintenanceType, TourismBomb, CanEarnExperience, TourismBombPossible, CanFormMilitaryFormation, MajorCivOnly)
 SELECT EnabledUniqueUnits.Type, ResourceMaintenanceAmount, ResourceCost, ResourceMaintenanceType, TourismBomb, CanEarnExperience, TourismBombPossible, CanFormMilitaryFormation, MajorCivOnly
 FROM   Units_XP2, EnabledUniqueUnits
 WHERE  EnabledUniqueUnits.Type = 'UNIT_MAORI_TUPARA'
-AND    Units_XP2.UnitType = EnabledUniqueUnits.DefaultReplaces
+AND    Units_XP2.UnitType = EnabledUniqueUnits.DefaultIGNOREs
 AND    EnabledUniqueUnits.Enabled = 1;
 
 
@@ -497,14 +497,14 @@ INSERT INTO Units (UnitType, Name, BaseSightRange, BaseMoves, Combat, RangedComb
 SELECT EnabledUniqueUnits.Type, 'LOC_'||EnabledUniqueUnits.Type||'_NAME', BaseSightRange, BaseMoves, Combat + 2, RangedCombat, Range, Bombard, Domain, FormationClass, Cost, PopulationCost, FoundCity, FoundReligion, MakeTradeRoute, EvangelizeBelief, LaunchInquisition, RequiresInquisition, BuildCharges, ReligiousStrength, ReligionEvictPercent, SpreadCharges, ReligiousHealCharges, ExtractsArtifacts, 'LOC_'||EnabledUniqueUnits.Type||'_DESCRIPTION', Flavor, CanCapture, CanRetreatWhenCaptured, 'TRAIT_CIVILIZATION_'||EnabledUniqueUnits.Type, AllowBarbarians, CostProgressionModel, CostProgressionParam1, PromotionClass, InitialLevel, NumRandomChoices, PrereqTech, PrereqCivic, PrereqDistrict, PrereqPopulation, LeaderType, CanTrain, StrategicResource, PurchaseYield, MustPurchase, Maintenance, Stackable, AirSlots, CanTargetAir, PseudoYieldType, ZoneOfControl, AntiAirCombat, Spy, WMDCapable, ParkCharges, IgnoreMoves, TeamVisibility, ObsoleteTech, ObsoleteCivic, MandatoryObsoleteTech, MandatoryObsoleteCivic, AdvisorType, EnabledByReligion, TrackReligion
 FROM Units, EnabledUniqueUnits
 WHERE EnabledUniqueUnits.Type = 'UNIT_OTTOMAN_SIPAHI'
-AND   Units.UnitType = EnabledUniqueUnits.DefaultReplaces
+AND   Units.UnitType = EnabledUniqueUnits.DefaultIGNOREs
 AND   EnabledUniqueUnits.Enabled = 1;
 
 INSERT INTO Units_XP2 (UnitType, ResourceMaintenanceAmount, ResourceCost, ResourceMaintenanceType, TourismBomb, CanEarnExperience, TourismBombPossible, CanFormMilitaryFormation, MajorCivOnly)
 SELECT EnabledUniqueUnits.Type, ResourceMaintenanceAmount, ResourceCost, ResourceMaintenanceType, TourismBomb, CanEarnExperience, TourismBombPossible, CanFormMilitaryFormation, MajorCivOnly
 FROM   Units_XP2, EnabledUniqueUnits
 WHERE  EnabledUniqueUnits.Type = 'UNIT_OTTOMAN_SIPAHI'
-AND    Units_XP2.UnitType = EnabledUniqueUnits.DefaultReplaces
+AND    Units_XP2.UnitType = EnabledUniqueUnits.DefaultIGNOREs
 AND    EnabledUniqueUnits.Enabled = 1;
 
 
@@ -512,14 +512,14 @@ INSERT INTO Units (UnitType, Name, BaseSightRange, BaseMoves, Combat, RangedComb
 SELECT EnabledUniqueUnits.Type, 'LOC_'||EnabledUniqueUnits.Type||'_NAME', BaseSightRange, BaseMoves + 1, 30, 31, 1, Bombard, Domain, FormationClass, Cost, PopulationCost, FoundCity, FoundReligion, MakeTradeRoute, EvangelizeBelief, LaunchInquisition, RequiresInquisition, BuildCharges, ReligiousStrength, ReligionEvictPercent, SpreadCharges, ReligiousHealCharges, ExtractsArtifacts, 'LOC_'||EnabledUniqueUnits.Type||'_DESCRIPTION', Flavor, CanCapture, CanRetreatWhenCaptured, 'TRAIT_CIVILIZATION_'||EnabledUniqueUnits.Type, AllowBarbarians, CostProgressionModel, CostProgressionParam1, PromotionClass, InitialLevel, NumRandomChoices, PrereqTech, PrereqCivic, PrereqDistrict, PrereqPopulation, LeaderType, CanTrain, StrategicResource, PurchaseYield, MustPurchase, Maintenance, Stackable, AirSlots, CanTargetAir, PseudoYieldType, ZoneOfControl, AntiAirCombat, Spy, WMDCapable, ParkCharges, IgnoreMoves, TeamVisibility, ObsoleteTech, ObsoleteCivic, MandatoryObsoleteTech, MandatoryObsoleteCivic, AdvisorType, EnabledByReligion, TrackReligion
 FROM Units, EnabledUniqueUnits
 WHERE EnabledUniqueUnits.Type = 'UNIT_PHOENICIA_NUMIDIAN_CAVALRY'
-AND   Units.UnitType = EnabledUniqueUnits.DefaultReplaces
+AND   Units.UnitType = EnabledUniqueUnits.DefaultIGNOREs
 AND   EnabledUniqueUnits.Enabled = 1;
 
 INSERT INTO Units_XP2 (UnitType, ResourceMaintenanceAmount, ResourceCost, ResourceMaintenanceType, TourismBomb, CanEarnExperience, TourismBombPossible, CanFormMilitaryFormation, MajorCivOnly)
 SELECT EnabledUniqueUnits.Type, ResourceMaintenanceAmount, ResourceCost, ResourceMaintenanceType, TourismBomb, CanEarnExperience, TourismBombPossible, CanFormMilitaryFormation, MajorCivOnly
 FROM   Units_XP2, EnabledUniqueUnits
 WHERE  EnabledUniqueUnits.Type = 'UNIT_PHOENICIA_NUMIDIAN_CAVALRY'
-AND    Units_XP2.UnitType = EnabledUniqueUnits.DefaultReplaces
+AND    Units_XP2.UnitType = EnabledUniqueUnits.DefaultIGNOREs
 AND    EnabledUniqueUnits.Enabled = 1;
 
 
@@ -527,14 +527,14 @@ INSERT INTO Units (UnitType, Name, BaseSightRange, BaseMoves, Combat, RangedComb
 SELECT EnabledUniqueUnits.Type, 'LOC_'||EnabledUniqueUnits.Type||'_NAME', BaseSightRange, BaseMoves, Combat + 5, RangedCombat + 5, Range, Bombard, Domain, FormationClass, Cost, PopulationCost, FoundCity, FoundReligion, MakeTradeRoute, EvangelizeBelief, LaunchInquisition, RequiresInquisition, BuildCharges, ReligiousStrength, ReligionEvictPercent, SpreadCharges, ReligiousHealCharges, ExtractsArtifacts, 'LOC_'||EnabledUniqueUnits.Type||'_DESCRIPTION', Flavor, CanCapture, CanRetreatWhenCaptured, 'TRAIT_CIVILIZATION_'||EnabledUniqueUnits.Type, AllowBarbarians, CostProgressionModel, CostProgressionParam1, PromotionClass, InitialLevel, NumRandomChoices, PrereqTech, PrereqCivic, PrereqDistrict, PrereqPopulation, LeaderType, CanTrain, StrategicResource, PurchaseYield, MustPurchase, Maintenance, Stackable, AirSlots, CanTargetAir, PseudoYieldType, ZoneOfControl, AntiAirCombat, Spy, WMDCapable, ParkCharges, IgnoreMoves, TeamVisibility, ObsoleteTech, ObsoleteCivic, MandatoryObsoleteTech, MandatoryObsoleteCivic, AdvisorType, EnabledByReligion, TrackReligion
 FROM Units, EnabledUniqueUnits
 WHERE EnabledUniqueUnits.Type = 'UNIT_ENGLISH_SHIP_OF_THE_LINE'
-AND   Units.UnitType = EnabledUniqueUnits.DefaultReplaces
+AND   Units.UnitType = EnabledUniqueUnits.DefaultIGNOREs
 AND   EnabledUniqueUnits.Enabled = 1;
 
 INSERT INTO Units_XP2 (UnitType, ResourceMaintenanceAmount, ResourceCost, ResourceMaintenanceType, TourismBomb, CanEarnExperience, TourismBombPossible, CanFormMilitaryFormation, MajorCivOnly)
 SELECT EnabledUniqueUnits.Type, ResourceMaintenanceAmount, ResourceCost, ResourceMaintenanceType, TourismBomb, CanEarnExperience, TourismBombPossible, CanFormMilitaryFormation, MajorCivOnly
 FROM   Units_XP2, EnabledUniqueUnits
 WHERE  EnabledUniqueUnits.Type = 'UNIT_ENGLISH_SHIP_OF_THE_LINE'
-AND    Units_XP2.UnitType = EnabledUniqueUnits.DefaultReplaces
+AND    Units_XP2.UnitType = EnabledUniqueUnits.DefaultIGNOREs
 AND    EnabledUniqueUnits.Enabled = 1;
 
 
@@ -542,14 +542,14 @@ INSERT INTO Units (UnitType, Name, BaseSightRange, BaseMoves, Combat, RangedComb
 SELECT EnabledUniqueUnits.Type, 'LOC_'||EnabledUniqueUnits.Type||'_NAME', BaseSightRange, BaseMoves, Combat, RangedCombat, Range, Bombard, Domain, FormationClass, Cost, PopulationCost, FoundCity, FoundReligion, MakeTradeRoute, EvangelizeBelief, LaunchInquisition, RequiresInquisition, BuildCharges, ReligiousStrength, ReligionEvictPercent, SpreadCharges, ReligiousHealCharges, ExtractsArtifacts, 'LOC_'||EnabledUniqueUnits.Type||'_DESCRIPTION', Flavor, CanCapture, CanRetreatWhenCaptured, 'TRAIT_CIVILIZATION_'||EnabledUniqueUnits.Type, AllowBarbarians, CostProgressionModel, CostProgressionParam1, PromotionClass, InitialLevel, NumRandomChoices, PrereqTech, PrereqCivic, PrereqDistrict, PrereqPopulation, LeaderType, CanTrain, StrategicResource, PurchaseYield, MustPurchase, Maintenance, Stackable, AirSlots, CanTargetAir, PseudoYieldType, ZoneOfControl, AntiAirCombat, Spy, WMDCapable, ParkCharges, IgnoreMoves, TeamVisibility, ObsoleteTech, ObsoleteCivic, MandatoryObsoleteTech, MandatoryObsoleteCivic, AdvisorType, EnabledByReligion, TrackReligion
 FROM Units, EnabledUniqueUnits
 WHERE EnabledUniqueUnits.Type = 'UNIT_SWEDEN_HAKKAPELIITTA'
-AND   Units.UnitType = EnabledUniqueUnits.DefaultReplaces
+AND   Units.UnitType = EnabledUniqueUnits.DefaultIGNOREs
 AND   EnabledUniqueUnits.Enabled = 1;
 
 INSERT INTO Units_XP2 (UnitType, ResourceMaintenanceAmount, ResourceCost, ResourceMaintenanceType, TourismBomb, CanEarnExperience, TourismBombPossible, CanFormMilitaryFormation, MajorCivOnly)
 SELECT EnabledUniqueUnits.Type, ResourceMaintenanceAmount, ResourceCost, ResourceMaintenanceType, TourismBomb, CanEarnExperience, TourismBombPossible, CanFormMilitaryFormation, MajorCivOnly
 FROM   Units_XP2, EnabledUniqueUnits
 WHERE  EnabledUniqueUnits.Type = 'UNIT_SWEDEN_HAKKAPELIITTA'
-AND    Units_XP2.UnitType = EnabledUniqueUnits.DefaultReplaces
+AND    Units_XP2.UnitType = EnabledUniqueUnits.DefaultIGNOREs
 AND    EnabledUniqueUnits.Enabled = 1;
 
 
@@ -678,20 +678,20 @@ AND    Units_XP2.UnitType = 'UNIT_KNIGHT'
 AND    EnabledUniqueUnits.Enabled = 1;
 
 
-INSERT INTO UnitReplaces (CivUniqueUnitType, ReplacesUnitType) SELECT Type, DefaultReplaces FROM EnabledUniqueUnits WHERE Enabled = 1 AND DefaultReplaces IS NOT NULL;
+INSERT INTO UnitIGNOREs (CivUniqueUnitType, IGNOREsUnitType) SELECT Type, DefaultIGNOREs FROM EnabledUniqueUnits WHERE Enabled = 1 AND DefaultIGNOREs IS NOT NULL;
 
 INSERT INTO UnitUpgrades (Unit, UpgradeUnit) SELECT Type, DefaultUpgrade FROM EnabledUniqueUnits WHERE Enabled = 1 AND DefaultUpgrade IS NOT NULL;
 
 INSERT INTO UnitAIInfos (UnitType, AiType) SELECT EnabledUniqueUnits.Type, UnitAiInfos.AiType FROM UnitAiInfos, EnabledUniqueUnits WHERE UnitAiInfos.UnitType = EnabledUniqueUnits.UnitAiBaseUnit AND EnabledUniqueUnits.Enabled = 1 AND EnabledUniqueUnits.UnitAiBaseUnit IS NOT NULL;
 
-INSERT INTO Tags (Tag, Vocabulary) SELECT replace(Type,'UNIT_','CLASS_'), 'ABILITY_CLASS' FROM EnabledUniqueUnits;
+INSERT INTO Tags (Tag, Vocabulary) SELECT IGNORE(Type,'UNIT_','CLASS_'), 'ABILITY_CLASS' FROM EnabledUniqueUnits;
 
-INSERT INTO TypeTags (Type, Tag) SELECT Type, replace(Type,'UNIT_','CLASS_') FROM EnabledUniqueUnits WHERE Enabled = 1;
+INSERT INTO TypeTags (Type, Tag) SELECT Type, IGNORE(Type,'UNIT_','CLASS_') FROM EnabledUniqueUnits WHERE Enabled = 1;
 
 INSERT INTO TypeTags (Type, Tag) SELECT EnabledUniqueUnits.Type, TypeTags.Tag FROM TypeTags, EnabledUniqueUnits WHERE TypeTags.Tag LIKE 'CLASS_%' AND TypeTags.Type = EnabledUniqueUnits.UnitAiBaseUnit AND EnabledUniqueUnits.Enabled = 1 AND EnabledUniqueUnits.UnitAiBaseUnit IS NOT NULL;
 
 -- Jaguars can capture units as Builders
-INSERT INTO TypeTags (Type, Tag) SELECT 'UNIT_AZTEC_JAGUAR', 'CLASS_CAPTURE_WORKER' FROM Civilizations WHERE CivilizationType = 'CIVILIZATION_AZTEC';
+-- INSERT INTO TypeTags (Type, Tag) SELECT 'UNIT_AZTEC_JAGUAR', 'CLASS_CAPTURE_WORKER' FROM Civilizations WHERE CivilizationType = 'CIVILIZATION_AZTEC';
 
 --Improvement_ValidBuildUnits
 INSERT INTO Improvement_ValidBuildUnits (ImprovementType, UnitType, ConsumesCharge, ValidRepairOnly) SELECT 'IMPROVEMENT_FORT', Type, 1, 0 FROM Types WHERE Type = 'UNIT_BRAZILIAN_BANDEIRANTE';
@@ -1083,153 +1083,153 @@ INSERT INTO RequirementSets (RequirementSetId, RequirementSetType) VALUES ('PLOT
 
 
 --Requirements
-INSERT OR REPLACE INTO Requirements (RequirementId, RequirementType) VALUES ('ADJACENT_FRIENDLY_MEDICINE_MAN_REQUIREMENT', 'REQUIREMENT_PLOT_ADJACENT_FRIENDLY_UNIT_TYPE_MATCHES');
-INSERT OR REPLACE INTO Requirements (RequirementId, RequirementType) VALUES ('ADJACENT_FRIENDLY_NORWEGIAN_ULFHEDNAR_REQUIREMENT', 'REQUIREMENT_PLOT_ADJACENT_FRIENDLY_UNIT_TYPE_MATCHES');
-INSERT OR REPLACE INTO Requirements (RequirementId, RequirementType) VALUES ('ADJACENT_FRIENDLY_SHIGONG_REQUIREMENT', 'REQUIREMENT_PLOT_ADJACENT_FRIENDLY_UNIT_TYPE_MATCHES');
-INSERT OR REPLACE INTO Requirements (RequirementId, RequirementType) VALUES ('REQUIRES_PLAYER_DECLARED_COLONIAL_WAR', 'REQUIREMENT_PLAYER_DECLARED_WAR');
-INSERT OR REPLACE INTO Requirements (RequirementId, RequirementType) VALUES ('REQUIRES_PLAYER_DECLARED_HOLY_WAR', 'REQUIREMENT_PLAYER_DECLARED_WAR');
-INSERT OR REPLACE INTO Requirements (RequirementId, RequirementType) VALUES ('REQUIRES_PLAYER_DECLARED_RECONQUEST_WAR', 'REQUIREMENT_PLAYER_DECLARED_WAR');
-INSERT OR REPLACE INTO Requirements (RequirementId, RequirementType) VALUES ('REQUIRES_PLAYER_DECLARED_TERRITORIAL_WAR', 'REQUIREMENT_PLAYER_DECLARED_WAR');
-INSERT OR REPLACE INTO Requirements (RequirementId, RequirementType) VALUES ('REQUIRES_PLOT_HAS_PLAINS', 'REQUIREMENT_PLOT_TERRAIN_TYPE_MATCHES');
-INSERT OR REPLACE INTO Requirements (RequirementId, RequirementType) VALUES ('REQUIRES_PLOT_HAS_PLAINS_HILLS', 'REQUIREMENT_PLOT_TERRAIN_TYPE_MATCHES');
-INSERT OR REPLACE INTO Requirements (RequirementId, RequirementType) VALUES ('REQUIRES_PLOT_WITHIN_EIGHT_OF_ZIGGURAT', 'REQUIREMENT_PLOT_ADJACENT_IMPROVEMENT_TYPE_MATCHES');
-INSERT OR REPLACE INTO Requirements (RequirementId, RequirementType) VALUES ('REQUIRES_PLOT_WITHIN_ONE_OF_STEPWELL', 'REQUIREMENT_PLOT_ADJACENT_IMPROVEMENT_TYPE_MATCHES');
-INSERT OR REPLACE INTO Requirements (RequirementId, RequirementType) VALUES ('REQUIRES_UNIT_NEXT_TO_LEGION', 'REQUIREMENT_PLOT_ADJACENT_FRIENDLY_UNIT_TYPE_MATCHES');
-INSERT OR REPLACE INTO Requirements (RequirementId, RequirementType) VALUES ('REQUIRES_UNIT_NEXT_TO_LONGBOWMAN', 'REQUIREMENT_PLOT_ADJACENT_FRIENDLY_UNIT_TYPE_MATCHES');
-INSERT OR REPLACE INTO Requirements (RequirementId, RequirementType) VALUES ('REQUIRES_UNIT_NEXT_TO_ASSEGAI', 'REQUIREMENT_PLOT_ADJACENT_FRIENDLY_UNIT_TYPE_MATCHES');
-INSERT OR REPLACE INTO Requirements (RequirementId, RequirementType) VALUES ('REQUIRES_UNIT_NEXT_TO_WARRIOR', 'REQUIREMENT_PLOT_ADJACENT_FRIENDLY_UNIT_TYPE_MATCHES');
-INSERT OR REPLACE INTO Requirements (RequirementId, RequirementType, Inverse) VALUES ('OPPONENT_IS_NOT_DAMAGED_UNIT_REQUIREMENT', 'REQUIREMENT_UNIT_DAMAGE_MINIMUM', 1);
-INSERT OR REPLACE INTO Requirements (RequirementId, RequirementType, Inverse) VALUES ('UNIT_NOT_IN_OWNER_TERRITORY_REQUIREMENT', 'REQUIREMENT_UNIT_IN_OWNER_TERRITORY', 1);
-INSERT OR REPLACE INTO Requirements (RequirementId, RequirementType) VALUES ('OPPONENT_IS_LIGHT_CAVALRY_REQUIREMENT', 'REQUIREMENT_OPPONENT_UNIT_PROMOTION_CLASS_MATCHES');
+INSERT OR IGNORE INTO Requirements (RequirementId, RequirementType) VALUES ('ADJACENT_FRIENDLY_MEDICINE_MAN_REQUIREMENT', 'REQUIREMENT_PLOT_ADJACENT_FRIENDLY_UNIT_TYPE_MATCHES');
+INSERT OR IGNORE INTO Requirements (RequirementId, RequirementType) VALUES ('ADJACENT_FRIENDLY_NORWEGIAN_ULFHEDNAR_REQUIREMENT', 'REQUIREMENT_PLOT_ADJACENT_FRIENDLY_UNIT_TYPE_MATCHES');
+INSERT OR IGNORE INTO Requirements (RequirementId, RequirementType) VALUES ('ADJACENT_FRIENDLY_SHIGONG_REQUIREMENT', 'REQUIREMENT_PLOT_ADJACENT_FRIENDLY_UNIT_TYPE_MATCHES');
+INSERT OR IGNORE INTO Requirements (RequirementId, RequirementType) VALUES ('REQUIRES_PLAYER_DECLARED_COLONIAL_WAR', 'REQUIREMENT_PLAYER_DECLARED_WAR');
+INSERT OR IGNORE INTO Requirements (RequirementId, RequirementType) VALUES ('REQUIRES_PLAYER_DECLARED_HOLY_WAR', 'REQUIREMENT_PLAYER_DECLARED_WAR');
+INSERT OR IGNORE INTO Requirements (RequirementId, RequirementType) VALUES ('REQUIRES_PLAYER_DECLARED_RECONQUEST_WAR', 'REQUIREMENT_PLAYER_DECLARED_WAR');
+INSERT OR IGNORE INTO Requirements (RequirementId, RequirementType) VALUES ('REQUIRES_PLAYER_DECLARED_TERRITORIAL_WAR', 'REQUIREMENT_PLAYER_DECLARED_WAR');
+INSERT OR IGNORE INTO Requirements (RequirementId, RequirementType) VALUES ('REQUIRES_PLOT_HAS_PLAINS', 'REQUIREMENT_PLOT_TERRAIN_TYPE_MATCHES');
+INSERT OR IGNORE INTO Requirements (RequirementId, RequirementType) VALUES ('REQUIRES_PLOT_HAS_PLAINS_HILLS', 'REQUIREMENT_PLOT_TERRAIN_TYPE_MATCHES');
+INSERT OR IGNORE INTO Requirements (RequirementId, RequirementType) VALUES ('REQUIRES_PLOT_WITHIN_EIGHT_OF_ZIGGURAT', 'REQUIREMENT_PLOT_ADJACENT_IMPROVEMENT_TYPE_MATCHES');
+INSERT OR IGNORE INTO Requirements (RequirementId, RequirementType) VALUES ('REQUIRES_PLOT_WITHIN_ONE_OF_STEPWELL', 'REQUIREMENT_PLOT_ADJACENT_IMPROVEMENT_TYPE_MATCHES');
+INSERT OR IGNORE INTO Requirements (RequirementId, RequirementType) VALUES ('REQUIRES_UNIT_NEXT_TO_LEGION', 'REQUIREMENT_PLOT_ADJACENT_FRIENDLY_UNIT_TYPE_MATCHES');
+INSERT OR IGNORE INTO Requirements (RequirementId, RequirementType) VALUES ('REQUIRES_UNIT_NEXT_TO_LONGBOWMAN', 'REQUIREMENT_PLOT_ADJACENT_FRIENDLY_UNIT_TYPE_MATCHES');
+INSERT OR IGNORE INTO Requirements (RequirementId, RequirementType) VALUES ('REQUIRES_UNIT_NEXT_TO_ASSEGAI', 'REQUIREMENT_PLOT_ADJACENT_FRIENDLY_UNIT_TYPE_MATCHES');
+INSERT OR IGNORE INTO Requirements (RequirementId, RequirementType) VALUES ('REQUIRES_UNIT_NEXT_TO_WARRIOR', 'REQUIREMENT_PLOT_ADJACENT_FRIENDLY_UNIT_TYPE_MATCHES');
+INSERT OR IGNORE INTO Requirements (RequirementId, RequirementType, Inverse) VALUES ('OPPONENT_IS_NOT_DAMAGED_UNIT_REQUIREMENT', 'REQUIREMENT_UNIT_DAMAGE_MINIMUM', 1);
+INSERT OR IGNORE INTO Requirements (RequirementId, RequirementType, Inverse) VALUES ('UNIT_NOT_IN_OWNER_TERRITORY_REQUIREMENT', 'REQUIREMENT_UNIT_IN_OWNER_TERRITORY', 1);
+INSERT OR IGNORE INTO Requirements (RequirementId, RequirementType) VALUES ('OPPONENT_IS_LIGHT_CAVALRY_REQUIREMENT', 'REQUIREMENT_OPPONENT_UNIT_PROMOTION_CLASS_MATCHES');
 
 --DLC
-INSERT OR REPLACE INTO Requirements (RequirementId, RequirementType, Inverse) VALUES ('PLOT_IS_NOT_DEFENDED_DISTRICT_REQUIREMENTS', 'REQUIREMENT_PLOT_DISTRICT_IS_DEFENDED', 1);
-INSERT OR REPLACE INTO Requirements (RequirementId, RequirementType) VALUES ('ADJACENT_FRIENDLY_WARRIOR_PRIEST_REQUIREMENT', 'REQUIREMENT_PLOT_ADJACENT_FRIENDLY_UNIT_TYPE_MATCHES');
-INSERT OR REPLACE INTO Requirements (RequirementId, RequirementType, Inverse) VALUES ('DEFENDER_IS_OCCUPYING_NON_DISTRICT_REQUIREMENT', 'REQUIREMENT_PLOT_HAS_ANY_DISTRICT', 1);
-INSERT OR REPLACE INTO Requirements (RequirementId, RequirementType) VALUES ('ADJACENT_FRIENDLY_PERSIAN_WARSHIP_REQUIREMENT', 'REQUIREMENT_PLOT_ADJACENT_FRIENDLY_UNIT_TYPE_MATCHES');
+INSERT OR IGNORE INTO Requirements (RequirementId, RequirementType, Inverse) VALUES ('PLOT_IS_NOT_DEFENDED_DISTRICT_REQUIREMENTS', 'REQUIREMENT_PLOT_DISTRICT_IS_DEFENDED', 1);
+INSERT OR IGNORE INTO Requirements (RequirementId, RequirementType) VALUES ('ADJACENT_FRIENDLY_WARRIOR_PRIEST_REQUIREMENT', 'REQUIREMENT_PLOT_ADJACENT_FRIENDLY_UNIT_TYPE_MATCHES');
+INSERT OR IGNORE INTO Requirements (RequirementId, RequirementType, Inverse) VALUES ('DEFENDER_IS_OCCUPYING_NON_DISTRICT_REQUIREMENT', 'REQUIREMENT_PLOT_HAS_ANY_DISTRICT', 1);
+INSERT OR IGNORE INTO Requirements (RequirementId, RequirementType) VALUES ('ADJACENT_FRIENDLY_PERSIAN_WARSHIP_REQUIREMENT', 'REQUIREMENT_PLOT_ADJACENT_FRIENDLY_UNIT_TYPE_MATCHES');
 
 -- R&F/DLC
-INSERT OR REPLACE INTO Requirements (RequirementId, RequirementType) VALUES ('ADJACENT_FRIENDLY_KHMER_WAR_CANOE_REQUIREMENT', 'REQUIREMENT_PLOT_ADJACENT_FRIENDLY_UNIT_TYPE_MATCHES');
-INSERT OR REPLACE INTO Requirements (RequirementId, RequirementType) VALUES ('ADJACENT_FRIENDLY_HUI_HUI_PAO_REQUIREMENT', 'REQUIREMENT_PLOT_ADJACENT_FRIENDLY_UNIT_TYPE_MATCHES');
-INSERT OR REPLACE INTO Requirements (RequirementId, RequirementType) VALUES ('REQUIRES_PLOT_HAS_GRASS', 'REQUIREMENT_PLOT_TERRAIN_TYPE_MATCHES');
+INSERT OR IGNORE INTO Requirements (RequirementId, RequirementType) VALUES ('ADJACENT_FRIENDLY_KHMER_WAR_CANOE_REQUIREMENT', 'REQUIREMENT_PLOT_ADJACENT_FRIENDLY_UNIT_TYPE_MATCHES');
+INSERT OR IGNORE INTO Requirements (RequirementId, RequirementType) VALUES ('ADJACENT_FRIENDLY_HUI_HUI_PAO_REQUIREMENT', 'REQUIREMENT_PLOT_ADJACENT_FRIENDLY_UNIT_TYPE_MATCHES');
+INSERT OR IGNORE INTO Requirements (RequirementId, RequirementType) VALUES ('REQUIRES_PLOT_HAS_GRASS', 'REQUIREMENT_PLOT_TERRAIN_TYPE_MATCHES');
 
 -- Gathering Storm
-INSERT OR REPLACE INTO Requirements (RequirementId, RequirementType) VALUES ('ADJACENT_FRIENDLY_SOFA_REQUIREMENT', 'REQUIREMENT_PLOT_ADJACENT_FRIENDLY_UNIT_TYPE_MATCHES');
-INSERT OR REPLACE INTO Requirements (RequirementId, RequirementType) VALUES ('ADJACENT_FRIENDLY_NAVAL_RANGED_REQUIREMENT', 'REQUIREMENT_PLOT_ADJACENT_FRIENDLY_UNIT_TYPE_MATCHES');
-INSERT OR REPLACE INTO Requirements (RequirementId, RequirementType) VALUES ('PLOT_IS_WITHIN_X_OF_HOLY_SITE_REQUIREMENT', 'REQUIREMENT_PLOT_ADJACENT_DISTRICT_TYPE_MATCHES');
-INSERT OR REPLACE INTO Requirements (RequirementId, RequirementType) VALUES ('REQUIRES_PLOT_HAS_SNOW', 'REQUIREMENT_PLOT_TERRAIN_TYPE_MATCHES');
-INSERT OR REPLACE INTO Requirements (RequirementId, RequirementType) VALUES ('REQUIRES_PLOT_HAS_SNOW_HILLS', 'REQUIREMENT_PLOT_TERRAIN_TYPE_MATCHES');
+INSERT OR IGNORE INTO Requirements (RequirementId, RequirementType) VALUES ('ADJACENT_FRIENDLY_SOFA_REQUIREMENT', 'REQUIREMENT_PLOT_ADJACENT_FRIENDLY_UNIT_TYPE_MATCHES');
+INSERT OR IGNORE INTO Requirements (RequirementId, RequirementType) VALUES ('ADJACENT_FRIENDLY_NAVAL_RANGED_REQUIREMENT', 'REQUIREMENT_PLOT_ADJACENT_FRIENDLY_UNIT_TYPE_MATCHES');
+INSERT OR IGNORE INTO Requirements (RequirementId, RequirementType) VALUES ('PLOT_IS_WITHIN_X_OF_HOLY_SITE_REQUIREMENT', 'REQUIREMENT_PLOT_ADJACENT_DISTRICT_TYPE_MATCHES');
+INSERT OR IGNORE INTO Requirements (RequirementId, RequirementType) VALUES ('REQUIRES_PLOT_HAS_SNOW', 'REQUIREMENT_PLOT_TERRAIN_TYPE_MATCHES');
+INSERT OR IGNORE INTO Requirements (RequirementId, RequirementType) VALUES ('REQUIRES_PLOT_HAS_SNOW_HILLS', 'REQUIREMENT_PLOT_TERRAIN_TYPE_MATCHES');
 
 -- New Frontier Pass
-INSERT OR REPLACE INTO Requirements (RequirementId, RequirementType) VALUES ('REQUIRES_COMBAT_AGAINST_STRONGER_UNIT2', 'REQUIREMENT_OPPONENT_IS_STRONGER');
+INSERT OR IGNORE INTO Requirements (RequirementId, RequirementType) VALUES ('REQUIRES_COMBAT_AGAINST_STRONGER_UNIT2', 'REQUIREMENT_OPPONENT_IS_STRONGER');
 
 
 --RequirementArguments
-INSERT OR REPLACE INTO RequirementArguments (RequirementId, Name, Value) VALUES ('ADJACENT_FRIENDLY_MEDICINE_MAN_REQUIREMENT', 'UnitType', 'UNIT_KONGO_MEDICINE_MAN');
-INSERT OR REPLACE INTO RequirementArguments (RequirementId, Name, Value) VALUES ('ADJACENT_FRIENDLY_NORWEGIAN_ULFHEDNAR_REQUIREMENT', 'UnitType', 'UNIT_NORWEGIAN_ULFHEDNAR');
-INSERT OR REPLACE INTO RequirementArguments (RequirementId, Name, Value) VALUES ('ADJACENT_FRIENDLY_SHIGONG_REQUIREMENT', 'UnitType', 'UNIT_CHINESE_SHIGONG');
-INSERT OR REPLACE INTO RequirementArguments (RequirementId, Name, Value) VALUES ('OPPONENT_IS_NOT_DAMAGED_UNIT_REQUIREMENT', 'MinimumAmount', '1');
-INSERT OR REPLACE INTO RequirementArguments (RequirementId, Name, Value) VALUES ('REQUIRES_PLOT_HAS_PLAINS', 'TerrainType', 'TERRAIN_PLAINS');
-INSERT OR REPLACE INTO RequirementArguments (RequirementId, Name, Value) VALUES ('REQUIRES_PLOT_HAS_PLAINS_HILLS', 'TerrainType', 'TERRAIN_PLAINS_HILLS');
-INSERT OR REPLACE INTO RequirementArguments (RequirementId, Name, Value) VALUES ('REQUIRES_PLOT_HAS_SNOW', 'TerrainType', 'TERRAIN_SNOW');
-INSERT OR REPLACE INTO RequirementArguments (RequirementId, Name, Value) VALUES ('REQUIRES_PLOT_HAS_SNOW_HILLS', 'TerrainType', 'TERRAIN_SNOW_HILLS');
-INSERT OR REPLACE INTO RequirementArguments (RequirementId, Name, Value) VALUES ('REQUIRES_PLOT_WITHIN_EIGHT_OF_ZIGGURAT', 'ImprovementType', 'IMPROVEMENT_ZIGGURAT');
-INSERT OR REPLACE INTO RequirementArguments (RequirementId, Name, Value) VALUES ('REQUIRES_PLOT_WITHIN_EIGHT_OF_ZIGGURAT', 'MaxRange', '8');
-INSERT OR REPLACE INTO RequirementArguments (RequirementId, Name, Value) VALUES ('REQUIRES_PLOT_WITHIN_EIGHT_OF_ZIGGURAT', 'MinRange', '0');
-INSERT OR REPLACE INTO RequirementArguments (RequirementId, Name, Value) VALUES ('REQUIRES_PLOT_WITHIN_ONE_OF_STEPWELL', 'ImprovementType', 'IMPROVEMENT_STEPWELL');
-INSERT OR REPLACE INTO RequirementArguments (RequirementId, Name, Value) VALUES ('REQUIRES_PLOT_WITHIN_ONE_OF_STEPWELL', 'MaxRange', '1');
-INSERT OR REPLACE INTO RequirementArguments (RequirementId, Name, Value) VALUES ('REQUIRES_PLOT_WITHIN_ONE_OF_STEPWELL', 'MinRange', '0');
-INSERT OR REPLACE INTO RequirementArguments (RequirementId, Name, Value) VALUES ('REQUIRES_UNIT_NEXT_TO_LEGION', 'UnitType', 'UNIT_ROMAN_LEGION');
-INSERT OR REPLACE INTO RequirementArguments (RequirementId, Name, Value) VALUES ('REQUIRES_UNIT_NEXT_TO_LONGBOWMAN', 'UnitType', 'UNIT_ENGLISH_LONGBOWMAN');
-INSERT OR REPLACE INTO RequirementArguments (RequirementId, Name, Value) VALUES ('REQUIRES_UNIT_NEXT_TO_ASSEGAI', 'UnitType', 'UNIT_ZULU_ASSEGAI');
-INSERT OR REPLACE INTO RequirementArguments (RequirementId, Name, Value) VALUES ('REQUIRES_UNIT_NEXT_TO_WARRIOR', 'UnitType', 'UNIT_WARRIOR');
-INSERT OR REPLACE INTO RequirementArguments (RequirementId, Name, Value) VALUES ('OPPONENT_IS_LIGHT_CAVALRY_REQUIREMENT', 'UnitPromotionClass', 'PROMOTION_CLASS_LIGHT_CAVALRY');
+INSERT OR IGNORE INTO RequirementArguments (RequirementId, Name, Value) VALUES ('ADJACENT_FRIENDLY_MEDICINE_MAN_REQUIREMENT', 'UnitType', 'UNIT_KONGO_MEDICINE_MAN');
+INSERT OR IGNORE INTO RequirementArguments (RequirementId, Name, Value) VALUES ('ADJACENT_FRIENDLY_NORWEGIAN_ULFHEDNAR_REQUIREMENT', 'UnitType', 'UNIT_NORWEGIAN_ULFHEDNAR');
+INSERT OR IGNORE INTO RequirementArguments (RequirementId, Name, Value) VALUES ('ADJACENT_FRIENDLY_SHIGONG_REQUIREMENT', 'UnitType', 'UNIT_CHINESE_SHIGONG');
+INSERT OR IGNORE INTO RequirementArguments (RequirementId, Name, Value) VALUES ('OPPONENT_IS_NOT_DAMAGED_UNIT_REQUIREMENT', 'MinimumAmount', '1');
+INSERT OR IGNORE INTO RequirementArguments (RequirementId, Name, Value) VALUES ('REQUIRES_PLOT_HAS_PLAINS', 'TerrainType', 'TERRAIN_PLAINS');
+INSERT OR IGNORE INTO RequirementArguments (RequirementId, Name, Value) VALUES ('REQUIRES_PLOT_HAS_PLAINS_HILLS', 'TerrainType', 'TERRAIN_PLAINS_HILLS');
+INSERT OR IGNORE INTO RequirementArguments (RequirementId, Name, Value) VALUES ('REQUIRES_PLOT_HAS_SNOW', 'TerrainType', 'TERRAIN_SNOW');
+INSERT OR IGNORE INTO RequirementArguments (RequirementId, Name, Value) VALUES ('REQUIRES_PLOT_HAS_SNOW_HILLS', 'TerrainType', 'TERRAIN_SNOW_HILLS');
+INSERT OR IGNORE INTO RequirementArguments (RequirementId, Name, Value) VALUES ('REQUIRES_PLOT_WITHIN_EIGHT_OF_ZIGGURAT', 'ImprovementType', 'IMPROVEMENT_ZIGGURAT');
+INSERT OR IGNORE INTO RequirementArguments (RequirementId, Name, Value) VALUES ('REQUIRES_PLOT_WITHIN_EIGHT_OF_ZIGGURAT', 'MaxRange', '8');
+INSERT OR IGNORE INTO RequirementArguments (RequirementId, Name, Value) VALUES ('REQUIRES_PLOT_WITHIN_EIGHT_OF_ZIGGURAT', 'MinRange', '0');
+INSERT OR IGNORE INTO RequirementArguments (RequirementId, Name, Value) VALUES ('REQUIRES_PLOT_WITHIN_ONE_OF_STEPWELL', 'ImprovementType', 'IMPROVEMENT_STEPWELL');
+INSERT OR IGNORE INTO RequirementArguments (RequirementId, Name, Value) VALUES ('REQUIRES_PLOT_WITHIN_ONE_OF_STEPWELL', 'MaxRange', '1');
+INSERT OR IGNORE INTO RequirementArguments (RequirementId, Name, Value) VALUES ('REQUIRES_PLOT_WITHIN_ONE_OF_STEPWELL', 'MinRange', '0');
+INSERT OR IGNORE INTO RequirementArguments (RequirementId, Name, Value) VALUES ('REQUIRES_UNIT_NEXT_TO_LEGION', 'UnitType', 'UNIT_ROMAN_LEGION');
+INSERT OR IGNORE INTO RequirementArguments (RequirementId, Name, Value) VALUES ('REQUIRES_UNIT_NEXT_TO_LONGBOWMAN', 'UnitType', 'UNIT_ENGLISH_LONGBOWMAN');
+INSERT OR IGNORE INTO RequirementArguments (RequirementId, Name, Value) VALUES ('REQUIRES_UNIT_NEXT_TO_ASSEGAI', 'UnitType', 'UNIT_ZULU_ASSEGAI');
+INSERT OR IGNORE INTO RequirementArguments (RequirementId, Name, Value) VALUES ('REQUIRES_UNIT_NEXT_TO_WARRIOR', 'UnitType', 'UNIT_WARRIOR');
+INSERT OR IGNORE INTO RequirementArguments (RequirementId, Name, Value) VALUES ('OPPONENT_IS_LIGHT_CAVALRY_REQUIREMENT', 'UnitPromotionClass', 'PROMOTION_CLASS_LIGHT_CAVALRY');
 
 --DLC
-INSERT OR REPLACE INTO RequirementArguments (RequirementId, Name, Value) VALUES ('ADJACENT_FRIENDLY_WARRIOR_PRIEST_REQUIREMENT', 'UnitType', 'UNIT_AZTEC_WARRIOR_PRIEST');
-INSERT OR REPLACE INTO RequirementArguments (RequirementId, Name, Value) VALUES ('ADJACENT_FRIENDLY_PERSIAN_WARSHIP_REQUIREMENT', 'UnitType', 'UNIT_PERSIAN_WARSHIP');
+INSERT OR IGNORE INTO RequirementArguments (RequirementId, Name, Value) VALUES ('ADJACENT_FRIENDLY_WARRIOR_PRIEST_REQUIREMENT', 'UnitType', 'UNIT_AZTEC_WARRIOR_PRIEST');
+INSERT OR IGNORE INTO RequirementArguments (RequirementId, Name, Value) VALUES ('ADJACENT_FRIENDLY_PERSIAN_WARSHIP_REQUIREMENT', 'UnitType', 'UNIT_PERSIAN_WARSHIP');
 
 -- R&F/DLC
-INSERT OR REPLACE INTO RequirementArguments (RequirementId, Name, Value) VALUES ('ADJACENT_FRIENDLY_KHMER_WAR_CANOE_REQUIREMENT', 'UnitType', 'UNIT_KHMER_WAR_CANOE');
-INSERT OR REPLACE INTO RequirementArguments (RequirementId, Name, Value) VALUES ('REQUIRES_PLOT_HAS_GRASS', 'TerrainType', 'TERRAIN_GRASS');
-INSERT OR REPLACE INTO RequirementArguments (RequirementId, Name, Value) VALUES ('ADJACENT_FRIENDLY_HUI_HUI_PAO_REQUIREMENT', 'UnitType', 'UNIT_MONGOLIAN_HUI_HUI_PAO');
+INSERT OR IGNORE INTO RequirementArguments (RequirementId, Name, Value) VALUES ('ADJACENT_FRIENDLY_KHMER_WAR_CANOE_REQUIREMENT', 'UnitType', 'UNIT_KHMER_WAR_CANOE');
+INSERT OR IGNORE INTO RequirementArguments (RequirementId, Name, Value) VALUES ('REQUIRES_PLOT_HAS_GRASS', 'TerrainType', 'TERRAIN_GRASS');
+INSERT OR IGNORE INTO RequirementArguments (RequirementId, Name, Value) VALUES ('ADJACENT_FRIENDLY_HUI_HUI_PAO_REQUIREMENT', 'UnitType', 'UNIT_MONGOLIAN_HUI_HUI_PAO');
 
 -- Gathering Storm
-INSERT OR REPLACE INTO RequirementArguments (RequirementId, Name, Value) VALUES ('ADJACENT_FRIENDLY_SOFA_REQUIREMENT', 'UnitType', 'UNIT_MALI_SOFA');
-INSERT OR REPLACE INTO RequirementArguments (RequirementId, Name, Value) VALUES ('ADJACENT_FRIENDLY_NAVAL_RANGED_REQUIREMENT', 'UnitType', 'UNIT_ENGLISH_SHIP_OF_THE_LINE');
-INSERT OR REPLACE INTO RequirementArguments (RequirementId, Name, Value) VALUES ('PLOT_IS_WITHIN_X_OF_HOLY_SITE_REQUIREMENT', 'DistrictType', 'DISTRICT_HOLY_SITE');
-INSERT OR REPLACE INTO RequirementArguments (RequirementId, Name, Value) VALUES ('PLOT_IS_WITHIN_X_OF_HOLY_SITE_REQUIREMENT', 'MaxRange', '4');
-INSERT OR REPLACE INTO RequirementArguments (RequirementId, Name, Value) VALUES ('PLOT_IS_WITHIN_X_OF_HOLY_SITE_REQUIREMENT', 'MinRange', '0');
+INSERT OR IGNORE INTO RequirementArguments (RequirementId, Name, Value) VALUES ('ADJACENT_FRIENDLY_SOFA_REQUIREMENT', 'UnitType', 'UNIT_MALI_SOFA');
+INSERT OR IGNORE INTO RequirementArguments (RequirementId, Name, Value) VALUES ('ADJACENT_FRIENDLY_NAVAL_RANGED_REQUIREMENT', 'UnitType', 'UNIT_ENGLISH_SHIP_OF_THE_LINE');
+INSERT OR IGNORE INTO RequirementArguments (RequirementId, Name, Value) VALUES ('PLOT_IS_WITHIN_X_OF_HOLY_SITE_REQUIREMENT', 'DistrictType', 'DISTRICT_HOLY_SITE');
+INSERT OR IGNORE INTO RequirementArguments (RequirementId, Name, Value) VALUES ('PLOT_IS_WITHIN_X_OF_HOLY_SITE_REQUIREMENT', 'MaxRange', '4');
+INSERT OR IGNORE INTO RequirementArguments (RequirementId, Name, Value) VALUES ('PLOT_IS_WITHIN_X_OF_HOLY_SITE_REQUIREMENT', 'MinRange', '0');
 
 
 --RequirementSetRequirements
-INSERT OR REPLACE INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('ADJACENT_MEDICINE_MAN_REQUIREMENTS', 'ADJACENT_FRIENDLY_MEDICINE_MAN_REQUIREMENT');
-INSERT OR REPLACE INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('ADJACENT_NORWEGIAN_ULFHEDNAR_REQUIREMENTS', 'ADJACENT_FRIENDLY_NORWEGIAN_ULFHEDNAR_REQUIREMENT');
-INSERT OR REPLACE INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('ADJACENT_SHIGONG_REQUIREMENTS', 'ADJACENT_FRIENDLY_SHIGONG_REQUIREMENT');
-INSERT OR REPLACE INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('NOT_IN_OWNER_TERRITORY_REQUIREMENTS', 'UNIT_NOT_IN_OWNER_TERRITORY_REQUIREMENT');
-INSERT OR REPLACE INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('OPPONENT_HEAVY_CAVALRY_REQUIREMENTS_MUU', 'ANTI_CAVALRY_OPPONENT_REQUIREMENT_HC');
-INSERT OR REPLACE INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('OPPONENT_LIGHT_CAVALRY_REQUIREMENTS_MUU', 'ANTI_CAVALRY_OPPONENT_REQUIREMENT_LC');
-INSERT OR REPLACE INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('OPPONENT_MELEE_ANTICAV_LIGHTCAV_REQUIREMENTS_MUU', 'OPPONENT_IS_LIGHT_CAVALRY_REQUIREMENT');
-INSERT OR REPLACE INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('OPPONENT_MELEE_ANTICAV_LIGHTCAV_REQUIREMENTS_MUU', 'OPPONENT_ANTI_CAVALRY_REQUIREMENT');
-INSERT OR REPLACE INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('OPPONENT_MELEE_ANTICAV_LIGHTCAV_REQUIREMENTS_MUU', 'OPPONENT_IS_PROMOTION_CLASS_MELEE');
-INSERT OR REPLACE INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('OPPONENT_MELEE_CAVALRY_REQUIREMENTS', 'ANTI_CAVALRY_OPPONENT_REQUIREMENT_HC');
-INSERT OR REPLACE INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('OPPONENT_MELEE_CAVALRY_REQUIREMENTS', 'ANTI_CAVALRY_OPPONENT_REQUIREMENT_LC');
-INSERT OR REPLACE INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('OPPONENT_MELEE_CAVALRY_REQUIREMENTS', 'OPPONENT_IS_PROMOTION_CLASS_MELEE');
-INSERT OR REPLACE INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('PLAYER_IS_ATTACKER_REQUIREMENTS_SET', 'PLAYER_IS_ATTACKER_REQUIREMENTS');
-INSERT OR REPLACE INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('PLAYER_IS_DEFENDER_REQUIREMENTS_SET', 'PLAYER_IS_DEFENDER_REQUIREMENTS');
-INSERT OR REPLACE INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('PLOT_IS_DESERT_OR_PLAINS_REQUIREMENTS', 'REQUIRES_PLOT_HAS_DESERT');
-INSERT OR REPLACE INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('PLOT_IS_DESERT_OR_PLAINS_REQUIREMENTS', 'REQUIRES_PLOT_HAS_DESERT_HILLS');
-INSERT OR REPLACE INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('PLOT_IS_DESERT_OR_PLAINS_REQUIREMENTS', 'REQUIRES_PLOT_HAS_PLAINS');
-INSERT OR REPLACE INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('PLOT_IS_DESERT_OR_PLAINS_REQUIREMENTS', 'REQUIRES_PLOT_HAS_PLAINS_HILLS');
-INSERT OR REPLACE INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('PLOT_IS_FOREST_OR_JUNGLE_REQUIREMENTS', 'PLOT_IS_FOREST_REQUIREMENT');
-INSERT OR REPLACE INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('PLOT_IS_FOREST_OR_JUNGLE_REQUIREMENTS', 'PLOT_IS_JUNGLE_REQUIREMENT');
-INSERT OR REPLACE INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('PLOT_IS_HILLS_REQUIREMENTS', 'PLOT_IS_HILLS_REQUIREMENT');
-INSERT OR REPLACE INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('PLOT_IS_NEXT_TO_LONGBOWMAN_REQUIREMENTS', 'REQUIRES_UNIT_NEXT_TO_LONGBOWMAN');
-INSERT OR REPLACE INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('PLOT_IS_NEXT_TO_ASSEGAI_REQUIREMENTS', 'REQUIRES_UNIT_NEXT_TO_ASSEGAI');
-INSERT OR REPLACE INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('PLOT_IS_NEXT_TO_ROMAN_EARLY_MELEE_REQUIREMENTS', 'REQUIRES_UNIT_NEXT_TO_LEGION');
-INSERT OR REPLACE INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('PLOT_IS_NEXT_TO_ROMAN_EARLY_MELEE_REQUIREMENTS', 'REQUIRES_UNIT_NEXT_TO_WARRIOR');
-INSERT OR REPLACE INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('PLOT_IS_WITHIN_1_OF_STEPWELL_REQUIREMENTS', 'REQUIRES_PLOT_WITHIN_ONE_OF_STEPWELL');
-INSERT OR REPLACE INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('PLOT_IS_WITHIN_8_OF_ZIGGURAT_REQUIREMENTS', 'REQUIRES_PLOT_WITHIN_EIGHT_OF_ZIGGURAT');
-INSERT OR REPLACE INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('OPPONENT_IS_NOT_DAMAGED_REQUIREMENTS', 'OPPONENT_IS_NOT_DAMAGED_UNIT_REQUIREMENT');
+INSERT OR IGNORE INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('ADJACENT_MEDICINE_MAN_REQUIREMENTS', 'ADJACENT_FRIENDLY_MEDICINE_MAN_REQUIREMENT');
+INSERT OR IGNORE INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('ADJACENT_NORWEGIAN_ULFHEDNAR_REQUIREMENTS', 'ADJACENT_FRIENDLY_NORWEGIAN_ULFHEDNAR_REQUIREMENT');
+INSERT OR IGNORE INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('ADJACENT_SHIGONG_REQUIREMENTS', 'ADJACENT_FRIENDLY_SHIGONG_REQUIREMENT');
+INSERT OR IGNORE INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('NOT_IN_OWNER_TERRITORY_REQUIREMENTS', 'UNIT_NOT_IN_OWNER_TERRITORY_REQUIREMENT');
+INSERT OR IGNORE INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('OPPONENT_HEAVY_CAVALRY_REQUIREMENTS_MUU', 'ANTI_CAVALRY_OPPONENT_REQUIREMENT_HC');
+INSERT OR IGNORE INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('OPPONENT_LIGHT_CAVALRY_REQUIREMENTS_MUU', 'ANTI_CAVALRY_OPPONENT_REQUIREMENT_LC');
+INSERT OR IGNORE INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('OPPONENT_MELEE_ANTICAV_LIGHTCAV_REQUIREMENTS_MUU', 'OPPONENT_IS_LIGHT_CAVALRY_REQUIREMENT');
+INSERT OR IGNORE INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('OPPONENT_MELEE_ANTICAV_LIGHTCAV_REQUIREMENTS_MUU', 'OPPONENT_ANTI_CAVALRY_REQUIREMENT');
+INSERT OR IGNORE INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('OPPONENT_MELEE_ANTICAV_LIGHTCAV_REQUIREMENTS_MUU', 'OPPONENT_IS_PROMOTION_CLASS_MELEE');
+INSERT OR IGNORE INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('OPPONENT_MELEE_CAVALRY_REQUIREMENTS', 'ANTI_CAVALRY_OPPONENT_REQUIREMENT_HC');
+INSERT OR IGNORE INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('OPPONENT_MELEE_CAVALRY_REQUIREMENTS', 'ANTI_CAVALRY_OPPONENT_REQUIREMENT_LC');
+INSERT OR IGNORE INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('OPPONENT_MELEE_CAVALRY_REQUIREMENTS', 'OPPONENT_IS_PROMOTION_CLASS_MELEE');
+INSERT OR IGNORE INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('PLAYER_IS_ATTACKER_REQUIREMENTS_SET', 'PLAYER_IS_ATTACKER_REQUIREMENTS');
+INSERT OR IGNORE INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('PLAYER_IS_DEFENDER_REQUIREMENTS_SET', 'PLAYER_IS_DEFENDER_REQUIREMENTS');
+INSERT OR IGNORE INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('PLOT_IS_DESERT_OR_PLAINS_REQUIREMENTS', 'REQUIRES_PLOT_HAS_DESERT');
+INSERT OR IGNORE INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('PLOT_IS_DESERT_OR_PLAINS_REQUIREMENTS', 'REQUIRES_PLOT_HAS_DESERT_HILLS');
+INSERT OR IGNORE INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('PLOT_IS_DESERT_OR_PLAINS_REQUIREMENTS', 'REQUIRES_PLOT_HAS_PLAINS');
+INSERT OR IGNORE INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('PLOT_IS_DESERT_OR_PLAINS_REQUIREMENTS', 'REQUIRES_PLOT_HAS_PLAINS_HILLS');
+INSERT OR IGNORE INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('PLOT_IS_FOREST_OR_JUNGLE_REQUIREMENTS', 'PLOT_IS_FOREST_REQUIREMENT');
+INSERT OR IGNORE INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('PLOT_IS_FOREST_OR_JUNGLE_REQUIREMENTS', 'PLOT_IS_JUNGLE_REQUIREMENT');
+INSERT OR IGNORE INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('PLOT_IS_HILLS_REQUIREMENTS', 'PLOT_IS_HILLS_REQUIREMENT');
+INSERT OR IGNORE INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('PLOT_IS_NEXT_TO_LONGBOWMAN_REQUIREMENTS', 'REQUIRES_UNIT_NEXT_TO_LONGBOWMAN');
+INSERT OR IGNORE INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('PLOT_IS_NEXT_TO_ASSEGAI_REQUIREMENTS', 'REQUIRES_UNIT_NEXT_TO_ASSEGAI');
+INSERT OR IGNORE INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('PLOT_IS_NEXT_TO_ROMAN_EARLY_MELEE_REQUIREMENTS', 'REQUIRES_UNIT_NEXT_TO_LEGION');
+INSERT OR IGNORE INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('PLOT_IS_NEXT_TO_ROMAN_EARLY_MELEE_REQUIREMENTS', 'REQUIRES_UNIT_NEXT_TO_WARRIOR');
+INSERT OR IGNORE INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('PLOT_IS_WITHIN_1_OF_STEPWELL_REQUIREMENTS', 'REQUIRES_PLOT_WITHIN_ONE_OF_STEPWELL');
+INSERT OR IGNORE INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('PLOT_IS_WITHIN_8_OF_ZIGGURAT_REQUIREMENTS', 'REQUIRES_PLOT_WITHIN_EIGHT_OF_ZIGGURAT');
+INSERT OR IGNORE INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('OPPONENT_IS_NOT_DAMAGED_REQUIREMENTS', 'OPPONENT_IS_NOT_DAMAGED_UNIT_REQUIREMENT');
 
 --DLC
-INSERT OR REPLACE INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('NON_DISTRICT_REQUIREMENT_SET', 'PLOT_IS_NOT_DEFENDED_DISTRICT_REQUIREMENTS');
-INSERT OR REPLACE INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('NON_DISTRICT_REQUIREMENT_SET', 'PLAYER_IS_ATTACKER_REQUIREMENTS');
-INSERT OR REPLACE INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('ADJACENT_WARRIOR_PRIEST_REQUIREMENTS', 'ADJACENT_FRIENDLY_WARRIOR_PRIEST_REQUIREMENT');
-INSERT OR REPLACE INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('ATTACKING_DISTRICT_REQUIREMENTS', 'PLAYER_IS_ATTACKER_REQUIREMENTS');
-INSERT OR REPLACE INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('ATTACKING_DISTRICT_REQUIREMENTS', 'DEFENDER_IS_OCCUPYING_DISTRICT_REQUIREMENT');
-INSERT OR REPLACE INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('ATTACKING_NON_DISTRICT_REQUIREMENTS', 'PLAYER_IS_ATTACKER_REQUIREMENTS');
-INSERT OR REPLACE INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('ATTACKING_NON_DISTRICT_REQUIREMENTS', 'DEFENDER_IS_OCCUPYING_NON_DISTRICT_REQUIREMENT');
-INSERT OR REPLACE INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('DEFENDING_DISTRICT_REQUIREMENTS', 'PLAYER_IS_DEFENDER_REQUIREMENTS');
-INSERT OR REPLACE INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('DEFENDING_DISTRICT_REQUIREMENTS', 'DEFENDER_IS_OCCUPYING_DISTRICT_REQUIREMENT');
-INSERT OR REPLACE INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('DEFENDING_NON_DISTRICT_REQUIREMENTS', 'PLAYER_IS_DEFENDER_REQUIREMENTS');
-INSERT OR REPLACE INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('DEFENDING_NON_DISTRICT_REQUIREMENTS', 'DEFENDER_IS_OCCUPYING_NON_DISTRICT_REQUIREMENT');
-INSERT OR REPLACE INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('ADJACENT_PERSIAN_WARSHIP_REQUIREMENTS', 'ADJACENT_FRIENDLY_PERSIAN_WARSHIP_REQUIREMENT');
+INSERT OR IGNORE INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('NON_DISTRICT_REQUIREMENT_SET', 'PLOT_IS_NOT_DEFENDED_DISTRICT_REQUIREMENTS');
+INSERT OR IGNORE INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('NON_DISTRICT_REQUIREMENT_SET', 'PLAYER_IS_ATTACKER_REQUIREMENTS');
+INSERT OR IGNORE INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('ADJACENT_WARRIOR_PRIEST_REQUIREMENTS', 'ADJACENT_FRIENDLY_WARRIOR_PRIEST_REQUIREMENT');
+INSERT OR IGNORE INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('ATTACKING_DISTRICT_REQUIREMENTS', 'PLAYER_IS_ATTACKER_REQUIREMENTS');
+INSERT OR IGNORE INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('ATTACKING_DISTRICT_REQUIREMENTS', 'DEFENDER_IS_OCCUPYING_DISTRICT_REQUIREMENT');
+INSERT OR IGNORE INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('ATTACKING_NON_DISTRICT_REQUIREMENTS', 'PLAYER_IS_ATTACKER_REQUIREMENTS');
+INSERT OR IGNORE INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('ATTACKING_NON_DISTRICT_REQUIREMENTS', 'DEFENDER_IS_OCCUPYING_NON_DISTRICT_REQUIREMENT');
+INSERT OR IGNORE INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('DEFENDING_DISTRICT_REQUIREMENTS', 'PLAYER_IS_DEFENDER_REQUIREMENTS');
+INSERT OR IGNORE INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('DEFENDING_DISTRICT_REQUIREMENTS', 'DEFENDER_IS_OCCUPYING_DISTRICT_REQUIREMENT');
+INSERT OR IGNORE INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('DEFENDING_NON_DISTRICT_REQUIREMENTS', 'PLAYER_IS_DEFENDER_REQUIREMENTS');
+INSERT OR IGNORE INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('DEFENDING_NON_DISTRICT_REQUIREMENTS', 'DEFENDER_IS_OCCUPYING_NON_DISTRICT_REQUIREMENT');
+INSERT OR IGNORE INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('ADJACENT_PERSIAN_WARSHIP_REQUIREMENTS', 'ADJACENT_FRIENDLY_PERSIAN_WARSHIP_REQUIREMENT');
 
 -- R&F/DLC
-INSERT OR REPLACE INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('ADJACENT_KHMER_WAR_CANOE_REQUIREMENTS', 'ADJACENT_FRIENDLY_KHMER_WAR_CANOE_REQUIREMENT');
-INSERT OR REPLACE INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('ADJACENT_HUI_HUI_PAO_REQUIREMENTS', 'ADJACENT_FRIENDLY_HUI_HUI_PAO_REQUIREMENT');
-INSERT OR REPLACE INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('ADJACENT_HUI_HUI_PAO_REQUIREMENTS', 'PLAYER_IS_ATTACKER_REQUIREMENTS');
-INSERT OR REPLACE INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('ADJACENT_HUI_HUI_PAO_REQUIREMENTS', 'DEFENDER_IS_OCCUPYING_DISTRICT_REQUIREMENT');
-INSERT OR REPLACE INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('PLOT_IS_PLAINS_OR_GRASS_REQUIREMENTS', 'REQUIRES_PLOT_HAS_GRASS');
-INSERT OR REPLACE INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('PLOT_IS_PLAINS_OR_GRASS_REQUIREMENTS', 'REQUIRES_PLOT_HAS_PLAINS');
+INSERT OR IGNORE INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('ADJACENT_KHMER_WAR_CANOE_REQUIREMENTS', 'ADJACENT_FRIENDLY_KHMER_WAR_CANOE_REQUIREMENT');
+INSERT OR IGNORE INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('ADJACENT_HUI_HUI_PAO_REQUIREMENTS', 'ADJACENT_FRIENDLY_HUI_HUI_PAO_REQUIREMENT');
+INSERT OR IGNORE INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('ADJACENT_HUI_HUI_PAO_REQUIREMENTS', 'PLAYER_IS_ATTACKER_REQUIREMENTS');
+INSERT OR IGNORE INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('ADJACENT_HUI_HUI_PAO_REQUIREMENTS', 'DEFENDER_IS_OCCUPYING_DISTRICT_REQUIREMENT');
+INSERT OR IGNORE INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('PLOT_IS_PLAINS_OR_GRASS_REQUIREMENTS', 'REQUIRES_PLOT_HAS_GRASS');
+INSERT OR IGNORE INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('PLOT_IS_PLAINS_OR_GRASS_REQUIREMENTS', 'REQUIRES_PLOT_HAS_PLAINS');
 
 -- Gathering Storm
-INSERT OR REPLACE INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('ADJACENT_SOFA_REQUIREMENTS', 'ADJACENT_FRIENDLY_SOFA_REQUIREMENT');
-INSERT OR REPLACE INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('ADJACENT_FRIENDLY_NAVAL_RANGED_REQUIREMENTS', 'ADJACENT_FRIENDLY_NAVAL_RANGED_REQUIREMENT');
-INSERT OR REPLACE INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('PLOT_IS_WITHIN_X_OF_HOLY_SITE_REQUIREMENTS', 'PLOT_IS_WITHIN_X_OF_HOLY_SITE_REQUIREMENT');
-INSERT OR REPLACE INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('PLOT_IS_TUNDRA_OR_SNOW_REQUIREMENTS', 'REQUIRES_PLOT_HAS_SNOW');
-INSERT OR REPLACE INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('PLOT_IS_TUNDRA_OR_SNOW_REQUIREMENTS', 'REQUIRES_PLOT_HAS_TUNDRA');
-INSERT OR REPLACE INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('PLOT_IS_TUNDRA_OR_SNOW_REQUIREMENTS', 'REQUIRES_PLOT_HAS_SNOW_HILLS');
-INSERT OR REPLACE INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('PLOT_IS_TUNDRA_OR_SNOW_REQUIREMENTS', 'REQUIRES_PLOT_HAS_TUNDRA_HILLS');
+INSERT OR IGNORE INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('ADJACENT_SOFA_REQUIREMENTS', 'ADJACENT_FRIENDLY_SOFA_REQUIREMENT');
+INSERT OR IGNORE INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('ADJACENT_FRIENDLY_NAVAL_RANGED_REQUIREMENTS', 'ADJACENT_FRIENDLY_NAVAL_RANGED_REQUIREMENT');
+INSERT OR IGNORE INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('PLOT_IS_WITHIN_X_OF_HOLY_SITE_REQUIREMENTS', 'PLOT_IS_WITHIN_X_OF_HOLY_SITE_REQUIREMENT');
+INSERT OR IGNORE INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('PLOT_IS_TUNDRA_OR_SNOW_REQUIREMENTS', 'REQUIRES_PLOT_HAS_SNOW');
+INSERT OR IGNORE INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('PLOT_IS_TUNDRA_OR_SNOW_REQUIREMENTS', 'REQUIRES_PLOT_HAS_TUNDRA');
+INSERT OR IGNORE INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('PLOT_IS_TUNDRA_OR_SNOW_REQUIREMENTS', 'REQUIRES_PLOT_HAS_SNOW_HILLS');
+INSERT OR IGNORE INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('PLOT_IS_TUNDRA_OR_SNOW_REQUIREMENTS', 'REQUIRES_PLOT_HAS_TUNDRA_HILLS');
 
 -- New Frontier Pass
-INSERT OR REPLACE INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('ATTACKING_RANGED_REQUIREMENTS', 'PLAYER_IS_ATTACKER_REQUIREMENTS');
-INSERT OR REPLACE INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('ATTACKING_RANGED_REQUIREMENTS', 'OPPONENT_RANGED_REQUIREMENT');
-INSERT OR REPLACE INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('COMBAT_AGAINST_STRONGER_UNIT_REQUIREMENTS2', 'REQUIRES_COMBAT_AGAINST_STRONGER_UNIT2');
-INSERT OR REPLACE INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('PLOT_IS_JUNGLE_FOREST_MARSH_REQUIREMENTS', 'PLOT_IS_FOREST_REQUIREMENT');
-INSERT OR REPLACE INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('PLOT_IS_JUNGLE_FOREST_MARSH_REQUIREMENTS', 'PLOT_IS_JUNGLE_REQUIREMENT');
-INSERT OR REPLACE INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('PLOT_IS_JUNGLE_FOREST_MARSH_REQUIREMENTS', 'PLOT_IS_MARSH_REQUIREMENT');
+INSERT OR IGNORE INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('ATTACKING_RANGED_REQUIREMENTS', 'PLAYER_IS_ATTACKER_REQUIREMENTS');
+INSERT OR IGNORE INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('ATTACKING_RANGED_REQUIREMENTS', 'OPPONENT_RANGED_REQUIREMENT');
+INSERT OR IGNORE INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('COMBAT_AGAINST_STRONGER_UNIT_REQUIREMENTS2', 'REQUIRES_COMBAT_AGAINST_STRONGER_UNIT2');
+INSERT OR IGNORE INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('PLOT_IS_JUNGLE_FOREST_MARSH_REQUIREMENTS', 'PLOT_IS_FOREST_REQUIREMENT');
+INSERT OR IGNORE INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('PLOT_IS_JUNGLE_FOREST_MARSH_REQUIREMENTS', 'PLOT_IS_JUNGLE_REQUIREMENT');
+INSERT OR IGNORE INTO RequirementSetRequirements (RequirementSetId, RequirementId) VALUES ('PLOT_IS_JUNGLE_FOREST_MARSH_REQUIREMENTS', 'PLOT_IS_MARSH_REQUIREMENT');
 
 
 -- Modifiers
@@ -1588,44 +1588,41 @@ INSERT INTO ModifierArguments (ModifierId, Name, Value) VALUES ('PLUS_X_DISTRICT
 INSERT INTO ModifierArguments (ModifierId, Name, Value) VALUES ('PLUS_X_VERSUS_STRONGER_UNITS', 'Amount', '6'); -- Mehal
 INSERT INTO ModifierArguments (ModifierId, Name, Value) VALUES ('INVISIBLE_ON_RAINFOREST_FOREST_MARSH', 'Hidden', 'true'); -- VietCong
 
--- Polish Winged Hussar Fix
-UPDATE Units SET MandatoryObsoleteTech = 'TECH_COMPOSITES' WHERE UnitType = 'UNIT_POLISH_HUSSAR';
-
 
 /* ------------------------- */
 /* Rise & Fall Compatibility */
 /* ------------------------- */
 
-INSERT OR REPLACE INTO UnitUpgrades SELECT 'UNIT_GERMAN_LANDSKNECHT', 'UNIT_PIKE_AND_SHOT' WHERE EXISTS (SELECT 1 FROM Units WHERE UnitType = 'UNIT_PIKE_AND_SHOT');
-INSERT OR REPLACE INTO UnitUpgrades SELECT 'UNIT_JAPANESE_SOHEI', 'UNIT_PIKE_AND_SHOT' WHERE EXISTS (SELECT 1 FROM Units WHERE UnitType = 'UNIT_PIKE_AND_SHOT');
-INSERT OR REPLACE INTO UnitUpgrades SELECT 'UNIT_BRAZILIAN_BANDEIRANTE', 'UNIT_SPEC_OPS' WHERE EXISTS (SELECT 1 FROM Units WHERE UnitType = 'UNIT_SPEC_OPS');
+-- INSERT OR IGNORE INTO UnitUpgrades SELECT 'UNIT_GERMAN_LANDSKNECHT', 'UNIT_PIKE_AND_SHOT' WHERE EXISTS (SELECT 1 FROM Units WHERE UnitType = 'UNIT_PIKE_AND_SHOT');
+-- INSERT OR IGNORE INTO UnitUpgrades SELECT 'UNIT_JAPANESE_SOHEI', 'UNIT_PIKE_AND_SHOT' WHERE EXISTS (SELECT 1 FROM Units WHERE UnitType = 'UNIT_PIKE_AND_SHOT');
+-- INSERT OR IGNORE INTO UnitUpgrades SELECT 'UNIT_BRAZILIAN_BANDEIRANTE', 'UNIT_SPEC_OPS' WHERE EXISTS (SELECT 1 FROM Units WHERE UnitType = 'UNIT_SPEC_OPS');
 
-INSERT OR REPLACE INTO UnitUpgrades SELECT 'UNIT_MAPUCHE_GUERILLA', 'UNIT_PIKE_AND_SHOT'
+INSERT OR IGNORE INTO UnitUpgrades SELECT 'UNIT_MAPUCHE_GUERILLA', 'UNIT_PIKE_AND_SHOT'
 WHERE EXISTS (SELECT 1 FROM Units WHERE UnitType = 'UNIT_PIKE_AND_SHOT')
 AND   EXISTS (SELECT 1 FROM Units WHERE UnitType = 'UNIT_MAPUCHE_GUERILLA');
 
-INSERT OR REPLACE INTO UnitUpgrades SELECT 'UNIT_MAORI_TUPARA', 'UNIT_SPEC_OPS'
+INSERT OR IGNORE INTO UnitUpgrades SELECT 'UNIT_MAORI_TUPARA', 'UNIT_SPEC_OPS'
 WHERE EXISTS (SELECT 1 FROM Units WHERE UnitType = 'UNIT_SPEC_OPS')
 AND   EXISTS (SELECT 1 FROM Units WHERE UnitType = 'UNIT_MAORI_TUPARA');
 
-INSERT OR REPLACE INTO UnitReplaces SELECT 'UNIT_SPANISH_TERCIO', 'UNIT_PIKE_AND_SHOT' WHERE EXISTS (SELECT 1 FROM Units WHERE UnitType = 'UNIT_PIKE_AND_SHOT');
+-- INSERT OR IGNORE INTO UnitIGNOREs SELECT 'UNIT_SPANISH_TERCIO', 'UNIT_PIKE_AND_SHOT' WHERE EXISTS (SELECT 1 FROM Units WHERE UnitType = 'UNIT_PIKE_AND_SHOT');
 
-UPDATE Units SET Cost = 140 WHERE UnitType = 'UNIT_GEORGIAN_KHEVSURETI' AND EXISTS (SELECT 1 FROM Units WHERE UnitType = 'UNIT_GEORGIAN_KHEVSURETI');
+-- UPDATE Units SET Cost = 140 WHERE UnitType = 'UNIT_GEORGIAN_KHEVSURETI' AND EXISTS (SELECT 1 FROM Units WHERE UnitType = 'UNIT_GEORGIAN_KHEVSURETI');
 
 
 /* ----------------------------- */
 /* Gathering Storm Compatibility */
 /* ----------------------------- */
 
-INSERT OR REPLACE INTO UnitReplaces (CivUniqueUnitType, ReplacesUnitType) SELECT 'UNIT_RUSSIAN_DRUZHINA', 'UNIT_COURSER'
+INSERT OR IGNORE INTO UnitIGNOREs (CivUniqueUnitType, IGNOREsUnitType) SELECT 'UNIT_RUSSIAN_DRUZHINA', 'UNIT_COURSER'
 WHERE EXISTS (SELECT 1 FROM Units WHERE UnitType = 'UNIT_COURSER')
 AND   EXISTS (SELECT 1 FROM Units WHERE UnitType = 'UNIT_RUSSIAN_DRUZHINA');
 
-INSERT OR REPLACE INTO UnitReplaces (CivUniqueUnitType, ReplacesUnitType) SELECT 'UNIT_SPANISH_JINETE', 'UNIT_COURSER'
+INSERT OR IGNORE INTO UnitIGNOREs (CivUniqueUnitType, IGNOREsUnitType) SELECT 'UNIT_SPANISH_JINETE', 'UNIT_COURSER'
 WHERE EXISTS (SELECT 1 FROM Units WHERE UnitType = 'UNIT_COURSER')
 AND   EXISTS (SELECT 1 FROM Units WHERE UnitType = 'UNIT_SPANISH_JINETE');
 
-INSERT OR REPLACE INTO UnitReplaces (CivUniqueUnitType, ReplacesUnitType) SELECT 'UNIT_AMERICAN_ROUGH_RIDER', 'UNIT_CUIRASSIER'
+INSERT OR IGNORE INTO UnitIGNOREs (CivUniqueUnitType, IGNOREsUnitType) SELECT 'UNIT_AMERICAN_ROUGH_RIDER', 'UNIT_CUIRASSIER'
 WHERE EXISTS (SELECT 1 FROM Units WHERE UnitType = 'UNIT_CUIRASSIER')
 AND   EXISTS (SELECT 1 FROM Units WHERE UnitType = 'UNIT_AMERICAN_ROUGH_RIDER');
 
@@ -1649,16 +1646,16 @@ INSERT INTO UnitUpgrades (Unit, UpgradeUnit) SELECT 'UNIT_NORWEGIAN_HIRDMAN', 'U
 /* Steel & Thunder Compatibility */
 /* ----------------------------- */
 
--- Unit Replaces
-INSERT OR REPLACE INTO UnitReplaces (CivUniqueUnitType, ReplacesUnitType) SELECT 'UNIT_RUSSIAN_DRUZHINA', 'UNIT_DLV_MEDIEVAL_HORSEMAN'
+-- Unit IGNOREs
+INSERT OR IGNORE INTO UnitIGNOREs (CivUniqueUnitType, IGNOREsUnitType) SELECT 'UNIT_RUSSIAN_DRUZHINA', 'UNIT_DLV_MEDIEVAL_HORSEMAN'
 WHERE EXISTS (SELECT 1 FROM Units WHERE UnitType = 'UNIT_DLV_MEDIEVAL_HORSEMAN')
 AND   EXISTS (SELECT 1 FROM Units WHERE UnitType = 'UNIT_RUSSIAN_DRUZHINA');
 
-INSERT OR REPLACE INTO UnitReplaces (CivUniqueUnitType, ReplacesUnitType) SELECT 'UNIT_SPANISH_JINETE', 'UNIT_DLV_MEDIEVAL_HORSEMAN'
+INSERT OR IGNORE INTO UnitIGNOREs (CivUniqueUnitType, IGNOREsUnitType) SELECT 'UNIT_SPANISH_JINETE', 'UNIT_DLV_MEDIEVAL_HORSEMAN'
 WHERE EXISTS (SELECT 1 FROM Units WHERE UnitType = 'UNIT_DLV_MEDIEVAL_HORSEMAN')
 AND   EXISTS (SELECT 1 FROM Units WHERE UnitType = 'UNIT_SPANISH_JINETE');
 
-INSERT OR REPLACE INTO UnitReplaces (CivUniqueUnitType, ReplacesUnitType) SELECT 'UNIT_AMERICAN_ROUGH_RIDER', 'UNIT_DLV_CUIRASSIER'
+INSERT OR IGNORE INTO UnitIGNOREs (CivUniqueUnitType, IGNOREsUnitType) SELECT 'UNIT_AMERICAN_ROUGH_RIDER', 'UNIT_DLV_CUIRASSIER'
 WHERE EXISTS (SELECT 1 FROM Units WHERE UnitType = 'UNIT_DLV_CUIRASSIER')
 AND   EXISTS (SELECT 1 FROM Units WHERE UnitType = 'UNIT_AMERICAN_ROUGH_RIDER');
 
