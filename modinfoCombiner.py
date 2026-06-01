@@ -22,7 +22,7 @@ def get_mod_folders():
         'CIVITASResources',
         'DistrictIcons',
         'Europe/AlfredEscher',
-        'Europe/Bohemia',
+        'Europe/Bismark',
         'Europe/Finland',
         'Europe/GaulVercingetorix',
         'Europe/Switzerland',

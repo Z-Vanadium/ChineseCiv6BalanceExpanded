@@ -4,7 +4,7 @@
 		<Name>CCB 文明拓展 WIP 2.0</Name>
 		<Version>2000</Version>
 		<Description>中国特色新文明拓展模组，取代BBG Expand。</Description>
-		<Authors>CCB制作组, ChimpanG, Chrisy15, Digihuman, JFD, Leugi, Leugi., Lime, Merrick, Rıaın, SailorCat, SeelingCat, Sukritact, Vanadium, clapyourhands, p0kiehl, thecrazyscotsman (alphabetical order)</Authors>
+		<Authors>CCB制作组, ChimpanG, Chrisy15, Digihuman, Gedemo, JFD, Leugi, Leugi., Lime, Merrick, Rıaın, SailorCat, SeelingCat, Sukritact, Vanadium, p0kiehl, thecrazyscotsman (alphabetical order)</Authors>
 		<SpecialThanks>Alexxis, BBG Expand, BBG制作组, Cat, ChimpanG, Chrisy, Darth, DarthKyofu, DarthStarkiller, Deliverator, Dray, Enigma, JFD, LeeS, Leugi, Relic, Sailor, SailorCat, SeelingCat, Senshidenshi, Sloth, Sukritact, TranquilSilence, WeeklyMeat, Zebenji, Zharques, p0khiel (alphabetical order)</SpecialThanks>
 		<CompatibleVersions>1.2,2.0</CompatibleVersions>
 	</Properties>
@@ -43,11 +43,6 @@
 		</Criteria>
 		<Criteria id="XP2">
 			<RuleSetInUse>RULESET_EXPANSION_2</RuleSetInUse>
-		</Criteria>
-		<Criteria id="Expansion1">
-			<GameModeInUse>
-				<GameCoreInUse>Expansion1</GameCoreInUse>
-			</GameModeInUse>
 		</Criteria>
 		<Criteria id="Suk_Vercingetorix">
 			<LeaderPlayable>Players:StandardPlayers::LEADER_SUK_VERCINGETORIX,StandardPlayers::LEADER_SUK_VERCINGETORIX,Players:Expansion1_Players::LEADER_SUK_VERCINGETORIX,Players:Expansion2_Players::LEADER_SUK_VERCINGETORIX</LeaderPlayable>
@@ -283,24 +278,20 @@
 			<File>Europe/AlfredEscher/Core/Escher_Colors.sql</File>
 		</UpdateColors>
 		<UpdateDatabase id="NewAction">
-			<File>Europe/Bohemia/Leader/Leader_Config.sql</File>
-			<File priority="5500">Europe/Bohemia/Core/Civilization_Sui_Generis_ModSupport.sql</File>
+			<File>Europe/Bismark/Core/Config.xml</File>
 		</UpdateDatabase>
-		<UpdateText id="NewAction">
-			<File>Europe/Bohemia/Core/Civilization_Localisation.sql</File>
-			<File>Europe/Bohemia/Leader/Leader_Localisation.sql</File>
-		</UpdateText>
-		<UpdateColors id="NewAction">
-			<File>Europe/Bohemia/Core/Civilization_Colors.sql</File>
-			<File>Europe/Bohemia/Leader/Leader_Colors.sql</File>
-		</UpdateColors>
 		<UpdateArt id="NewAction">
-			<File>Europe/Bohemia/CYH_Bohemia.dep</File>
+			<File>Europe/Bismark/Gedemo Bismarck.dep</File>
 		</UpdateArt>
-		<UpdateIcons id="UpdateIcons">
-			<File>Europe/Bohemia/Core/NewIcons.sql</File>
-			<File priority="200">Europe/Bohemia/Core/Civilization_Unique_District_Icons_Support.sql</File>
+		<UpdateText id="NewAction">
+			<File>Europe/Bismark/Core/Bismark_Text.xml</File>
+		</UpdateText>
+		<UpdateIcons id="NewAction">
+			<File>Europe/Bismark/Core/Bismark_Icons.xml</File>
 		</UpdateIcons>
+		<UpdateColors id="NewAction">
+			<File>Europe/Bismark/Core/Colour.sql</File>
+		</UpdateColors>
 		<UpdateDatabase id="NewAction">
 			<File>Europe/Finland/Core/Finland_Config.xml</File>
 		</UpdateDatabase>
@@ -847,42 +838,25 @@
 			<File>Europe/AlfredEscher/Core/Escher_Colors.sql</File>
 		</UpdateColors>
 		<UpdateDatabase id="NewAction">
-			<File>Europe/Bohemia/Core/Civilization_Config.sql</File>
-			<File>Europe/Bohemia/Leader/Leader_Core.sql</File>
-			<File>Europe/Bohemia/Core/Civilization_UA.sql</File>
-			<File>Europe/Bohemia/Core/Civilization_UI.sql</File>
-			<File>Europe/Bohemia/Core/Civilization_UU.sql</File>
-			<File>Europe/Bohemia/Leader/Leader_UA.sql</File>
-			<File>Europe/Bohemia/Leader/Leader_Agenda.sql</File>
-			<File>Europe/Bohemia/Leader/Leader_Screens.sql</File>
-			<File>Europe/Bohemia/Core/Civilization_HistoricMoments.sql</File>
-			<File>Europe/Bohemia/Core/Civilization_UD.sql</File>
-			<File priority="110">Europe/Bohemia/Core/Civilization_Historic_Religion_ModSupport.sql</File>
-			<File priority="110">Europe/Bohemia/Core/Civilization_Sui_Generis_ModSupport.sql</File>
-			<File priority="200">Europe/Bohemia/Core/Civilization_Historical_Spawn_Dates_ModSupport.sql</File>
-			<File priority="200">Europe/Bohemia/Core/Civilization_YNAEMP_ModSupport.sql</File>
+			<Properties>
+				<LoadOrder>92120</LoadOrder>
+			</Properties>
+			<File>Europe/Bismark/Core/Template_GameDefines.sql</File>
+			<File>Europe/Bismark/Core/MJ_ynaempSupportTable.sql</File>
+			<File>Europe/Bismark/Core/Oldworld.sql</File>
 		</UpdateDatabase>
-		<UpdateColors id="NewAction">
-			<File>Europe/Bohemia/Core/Civilization_Colors.sql</File>
-			<File>Europe/Bohemia/Leader/Leader_Colors.sql</File>
-		</UpdateColors>
-		<UpdateText id="NewAction">
-			<File>Europe/Bohemia/Core/Civilization_Localisation.sql</File>
-			<File>Europe/Bohemia/Leader/Leader_Localisation.sql</File>
-		</UpdateText>
-		<UpdateIcons id="NewIcons">
-			<File>Europe/Bohemia/Core/NewIcons.sql</File>
-			<File priority="200">Europe/Bohemia/Core/Civilization_Unique_District_Icons_Support.sql</File>
+		<UpdateIcons id="NewAction">
+			<File>Europe/Bismark/Core/Bismark_Icons.xml</File>
 		</UpdateIcons>
+		<UpdateText id="NewAction">
+			<File>Europe/Bismark/Core/Bismark_Text.xml</File>
+		</UpdateText>
 		<UpdateArt id="NewAction">
-			<File>Europe/Bohemia/CYH_Bohemia.dep</File>
+			<File>Europe/Bismark/Gedemo Bismarck.dep</File>
 		</UpdateArt>
-		<UpdateAudio id="NewAction">
-			<File>Europe/Bohemia/Platforms/Windows/Audio/CYH_BOHEMIA_Soundbank.ini</File>
-			<File>Europe/Bohemia/Platforms/Windows/Audio/CYH_BOHEMIA_Soundbank.bnk</File>
-			<File>Europe/Bohemia/Platforms/Windows/Audio/SoundbanksInfo.xml</File>
-			<File>Europe/Bohemia/Platforms/Windows/Audio/CYH_BOHEMIA_Soundbank.txt</File>
-		</UpdateAudio>
+		<UpdateColors id="NewAction">
+			<File>Europe/Bismark/Core/Colour.sql</File>
+		</UpdateColors>
 		<UpdateDatabase id="NewAction">
 			<File>Europe/Finland/Core/Finland_GameDefines.sql</File>
 			<File>Europe/Finland/Core/Finland_Moments.sql</File>
@@ -1755,138 +1729,51 @@
 		<File>Europe/AlfredEscher/Platforms/Windows/BLPs/UI/Icons.blp</File>
 		<File>Europe/AlfredEscher/XLPs/Icons.xlp</File>
 		<File>Europe/AlfredEscher/XLPs/LeaderFallbacks.xlp</File>
-		<File>Europe/Bohemia/ArtDefs/Civilizations.artdef</File>
-		<File>Europe/Bohemia/ArtDefs/Cultures.artdef</File>
-		<File>Europe/Bohemia/ArtDefs/Districts.artdef</File>
-		<File>Europe/Bohemia/ArtDefs/FallbackLeaders.artdef</File>
-		<File>Europe/Bohemia/ArtDefs/Improvements.artdef</File>
-		<File>Europe/Bohemia/ArtDefs/Units.artdef</File>
-		<File>Europe/Bohemia/Core/Civilization_Colors.sql</File>
-		<File>Europe/Bohemia/Core/Civilization_Config.sql</File>
-		<File>Europe/Bohemia/Core/Civilization_Historical_Spawn_Dates_ModSupport.sql</File>
-		<File>Europe/Bohemia/Core/Civilization_HistoricMoments.sql</File>
-		<File>Europe/Bohemia/Core/Civilization_Historic_Religion_ModSupport.sql</File>
-		<File>Europe/Bohemia/Core/Civilization_Localisation.sql</File>
-		<File>Europe/Bohemia/Core/Civilization_Sui_Generis_ModSupport.sql</File>
-		<File>Europe/Bohemia/Core/Civilization_UA.sql</File>
-		<File>Europe/Bohemia/Core/Civilization_UD.sql</File>
-		<File>Europe/Bohemia/Core/Civilization_UI.sql</File>
-		<File>Europe/Bohemia/Core/Civilization_Unique_District_Icons_Support.sql</File>
-		<File>Europe/Bohemia/Core/Civilization_UU.sql</File>
-		<File>Europe/Bohemia/Core/Civilization_YNAEMP_ModSupport.sql</File>
-		<File>Europe/Bohemia/Core/NewIcons.sql</File>
-		<File>Europe/Bohemia/Credits.txt</File>
-		<File>Europe/Bohemia/CYH_Bohemia.Art.xml</File>
-		<File>Europe/Bohemia/CYH_Bohemia.dep</File>
-		<File>Europe/Bohemia/Leader/Leader_Agenda.sql</File>
-		<File>Europe/Bohemia/Leader/Leader_Colors.sql</File>
-		<File>Europe/Bohemia/Leader/Leader_Config.sql</File>
-		<File>Europe/Bohemia/Leader/Leader_Core.sql</File>
-		<File>Europe/Bohemia/Leader/Leader_Localisation.sql</File>
-		<File>Europe/Bohemia/Leader/Leader_Screens.sql</File>
-		<File>Europe/Bohemia/Leader/Leader_UA.sql</File>
-		<File>Europe/Bohemia/Platforms/Windows/Audio/246146550.wem</File>
-		<File>Europe/Bohemia/Platforms/Windows/Audio/246967795.wem</File>
-		<File>Europe/Bohemia/Platforms/Windows/Audio/345665199.wem</File>
-		<File>Europe/Bohemia/Platforms/Windows/Audio/376691277.wem</File>
-		<File>Europe/Bohemia/Platforms/Windows/Audio/385105153.wem</File>
-		<File>Europe/Bohemia/Platforms/Windows/Audio/397156261.wem</File>
-		<File>Europe/Bohemia/Platforms/Windows/Audio/420368145.wem</File>
-		<File>Europe/Bohemia/Platforms/Windows/Audio/48737532.wem</File>
-		<File>Europe/Bohemia/Platforms/Windows/Audio/542620721.wem</File>
-		<File>Europe/Bohemia/Platforms/Windows/Audio/546832394.wem</File>
-		<File>Europe/Bohemia/Platforms/Windows/Audio/651928400.wem</File>
-		<File>Europe/Bohemia/Platforms/Windows/Audio/892960468.wem</File>
-		<File>Europe/Bohemia/Platforms/Windows/Audio/987874820.wem</File>
-		<File>Europe/Bohemia/Platforms/Windows/Audio/CYH_BOHEMIA_Soundbank.bnk</File>
-		<File>Europe/Bohemia/Platforms/Windows/Audio/CYH_BOHEMIA_Soundbank.ini</File>
-		<File>Europe/Bohemia/Platforms/Windows/Audio/CYH_BOHEMIA_Soundbank.txt</File>
-		<File>Europe/Bohemia/Platforms/Windows/Audio/PluginInfo.xml</File>
-		<File>Europe/Bohemia/Platforms/Windows/Audio/SoundbanksInfo.xml</File>
-		<File>Europe/Bohemia/Platforms/Windows/BLPs/LeaderFallbacks.blp</File>
-		<File>Europe/Bohemia/Platforms/Windows/BLPs/UI/Icons.blp</File>
-		<File>Europe/Bohemia/Textures/BohemiaAtlas200.dds</File>
-		<File>Europe/Bohemia/Textures/BohemiaAtlas200.tex</File>
-		<File>Europe/Bohemia/Textures/BohemiaAtlas22.dds</File>
-		<File>Europe/Bohemia/Textures/BohemiaAtlas22.tex</File>
-		<File>Europe/Bohemia/Textures/BohemiaAtlas256.dds</File>
-		<File>Europe/Bohemia/Textures/BohemiaAtlas256.tex</File>
-		<File>Europe/Bohemia/Textures/BohemiaAtlas30.dds</File>
-		<File>Europe/Bohemia/Textures/BohemiaAtlas30.tex</File>
-		<File>Europe/Bohemia/Textures/BohemiaAtlas36.dds</File>
-		<File>Europe/Bohemia/Textures/BohemiaAtlas36.tex</File>
-		<File>Europe/Bohemia/Textures/BohemiaAtlas44.dds</File>
-		<File>Europe/Bohemia/Textures/BohemiaAtlas44.tex</File>
-		<File>Europe/Bohemia/Textures/BohemiaAtlas48.dds</File>
-		<File>Europe/Bohemia/Textures/BohemiaAtlas48.tex</File>
-		<File>Europe/Bohemia/Textures/BohemiaAtlas50.dds</File>
-		<File>Europe/Bohemia/Textures/BohemiaAtlas50.tex</File>
-		<File>Europe/Bohemia/Textures/BohemiaAtlas64.dds</File>
-		<File>Europe/Bohemia/Textures/BohemiaAtlas64.tex</File>
-		<File>Europe/Bohemia/Textures/BohemiaAtlas80.dds</File>
-		<File>Europe/Bohemia/Textures/BohemiaAtlas80.tex</File>
-		<File>Europe/Bohemia/Textures/BohemiaColorAtlas256.dds</File>
-		<File>Europe/Bohemia/Textures/BohemiaColorAtlas256.tex</File>
-		<File>Europe/Bohemia/Textures/FALLBACK_NEUTRAL_CYH_JAN_ZIZKA.dds</File>
-		<File>Europe/Bohemia/Textures/FALLBACK_NEUTRAL_CYH_JAN_ZIZKA.tex</File>
-		<File>Europe/Bohemia/Textures/JanZizkaIcon256.dds</File>
-		<File>Europe/Bohemia/Textures/JanZizkaIcon256.tex</File>
-		<File>Europe/Bohemia/Textures/JanZizkaIcon32.dds</File>
-		<File>Europe/Bohemia/Textures/JanZizkaIcon32.tex</File>
-		<File>Europe/Bohemia/Textures/JanZizkaIcon45.dds</File>
-		<File>Europe/Bohemia/Textures/JanZizkaIcon45.tex</File>
-		<File>Europe/Bohemia/Textures/JanZizkaIcon48.dds</File>
-		<File>Europe/Bohemia/Textures/JanZizkaIcon48.tex</File>
-		<File>Europe/Bohemia/Textures/JanZizkaIcon50.dds</File>
-		<File>Europe/Bohemia/Textures/JanZizkaIcon50.tex</File>
-		<File>Europe/Bohemia/Textures/JanZizkaIcon55.dds</File>
-		<File>Europe/Bohemia/Textures/JanZizkaIcon55.tex</File>
-		<File>Europe/Bohemia/Textures/JanZizkaIcon64.dds</File>
-		<File>Europe/Bohemia/Textures/JanZizkaIcon64.tex</File>
-		<File>Europe/Bohemia/Textures/JanZizkaIcon80.dds</File>
-		<File>Europe/Bohemia/Textures/JanZizkaIcon80.tex</File>
-		<File>Europe/Bohemia/Textures/LEADER_CYH_JAN_ZIZKA_BACKGROUND.dds</File>
-		<File>Europe/Bohemia/Textures/LEADER_CYH_JAN_ZIZKA_BACKGROUND.tex</File>
-		<File>Europe/Bohemia/Textures/LEADER_CYH_JAN_ZIZKA_DIPLO_BG.dds</File>
-		<File>Europe/Bohemia/Textures/LEADER_CYH_JAN_ZIZKA_DIPLO_BG.tex</File>
-		<File>Europe/Bohemia/Textures/LEADER_CYH_JAN_ZIZKA_NEUTRAL.dds</File>
-		<File>Europe/Bohemia/Textures/LEADER_CYH_JAN_ZIZKA_NEUTRAL.tex</File>
-		<File>Europe/Bohemia/Textures/RoyalMintAtlas128.dds</File>
-		<File>Europe/Bohemia/Textures/RoyalMintAtlas128.tex</File>
-		<File>Europe/Bohemia/Textures/RoyalMintAtlas22.dds</File>
-		<File>Europe/Bohemia/Textures/RoyalMintAtlas22.tex</File>
-		<File>Europe/Bohemia/Textures/RoyalMintAtlas256.dds</File>
-		<File>Europe/Bohemia/Textures/RoyalMintAtlas256.tex</File>
-		<File>Europe/Bohemia/Textures/RoyalMintAtlas32.dds</File>
-		<File>Europe/Bohemia/Textures/RoyalMintAtlas32.tex</File>
-		<File>Europe/Bohemia/Textures/RoyalMintAtlas38.dds</File>
-		<File>Europe/Bohemia/Textures/RoyalMintAtlas38.tex</File>
-		<File>Europe/Bohemia/Textures/RoyalMintAtlas50.dds</File>
-		<File>Europe/Bohemia/Textures/RoyalMintAtlas50.tex</File>
-		<File>Europe/Bohemia/Textures/RoyalMintAtlas80.dds</File>
-		<File>Europe/Bohemia/Textures/RoyalMintAtlas80.tex</File>
-		<File>Europe/Bohemia/Textures/RoyalMintHistoricMoment.dds</File>
-		<File>Europe/Bohemia/Textures/RoyalMintHistoricMoment.tex</File>
-		<File>Europe/Bohemia/Textures/WagonFortAtlas200.dds</File>
-		<File>Europe/Bohemia/Textures/WagonFortAtlas200.tex</File>
-		<File>Europe/Bohemia/Textures/WagonFortAtlas22.dds</File>
-		<File>Europe/Bohemia/Textures/WagonFortAtlas22.tex</File>
-		<File>Europe/Bohemia/Textures/WagonFortAtlas256.dds</File>
-		<File>Europe/Bohemia/Textures/WagonFortAtlas256.tex</File>
-		<File>Europe/Bohemia/Textures/WagonFortAtlas32.dds</File>
-		<File>Europe/Bohemia/Textures/WagonFortAtlas32.tex</File>
-		<File>Europe/Bohemia/Textures/WagonFortAtlas38.dds</File>
-		<File>Europe/Bohemia/Textures/WagonFortAtlas38.tex</File>
-		<File>Europe/Bohemia/Textures/WagonFortAtlas50.dds</File>
-		<File>Europe/Bohemia/Textures/WagonFortAtlas50.tex</File>
-		<File>Europe/Bohemia/Textures/WagonFortAtlas70.dds</File>
-		<File>Europe/Bohemia/Textures/WagonFortAtlas70.tex</File>
-		<File>Europe/Bohemia/Textures/WagonFortAtlas80.dds</File>
-		<File>Europe/Bohemia/Textures/WagonFortAtlas80.tex</File>
-		<File>Europe/Bohemia/Textures/WagonFortAtlas95.dds</File>
-		<File>Europe/Bohemia/Textures/WagonFortAtlas95.tex</File>
-		<File>Europe/Bohemia/Textures/WagonFortHistoricMoment.dds</File>
-		<File>Europe/Bohemia/Textures/WagonFortHistoricMoment.tex</File>
+		<File>Europe/Bismark/ArtDefs/FallbackLeaders.artdef</File>
+		<File>Europe/Bismark/ArtDefs/Leaders.artdef</File>
+		<File>Europe/Bismark/Core/Bismark_Icons.xml</File>
+		<File>Europe/Bismark/Core/Bismark_Text.xml</File>
+		<File>Europe/Bismark/Core/Colour.sql</File>
+		<File>Europe/Bismark/Core/Config.xml</File>
+		<File>Europe/Bismark/Core/MJ_ynaempSupportTable.sql</File>
+		<File>Europe/Bismark/Core/Oldworld.sql</File>
+		<File>Europe/Bismark/Core/Template_GameDefines.sql</File>
+		<File>Europe/Bismark/Gedemo Bismarck.dep</File>
+		<File>Europe/Bismark/Mod.Art.xml</File>
+		<File>Europe/Bismark/Platforms/Windows/BLPs/Icons.blp</File>
+		<File>Europe/Bismark/Platforms/Windows/BLPs/LeaderBackgrounds.blp</File>
+		<File>Europe/Bismark/Platforms/Windows/BLPs/LeaderFallbacks.blp</File>
+		<File>Europe/Bismark/Platforms/Windows/BLPs/LEADER_GEDEMO_BISMARK.blp</File>
+		<File>Europe/Bismark/Platforms/Windows/BLPs/UILeaders.blp</File>
+		<File>Europe/Bismark/Textures/ART_LEADER_BISMARK.dds</File>
+		<File>Europe/Bismark/Textures/ART_LEADER_BISMARK.tex</File>
+		<File>Europe/Bismark/Textures/FALLBACK_NEUTRAL_BISMARK.dds</File>
+		<File>Europe/Bismark/Textures/FALLBACK_NEUTRAL_BISMARK.tex</File>
+		<File>Europe/Bismark/Textures/ICON_BISMARK_256.dds</File>
+		<File>Europe/Bismark/Textures/ICON_BISMARK_256.tex</File>
+		<File>Europe/Bismark/Textures/ICON_BISMARK_32.dds</File>
+		<File>Europe/Bismark/Textures/ICON_BISMARK_32.tex</File>
+		<File>Europe/Bismark/Textures/ICON_BISMARK_45.dds</File>
+		<File>Europe/Bismark/Textures/ICON_BISMARK_45.tex</File>
+		<File>Europe/Bismark/Textures/ICON_BISMARK_48.dds</File>
+		<File>Europe/Bismark/Textures/ICON_BISMARK_48.tex</File>
+		<File>Europe/Bismark/Textures/ICON_BISMARK_50.dds</File>
+		<File>Europe/Bismark/Textures/ICON_BISMARK_50.tex</File>
+		<File>Europe/Bismark/Textures/ICON_BISMARK_55.dds</File>
+		<File>Europe/Bismark/Textures/ICON_BISMARK_55.tex</File>
+		<File>Europe/Bismark/Textures/ICON_BISMARK_64.dds</File>
+		<File>Europe/Bismark/Textures/ICON_BISMARK_64.tex</File>
+		<File>Europe/Bismark/Textures/ICON_BISMARK_80.dds</File>
+		<File>Europe/Bismark/Textures/ICON_BISMARK_80.tex</File>
+		<File>Europe/Bismark/Textures/LEADER_BISMARK_BACKGROUND.dds</File>
+		<File>Europe/Bismark/Textures/LEADER_BISMARK_BACKGROUND.tex</File>
+		<File>Europe/Bismark/Textures/LEADER_BISMARK_NEUTRAL.dds</File>
+		<File>Europe/Bismark/Textures/LEADER_BISMARK_NEUTRAL.tex</File>
+		<File>Europe/Bismark/XLPs/Icons.xlp</File>
+		<File>Europe/Bismark/XLPs/LeaderBackgrounds.xlp</File>
+		<File>Europe/Bismark/XLPs/LeaderFallbacks.xlp</File>
+		<File>Europe/Bismark/XLPs/Leader_BISMARK.xlp</File>
+		<File>Europe/Bismark/XLPs/UILeaders.xlp</File>
 		<File>Europe/Finland/ArtDefs/Civilizations.artdef</File>
 		<File>Europe/Finland/ArtDefs/Cultures.artdef</File>
 		<File>Europe/Finland/ArtDefs/FallbackLeaders.artdef</File>
@@ -2925,9 +2812,6 @@
 		<File>Platforms/Windows/audio/SoundbanksInfo.xml</File>
 	</Files>
 	<References>
-		<Mod id="00dbaca9-5012-45d1-abf0-454edb2668a6" title="Sui Generis"/>
-		<Mod id="2e6d1093-6689-4dd5-a47a-9539bc3f8a29" title="Tomatekh's Historical Religions"/>
-		<Mod id="83710098-5cae-4c9f-a1e4-8dc652a537fe" title="Leugi's [COLOR:ResCultureLabelCS]Unique District Icons[ENDCOLOR]"/>
 		<Mod id="01159f41-7ca0-4181-84cf-2f2c912edfdd" title="DELIVERATOR STEEL AND THUNDER"/>
 		<Mod id="8342b98d-80c7-4002-87bb-419646bd9b54" title="DELIVERATOR MOAR UNITS"/>
 		<Mod id="514aaa88-ffd2-475f-ace6-ea49b34a100a" title="GEDEMON CORDIFORM EARTH FOR YNAEMP"/>
