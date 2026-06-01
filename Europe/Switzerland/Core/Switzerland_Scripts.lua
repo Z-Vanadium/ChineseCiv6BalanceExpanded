@@ -77,7 +77,7 @@ function CPG_Switzerland_GovernorEnvoy(playerID, governorID, promotionID)
 	print ("CPG_Switzerland_GovernorEnvoy Complete!")
 end		
 
-Events.GovernorPromoted.Add(CPG_Switzerland_GovernorEnvoy);
+-- Events.GovernorPromoted.Add(CPG_Switzerland_GovernorEnvoy);
 
 -----------------------------------------------
 -- FUNCTION CPG_Switzerland_CivicBoostEraScore
@@ -109,5 +109,5 @@ function CPG_Switzerland_CivicBoostEraScore(playerID, iBoostedCivic, iUnknownA, 
 	print ("CPG_Switzerland_CivicBoostEraScore Complete!")
 end		
 
-Events.CivicBoostTriggered.Add(CPG_Switzerland_CivicBoostEraScore);
+-- Events.CivicBoostTriggered.Add(CPG_Switzerland_CivicBoostEraScore);
 

@@ -5,7 +5,7 @@
 		<Version>2000</Version>
 		<Description>中国特色新文明拓展模组，取代BBG Expand。</Description>
 		<Authors>CCB制作组, ChimpanG, Chrisy15, Digihuman, JFD, Leugi, Leugi., Lime, Merrick, Rıaın, SailorCat, SeelingCat, Sukritact, Vanadium, p0kiehl, thecrazyscotsman (alphabetical order)</Authors>
-		<SpecialThanks>Alexxis, BBG Expand, BBG制作组, Cat, ChimpanG, Chrisy, Darth, DarthKyofu, DarthStarkiller, Deliverator, Dray, Enigma, JFD, LeeS, Leugi, Relic, Sailor, SailorCat, SeelingCat, Senshidenshi, Sloth, Sukritact, TranquilSilence, WeeklyMeat, Zebenji, Zharques, p0khiel (alphabetical order)</SpecialThanks>
+		<SpecialThanks>Alexxis, BBG Expand, BBG制作组, Cat, ChimpanG, Chrisy, Darth, DarthKyofu, DarthStarkiller, Dray, Enigma, JFD, LeeS, Leugi, Relic, Sailor, SailorCat, SeelingCat, Senshidenshi, Sloth, Sukritact, TranquilSilence, WeeklyMeat, Zebenji, Zharques, p0khiel (alphabetical order)</SpecialThanks>
 		<CompatibleVersions>1.2,2.0</CompatibleVersions>
 	</Properties>
 	<Dependencies>
@@ -99,12 +99,6 @@
 				<ConfigurationId>GAMEMODE_SUK_GAULREWORKPLUS</ConfigurationId>
 				<Value>1</Value>
 			</ConfigurationValueMatches>
-		</Criteria>
-		<Criteria id="XP1">
-			<RuleSetInUse>RULESET_EXPANSION_1</RuleSetInUse>
-		</Criteria>
-		<Criteria id="XP2">
-			<RuleSetInUse>RULESET_EXPANSION_2</RuleSetInUse>
 		</Criteria>
 		<Criteria id="Expansion1">
 			<GameCoreInUse>Expansion1</GameCoreInUse>
@@ -230,21 +224,6 @@
 			<File>Europe/AlfredEscher/Core/Escher_Colors.sql</File>
 		</UpdateColors>
 		<UpdateDatabase id="NewAction">
-			<File>Europe/Denmark/Core/Denmark_Config.xml</File>
-		</UpdateDatabase>
-		<UpdateColors id="NewAction">
-			<File>Europe/Denmark/Core/Denmark_Colours.sql</File>
-		</UpdateColors>
-		<UpdateIcons id="NewAction">
-			<File>Europe/Denmark/Core/Denmark_IconDefinitions.xml</File>
-		</UpdateIcons>
-		<UpdateText id="NewAction">
-			<File>Europe/Denmark/Core/Denmark_GameText.xml</File>
-		</UpdateText>
-		<UpdateArt id="NewAction">
-			<File>Europe/Denmark/Merrick's Denmark.dep</File>
-		</UpdateArt>
-		<UpdateDatabase id="NewAction">
 			<File>Europe/Finland/Core/Finland_Config.xml</File>
 		</UpdateDatabase>
 		<UpdateColors id="NewAction">
@@ -261,53 +240,37 @@
 		</UpdateArt>
 		<UpdateDatabase id="Suk_Vercingetorix_DatabaseConfig">
 			<Properties>
-				<LoadOrder>92100</LoadOrder>
+				<LoadOrder>93100</LoadOrder>
 			</Properties>
 			<File>Europe/GaulVercingetorix/Core/Common/Suk_Vercingetorix_Config.sql</File>
 		</UpdateDatabase>
 		<UpdateText id="Suk_Vercingetorix_TextConfig">
 			<Properties>
-				<LoadOrder>92100</LoadOrder>
+				<LoadOrder>93100</LoadOrder>
 			</Properties>
 			<File>Europe/GaulVercingetorix/Core/Localisation/Suk_Vercingetorix_ConfigText.sql</File>
 		</UpdateText>
 		<UpdateArt id="Suk_Vercingetorix_ArtConfig">
 			<Properties>
-				<LoadOrder>92100</LoadOrder>
+				<LoadOrder>93100</LoadOrder>
 			</Properties>
 			<File>Europe/GaulVercingetorix/Sukritact's Vercingetorix (Gauls).dep</File>
 		</UpdateArt>
 		<UpdateIcons id="Suk_Vercingetorix_IconsConfig">
 			<Properties>
-				<LoadOrder>92100</LoadOrder>
+				<LoadOrder>93100</LoadOrder>
 			</Properties>
 			<File>Europe/GaulVercingetorix/Core/Common/Suk_Vercingetorix_IconDefinitions.sql</File>
 		</UpdateIcons>
 		<UpdateColors id="Suk_Vercingetorix_ColorsConfig">
 			<Properties>
-				<LoadOrder>92101</LoadOrder>
+				<LoadOrder>93101</LoadOrder>
 			</Properties>
 			<File>Europe/GaulVercingetorix/Core/Common/Suk_Vercingetorix_Color.sql</File>
 		</UpdateColors>
-		<UpdateIcons id="Switzerland_Setup_Icons">
-			<File>Europe/Switzerland/Core/Switzerland_Icons.sql</File>
-		</UpdateIcons>
-		<UpdateText id="Switzerland_Setup_Text">
-			<Properties>
-				<LoadOrder>91100</LoadOrder>
-			</Properties>
-			<File>Europe/Switzerland/Core/Switzerland_Localisation.sql</File>
-			<File>Europe/Switzerland/Core/Translation/Switzerland_Localisation_de_DE.sql</File>
-		</UpdateText>
-		<UpdateArt id="ArtDep">
-			<File>Europe/Switzerland/CIVITAS [ICON_Government] Switzerland.dep</File>
-		</UpdateArt>
-		<UpdateColors id="Switzerland_Colors">
-			<File>Europe/Switzerland/Core/Switzerland_Colors.sql</File>
-		</UpdateColors>
 		<UpdateDatabase id="UpdateDatabase">
 			<Properties>
-				<LoadOrder>9010</LoadOrder>
+				<LoadOrder>9210</LoadOrder>
 			</Properties>
 			<File>Mediterranean/MacedonOlympias/Core/MacedonOlympias_Config.sql</File>
 		</UpdateDatabase>
@@ -325,37 +288,37 @@
 		</UpdateColors>
 		<UpdateDatabase id="NewAction">
 			<Properties>
-				<LoadOrder>89100</LoadOrder>
+				<LoadOrder>91100</LoadOrder>
 			</Properties>
 			<File>Mediterranean/PhoeniciaAhiram/core/Ahiram - Config.sql</File>
 		</UpdateDatabase>
 		<UpdateColors id="NewAction">
 			<Properties>
-				<LoadOrder>89100</LoadOrder>
+				<LoadOrder>91100</LoadOrder>
 			</Properties>
 			<File>Mediterranean/PhoeniciaAhiram/core/Ahiram - Colours.sql</File>
 		</UpdateColors>
 		<UpdateText id="NewAction">
 			<Properties>
-				<LoadOrder>89100</LoadOrder>
+				<LoadOrder>91100</LoadOrder>
 			</Properties>
 			<File>Mediterranean/PhoeniciaAhiram/core/Ahiram - Text.sql</File>
 		</UpdateText>
 		<UpdateIcons id="NewAction">
 			<Properties>
-				<LoadOrder>89100</LoadOrder>
+				<LoadOrder>91100</LoadOrder>
 			</Properties>
 			<File>Mediterranean/PhoeniciaAhiram/core/Ahiram - Icons.sql</File>
 		</UpdateIcons>
 		<UpdateArt id="NewAction">
 			<Properties>
-				<LoadOrder>89100</LoadOrder>
+				<LoadOrder>91100</LoadOrder>
 			</Properties>
 			<File>Mediterranean/PhoeniciaAhiram/Lime_Phoenicia_Ahiram.dep</File>
 		</UpdateArt>
 		<UpdateDatabase id="Config">
 			<Properties>
-				<LoadOrder>8850</LoadOrder>
+				<LoadOrder>9050</LoadOrder>
 			</Properties>
 			<File>Meso/Argentina/xml/Config_Evita.xml</File>
 			<File>Meso/Argentina/xml/Roca/Config_Roca.xml</File>
@@ -363,7 +326,7 @@
 		</UpdateDatabase>
 		<UpdateText id="ConfigText">
 			<Properties>
-				<LoadOrder>8850</LoadOrder>
+				<LoadOrder>9050</LoadOrder>
 			</Properties>
 			<File>Meso/Argentina/xml/Text_Argentina.xml</File>
 			<File>Meso/Argentina/xml/Text_Evita.xml</File>
@@ -377,7 +340,7 @@
 		</UpdateText>
 		<UpdateIcons id="ConfigIcons">
 			<Properties>
-				<LoadOrder>8850</LoadOrder>
+				<LoadOrder>9050</LoadOrder>
 			</Properties>
 			<File>Meso/Argentina/xml/Icons_Argentina.xml</File>
 			<File>Meso/Argentina/xml/Icons_Evita.xml</File>
@@ -388,62 +351,62 @@
 		</UpdateIcons>
 		<UpdateArt id="UpdateArt">
 			<Properties>
-				<LoadOrder>8850</LoadOrder>
+				<LoadOrder>9050</LoadOrder>
 			</Properties>
 			<File>Meso/Argentina/Leugi_s_Argentina_Civilization.dep</File>
 		</UpdateArt>
 		<UpdateDatabase id="NewAction">
 			<Properties>
-				<LoadOrder>87333</LoadOrder>
+				<LoadOrder>89333</LoadOrder>
 			</Properties>
 			<File>Meso/MayaTeKinichII/core/Port Lime - Te Kinich - Config.sql</File>
 		</UpdateDatabase>
 		<UpdateArt id="NewAction">
 			<Properties>
-				<LoadOrder>87333</LoadOrder>
+				<LoadOrder>89333</LoadOrder>
 			</Properties>
 			<File>Meso/MayaTeKinichII/PortLime_TeKinichII.dep</File>
 		</UpdateArt>
 		<UpdateColors id="NewAction">
 			<Properties>
-				<LoadOrder>87333</LoadOrder>
+				<LoadOrder>89333</LoadOrder>
 			</Properties>
 			<File>Meso/MayaTeKinichII/core/Port Lime - Te Kinich - Colours.sql</File>
 		</UpdateColors>
 		<UpdateIcons id="NewAction">
 			<Properties>
-				<LoadOrder>87333</LoadOrder>
+				<LoadOrder>89333</LoadOrder>
 			</Properties>
 			<File>Meso/MayaTeKinichII/core/Port Lime - Te Kinich - Icons.sql</File>
 		</UpdateIcons>
 		<UpdateText id="NewAction">
 			<Properties>
-				<LoadOrder>87333</LoadOrder>
+				<LoadOrder>89333</LoadOrder>
 			</Properties>
 			<File>Meso/MayaTeKinichII/core/Port Lime - Te Kinich - Pedia.sql</File>
 		</UpdateText>
 		<UpdateDatabase id="NewAction">
 			<Properties>
-				<LoadOrder>86350</LoadOrder>
+				<LoadOrder>88350</LoadOrder>
 			</Properties>
 			<File>Meso/TheoticuanasTeotihuacan/Spearthrower Owl/Leader Configs.sql</File>
 		</UpdateDatabase>
 		<UpdateIcons id="NewAction">
 			<Properties>
-				<LoadOrder>86350</LoadOrder>
+				<LoadOrder>88350</LoadOrder>
 			</Properties>
 			<File>Meso/TheoticuanasTeotihuacan/Spearthrower Owl/Icon Definitions.sql</File>
 			<File>Meso/TheoticuanasTeotihuacan/Teotihuacan/Icon Definitions.sql</File>
 		</UpdateIcons>
 		<UpdateColors id="NewAction">
 			<Properties>
-				<LoadOrder>86350</LoadOrder>
+				<LoadOrder>88350</LoadOrder>
 			</Properties>
 			<File>Meso/TheoticuanasTeotihuacan/Spearthrower Owl/Colors.sql</File>
 		</UpdateColors>
 		<UpdateText id="NewAction">
 			<Properties>
-				<LoadOrder>86350</LoadOrder>
+				<LoadOrder>88350</LoadOrder>
 			</Properties>
 			<File>Meso/TheoticuanasTeotihuacan/Spearthrower Owl/Game Text.sql</File>
 			<File>Meso/TheoticuanasTeotihuacan/Teotihuacan/Game Text.sql</File>
@@ -451,7 +414,7 @@
 		</UpdateText>
 		<UpdateArt id="NewAction">
 			<Properties>
-				<LoadOrder>86350</LoadOrder>
+				<LoadOrder>88350</LoadOrder>
 			</Properties>
 			<File>Meso/TheoticuanasTeotihuacan/Port Lime - Teotihuacan.dep</File>
 		</UpdateArt>
@@ -722,27 +685,6 @@
 			</Properties>
 			<File>Europe/AlfredEscher/Core/Escher_Colors.sql</File>
 		</UpdateColors>
-		<UpdateIcons id="NewAction">
-			<File>Europe/Denmark/Core/Denmark_IconDefinitions.xml</File>
-		</UpdateIcons>
-		<UpdateDatabase id="NewAction">
-			<File>Europe/Denmark/Core/Denmark_GameDefines.sql</File>
-			<File>Europe/Denmark/Core/Denmark_Uniques.xml</File>
-			<File>Europe/Denmark/Core/Denmark_Moments.sql</File>
-			<File>Europe/Denmark/Core/Denmark_NamedPlaces.xml</File>
-			<File>Europe/Denmark/Core/Support.sql</File>
-		</UpdateDatabase>
-		<UpdateArt id="NewAction">
-			<File>Europe/Denmark/Merrick's Denmark.dep</File>
-		</UpdateArt>
-		<UpdateColors id="NewAction">
-			<File>Europe/Denmark/Core/Denmark_Colours.sql</File>
-		</UpdateColors>
-		<UpdateText id="NewAction">
-			<File>Europe/Denmark/Core/Denmark_GameText.xml</File>
-			<File>Europe/Denmark/Core/Diplotext_Christian.sql</File>
-			<File>Europe/Denmark/Core/CityNames.sql</File>
-		</UpdateText>
 		<UpdateDatabase id="NewAction">
 			<File>Europe/Finland/Core/Finland_GameDefines.sql</File>
 			<File>Europe/Finland/Core/Finland_Moments.sql</File>
@@ -765,32 +707,32 @@
 		</UpdateArt>
 		<UpdateArt id="Suk_Vercingetorix_Art">
 			<Properties>
-				<LoadOrder>92100</LoadOrder>
+				<LoadOrder>93100</LoadOrder>
 			</Properties>
 			<File>Europe/GaulVercingetorix/Sukritact's Vercingetorix (Gauls).dep</File>
 		</UpdateArt>
 		<UpdateColors id="Suk_Vercingetorix_Colors">
 			<Properties>
-				<LoadOrder>92100</LoadOrder>
+				<LoadOrder>93100</LoadOrder>
 			</Properties>
 			<File>Europe/GaulVercingetorix/Core/Common/Suk_Vercingetorix_Color.sql</File>
 		</UpdateColors>
 		<UpdateIcons id="Suk_Vercingetorix_Icons">
 			<Properties>
-				<LoadOrder>92100</LoadOrder>
+				<LoadOrder>93100</LoadOrder>
 			</Properties>
 			<File>Europe/GaulVercingetorix/Core/Common/Suk_Vercingetorix_IconDefinitions.sql</File>
 		</UpdateIcons>
 		<UpdateText id="Suk_Vercingetorix_Text">
 			<Properties>
-				<LoadOrder>92100</LoadOrder>
+				<LoadOrder>93100</LoadOrder>
 			</Properties>
 			<File>Europe/GaulVercingetorix/Core/Localisation/Suk_Vercingetorix_ConfigText.sql</File>
 			<File>Europe/GaulVercingetorix/Core/Localisation/Suk_Vercingetorix_LeaderText.sql</File>
 		</UpdateText>
 		<UpdateDatabase id="Suk_Vercingetorix_Base">
 			<Properties>
-				<LoadOrder>92100</LoadOrder>
+				<LoadOrder>93100</LoadOrder>
 			</Properties>
 			<Criteria>Suk_Vercingetorix</Criteria>
 			<File>Europe/GaulVercingetorix/Core/Base/Suk_Vercingetorix_Civilizations.sql</File>
@@ -800,49 +742,49 @@
 		</UpdateDatabase>
 		<UpdateText id="Suk_Vercingetorix_BaseText">
 			<Properties>
-				<LoadOrder>92100</LoadOrder>
+				<LoadOrder>93100</LoadOrder>
 			</Properties>
 			<Criteria>Suk_Vercingetorix</Criteria>
 			<File>Europe/GaulVercingetorix/Core/Localisation/Suk_Vercingetorix_InGameText.sql</File>
 		</UpdateText>
 		<AddGameplayScripts id="Suk_Vercingetorix_BaseScripts">
 			<Properties>
-				<LoadOrder>92100</LoadOrder>
+				<LoadOrder>93100</LoadOrder>
 			</Properties>
 			<Criteria>Suk_Vercingetorix</Criteria>
 			<File>Europe/GaulVercingetorix/Lua/Suk_Vercingetorix_CoreFunctions.lua</File>
 		</AddGameplayScripts>
 		<UpdateDatabase id="Suk_Vercingetorix_XP1">
 			<Properties>
-				<LoadOrder>92101</LoadOrder>
+				<LoadOrder>93101</LoadOrder>
 			</Properties>
 			<Criteria>Suk_Vercingetorix_Expansion1</Criteria>
 			<File>Europe/GaulVercingetorix/Core/Base/Suk_Vercingetorix_Expansion1.sql</File>
 		</UpdateDatabase>
 		<UpdateDatabase id="Suk_Vercingetorix_XP2">
 			<Properties>
-				<LoadOrder>92101</LoadOrder>
+				<LoadOrder>93101</LoadOrder>
 			</Properties>
 			<Criteria>Suk_Vercingetorix_Expansion2</Criteria>
 			<File>Europe/GaulVercingetorix/Core/Base/Suk_Vercingetorix_Expansion2.sql</File>
 		</UpdateDatabase>
 		<UpdateDatabase id="Suk_Vercingetorix_DLC">
 			<Properties>
-				<LoadOrder>92120</LoadOrder>
+				<LoadOrder>93120</LoadOrder>
 			</Properties>
 			<Criteria>Suk_Vercingetorix_DLC</Criteria>
 			<File>Europe/GaulVercingetorix/Core/DLC/Suk_Vercingetorix_Leader_DLC.sql</File>
 		</UpdateDatabase>
 		<UpdateDatabase id="Suk_Vercingetorix_DLCReworkCommon">
 			<Properties>
-				<LoadOrder>92110</LoadOrder>
+				<LoadOrder>93110</LoadOrder>
 			</Properties>
 			<Criteria>Suk_Vercingetorix_DLC_Rework</Criteria>
 			<File>Europe/GaulVercingetorix/Core/DLC/Suk_Vercingetorix_Civilizations_DLC.sql</File>
 		</UpdateDatabase>
 		<UpdateAudio id="Suk_Vercingetorix_Audio">
 			<Properties>
-				<LoadOrder>92100</LoadOrder>
+				<LoadOrder>93100</LoadOrder>
 			</Properties>
 			<File>Europe/GaulVercingetorix/Platforms/Windows/Audio/Suk_Vercingetorix_Banks.ini</File>
 			<File>Europe/GaulVercingetorix/Platforms/Windows/Audio/Suk_Vercingetorix_Speech_Bank.bnk</File>
@@ -851,14 +793,14 @@
 		</UpdateAudio>
 		<UpdateDatabase id="Suk_Vercingetorix_DLCReworkBase">
 			<Properties>
-				<LoadOrder>92111</LoadOrder>
+				<LoadOrder>93111</LoadOrder>
 			</Properties>
 			<Criteria>Suk_Vercingetorix_DLC_ReworkBasic</Criteria>
 			<File>Europe/GaulVercingetorix/Core/DLC/Suk_Vercingetorix_Districts_DLC.sql</File>
 		</UpdateDatabase>
 		<UpdateDatabase id="Suk_Vercingetorix_DLCReworkPlus">
 			<Properties>
-				<LoadOrder>92111</LoadOrder>
+				<LoadOrder>93111</LoadOrder>
 			</Properties>
 			<Criteria>Suk_Vercingetorix_DLC_ReworkPlus</Criteria>
 			<File>Europe/GaulVercingetorix/Core/DLC/Suk_Vercingetorix_Units_DLC.sql</File>
@@ -866,62 +808,14 @@
 		</UpdateDatabase>
 		<AddGameplayScripts id="Suk_Vercingetorix_DLCRework_Scripts">
 			<Properties>
-				<LoadOrder>92100</LoadOrder>
+				<LoadOrder>93100</LoadOrder>
 			</Properties>
 			<Criteria>Suk_Vercingetorix_DLC_ReworkPlus</Criteria>
 			<File>Europe/GaulVercingetorix/Lua/Suk_Vercingetorix_CoreFunctions.lua</File>
 		</AddGameplayScripts>
-		<UpdateDatabase id="Switzerland_DB">
-			<Properties>
-				<LoadOrder>91100</LoadOrder>
-			</Properties>
-			<File>Europe/Switzerland/Core/Switzerland_Civilization.sql</File>
-			<File>Europe/Switzerland/Core/Switzerland_UA.sql</File>
-			<File>Europe/Switzerland/Core/Switzerland_UU.sql</File>
-			<File>Europe/Switzerland/Core/Switzerland_UI.sql</File>
-			<File>Europe/Switzerland/Core/Switzerland_ModSupport.sql</File>
-		</UpdateDatabase>
-		<UpdateIcons id="Switzerland_Icons">
-			<Properties>
-				<LoadOrder>91100</LoadOrder>
-			</Properties>
-			<File>Europe/Switzerland/Core/Switzerland_Icons.sql</File>
-		</UpdateIcons>
-		<UpdateText id="Switzerland_Text">
-			<Properties>
-				<LoadOrder>91100</LoadOrder>
-			</Properties>
-			<File>Europe/Switzerland/Core/Switzerland_Localisation.sql</File>
-			<File>Europe/Switzerland/Core/Translation/Switzerland_Localisation_de_DE.sql</File>
-		</UpdateText>
-		<UpdateArt id="ArtDep">
-			<File>Europe/Switzerland/CIVITAS [ICON_Government] Switzerland.dep</File>
-		</UpdateArt>
-		<AddGameplayScripts id="Switzerland_Scripts">
-			<Properties>
-				<LoadOrder>91100</LoadOrder>
-			</Properties>
-			<File>Europe/Switzerland/Core/Switzerland_Scripts.lua</File>
-		</AddGameplayScripts>
-		<UpdateColors id="Switzerland_Colors">
-			<File>Europe/Switzerland/Core/Switzerland_Colors.sql</File>
-		</UpdateColors>
-		<UpdateDatabase id="Switzerland_DB_XP2">
-			<Properties>
-				<LoadOrder>91115</LoadOrder>
-			</Properties>
-			<File>Europe/Switzerland/Core/Switzerland_UA_XP2.sql</File>
-			<File>Europe/Switzerland/Core/Switzerland_Civilization_XP2.sql</File>
-		</UpdateDatabase>
-		<UpdateDatabase id="Switzerland_Validation">
-			<Properties>
-				<LoadOrder>911</LoadOrder>
-			</Properties>
-			<File>Europe/Switzerland/Core/Switzerland_Validation.sql</File>
-		</UpdateDatabase>
 		<UpdateDatabase id="UpdateDatabase">
 			<Properties>
-				<LoadOrder>9010</LoadOrder>
+				<LoadOrder>9210</LoadOrder>
 			</Properties>
 			<File>Mediterranean/MacedonOlympias/Core/MacedonOlympias_GameDefines.sql</File>
 		</UpdateDatabase>
@@ -942,43 +836,43 @@
 		</UpdateColors>
 		<UpdateDatabase id="NewAction">
 			<Properties>
-				<LoadOrder>89100</LoadOrder>
+				<LoadOrder>91100</LoadOrder>
 			</Properties>
 			<File>Mediterranean/PhoeniciaAhiram/core/Ahiram - Game Defines.sql</File>
 		</UpdateDatabase>
 		<UpdateColors id="NewAction">
 			<Properties>
-				<LoadOrder>89100</LoadOrder>
+				<LoadOrder>91100</LoadOrder>
 			</Properties>
 			<File>Mediterranean/PhoeniciaAhiram/core/Ahiram - Colours.sql</File>
 		</UpdateColors>
 		<UpdateArt id="NewAction">
 			<Properties>
-				<LoadOrder>89100</LoadOrder>
+				<LoadOrder>91100</LoadOrder>
 			</Properties>
 			<File>Mediterranean/PhoeniciaAhiram/Lime_Phoenicia_Ahiram.dep</File>
 		</UpdateArt>
 		<UpdateText id="NewAction">
 			<Properties>
-				<LoadOrder>89100</LoadOrder>
+				<LoadOrder>91100</LoadOrder>
 			</Properties>
 			<File>Mediterranean/PhoeniciaAhiram/core/Ahiram - Text.sql</File>
 		</UpdateText>
 		<AddGameplayScripts id="NewAction">
 			<Properties>
-				<LoadOrder>89100</LoadOrder>
+				<LoadOrder>91100</LoadOrder>
 			</Properties>
 			<File>Mediterranean/PhoeniciaAhiram/core/Ahiram - Lua.lua</File>
 		</AddGameplayScripts>
 		<UpdateIcons id="NewAction">
 			<Properties>
-				<LoadOrder>89100</LoadOrder>
+				<LoadOrder>91100</LoadOrder>
 			</Properties>
 			<File>Mediterranean/PhoeniciaAhiram/core/Ahiram - Icons.sql</File>
 		</UpdateIcons>
 		<UpdateDatabase id="Gameplay">
 			<Properties>
-				<LoadOrder>8850</LoadOrder>
+				<LoadOrder>9050</LoadOrder>
 			</Properties>
 			<File>Meso/Argentina/sql/Civilization_Argentina.sql</File>
 			<File>Meso/Argentina/sql/Leader_Evita.sql</File>
@@ -998,7 +892,7 @@
 		</UpdateDatabase>
 		<UpdateText id="Text">
 			<Properties>
-				<LoadOrder>8850</LoadOrder>
+				<LoadOrder>9050</LoadOrder>
 			</Properties>
 			<File>Meso/Argentina/xml/Text_Argentina.xml</File>
 			<File>Meso/Argentina/xml/Text_Evita.xml</File>
@@ -1012,7 +906,7 @@
 		</UpdateText>
 		<UpdateIcons id="Icons">
 			<Properties>
-				<LoadOrder>8850</LoadOrder>
+				<LoadOrder>9050</LoadOrder>
 			</Properties>
 			<File>Meso/Argentina/xml/Icons_Argentina.xml</File>
 			<File>Meso/Argentina/xml/Icons_Evita.xml</File>
@@ -1023,57 +917,57 @@
 		</UpdateIcons>
 		<UpdateArt id="Art">
 			<Properties>
-				<LoadOrder>8850</LoadOrder>
+				<LoadOrder>9050</LoadOrder>
 			</Properties>
 			<File>Meso/Argentina/Leugi_s_Argentina_Civilization.dep</File>
 		</UpdateArt>
 		<AddGameplayScripts id="Lua Files">
 			<Properties>
-				<LoadOrder>8850</LoadOrder>
+				<LoadOrder>9050</LoadOrder>
 			</Properties>
 			<File>Meso/Argentina/lua/District_Estancia.lua</File>
 			<File>Meso/Argentina/lua/Trait_Roca.lua</File>
 		</AddGameplayScripts>
 		<UpdateDatabase id="NewAction">
 			<Properties>
-				<LoadOrder>87333</LoadOrder>
+				<LoadOrder>89333</LoadOrder>
 			</Properties>
 			<File>Meso/MayaTeKinichII/core/Port Lime - Te Kinich - Leader.sql</File>
 		</UpdateDatabase>
 		<AddGameplayScripts id="NewAction">
 			<Properties>
-				<LoadOrder>87333</LoadOrder>
+				<LoadOrder>89333</LoadOrder>
 			</Properties>
 			<File>Meso/MayaTeKinichII/core/Port Lime - Te Kinich - Functions.lua</File>
 		</AddGameplayScripts>
 		<UpdateIcons id="NewAction">
 			<Properties>
-				<LoadOrder>87333</LoadOrder>
+				<LoadOrder>89333</LoadOrder>
 			</Properties>
 			<File>Meso/MayaTeKinichII/core/Port Lime - Te Kinich - Icons.sql</File>
 		</UpdateIcons>
 		<UpdateArt id="NewAction">
 			<Properties>
-				<LoadOrder>87333</LoadOrder>
+				<LoadOrder>89333</LoadOrder>
 			</Properties>
 			<File>Meso/MayaTeKinichII/PortLime_TeKinichII.dep</File>
 		</UpdateArt>
 		<UpdateText id="NewAction">
 			<Properties>
-				<LoadOrder>87333</LoadOrder>
+				<LoadOrder>89333</LoadOrder>
 			</Properties>
 			<File>Meso/MayaTeKinichII/core/Port Lime - Te Kinich - Diplomacy.sql</File>
 			<File>Meso/MayaTeKinichII/core/Port Lime - Te Kinich - Pedia.sql</File>
 		</UpdateText>
 		<UpdateColors id="NewAction">
 			<Properties>
-				<LoadOrder>87333</LoadOrder>
+				<LoadOrder>89333</LoadOrder>
 			</Properties>
 			<File>Meso/MayaTeKinichII/core/Port Lime - Te Kinich - Colours.sql</File>
 		</UpdateColors>
 		<UpdateDatabase id="NewAction">
 			<Properties>
-				<LoadOrder>86350</LoadOrder>
+				<LoadOrder>88350</LoadOrder>
 			</Properties>
 			<File>Meso/TheoticuanasTeotihuacan/Spearthrower Owl/Game Defines.sql</File>
 			<File>Meso/TheoticuanasTeotihuacan/Teotihuacan/Game Defines.sql</File>
@@ -1081,20 +975,20 @@
 		</UpdateDatabase>
 		<UpdateIcons id="NewAction">
 			<Properties>
-				<LoadOrder>86350</LoadOrder>
+				<LoadOrder>88350</LoadOrder>
 			</Properties>
 			<File>Meso/TheoticuanasTeotihuacan/Spearthrower Owl/Icon Definitions.sql</File>
 			<File>Meso/TheoticuanasTeotihuacan/Teotihuacan/Icon Definitions.sql</File>
 		</UpdateIcons>
 		<UpdateColors id="NewAction">
 			<Properties>
-				<LoadOrder>86350</LoadOrder>
+				<LoadOrder>88350</LoadOrder>
 			</Properties>
 			<File>Meso/TheoticuanasTeotihuacan/Spearthrower Owl/Colors.sql</File>
 		</UpdateColors>
 		<UpdateText id="NewAction">
 			<Properties>
-				<LoadOrder>86350</LoadOrder>
+				<LoadOrder>88350</LoadOrder>
 			</Properties>
 			<File>Meso/TheoticuanasTeotihuacan/Spearthrower Owl/Game Text.sql</File>
 			<File>Meso/TheoticuanasTeotihuacan/Teotihuacan/Game Text.sql</File>
@@ -1102,20 +996,20 @@
 		</UpdateText>
 		<UpdateArt id="NewAction">
 			<Properties>
-				<LoadOrder>86350</LoadOrder>
+				<LoadOrder>88350</LoadOrder>
 			</Properties>
 			<File>Meso/TheoticuanasTeotihuacan/Port Lime - Teotihuacan.dep</File>
 		</UpdateArt>
 		<AddGameplayScripts id="NewAction">
 			<Properties>
-				<LoadOrder>86300</LoadOrder>
+				<LoadOrder>88300</LoadOrder>
 			</Properties>
 			<File>Meso/TheoticuanasTeotihuacan/Spearthrower Owl/Spearthrower-PopConqueror.lua</File>
 			<File>Meso/TheoticuanasTeotihuacan/Teotihuacan/Teotihuacan-EnvoyDoubler.lua</File>
 		</AddGameplayScripts>
 		<UpdateDatabase id="Thule_DB">
 			<Properties>
-				<LoadOrder>85100</LoadOrder>
+				<LoadOrder>87100</LoadOrder>
 			</Properties>
 			<File>NorthAmerica/ThuleKiviuq/core/civilization/Thule_GameDefines.sql</File>
 			<File>NorthAmerica/ThuleKiviuq/core/leader/kiviuq_dave/ThuleKiviuq_GameDefines.sql</File>
@@ -1156,7 +1050,7 @@
 		</UpdateIcons>
 		<UpdateAudio id="UpdateAudio">
 			<Properties>
-				<LoadOrder>83101</LoadOrder>
+				<LoadOrder>85101</LoadOrder>
 			</Properties>
 			<File>Platforms/Windows/audio/CCBE_Audio.ini</File>
 		</UpdateAudio>
@@ -1500,127 +1394,6 @@
 		<File>Europe/AlfredEscher/Platforms/Windows/BLPs/UI/Icons.blp</File>
 		<File>Europe/AlfredEscher/XLPs/Icons.xlp</File>
 		<File>Europe/AlfredEscher/XLPs/LeaderFallbacks.xlp</File>
-		<File>Europe/Denmark/ArtDefs/Buildings.artdef</File>
-		<File>Europe/Denmark/ArtDefs/Civilizations.artdef</File>
-		<File>Europe/Denmark/ArtDefs/Cultures.artdef</File>
-		<File>Europe/Denmark/ArtDefs/FallbackLeaders.artdef</File>
-		<File>Europe/Denmark/ArtDefs/Landmarks.artdef</File>
-		<File>Europe/Denmark/ArtDefs/Leaders.artdef</File>
-		<File>Europe/Denmark/ArtDefs/Overlay.artdef</File>
-		<File>Europe/Denmark/ArtDefs/Units.artdef</File>
-		<File>Europe/Denmark/Core/CityNames.sql</File>
-		<File>Europe/Denmark/Core/Denmark_Colours.sql</File>
-		<File>Europe/Denmark/Core/Denmark_Config.xml</File>
-		<File>Europe/Denmark/Core/Denmark_GameDefines.sql</File>
-		<File>Europe/Denmark/Core/Denmark_GameText.xml</File>
-		<File>Europe/Denmark/Core/Denmark_IconDefinitions.xml</File>
-		<File>Europe/Denmark/Core/Denmark_Moments.sql</File>
-		<File>Europe/Denmark/Core/Denmark_NamedPlaces.xml</File>
-		<File>Europe/Denmark/Core/Denmark_Uniques.xml</File>
-		<File>Europe/Denmark/Core/Diplotext_Christian.sql</File>
-		<File>Europe/Denmark/Core/Support.sql</File>
-		<File>Europe/Denmark/Merrick's Denmark.dep</File>
-		<File>Europe/Denmark/Platforms/Windows/BLPs/Landmark.blp</File>
-		<File>Europe/Denmark/Platforms/Windows/BLPs/LeaderFallback.blp</File>
-		<File>Europe/Denmark/Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_Berzerker_DeathA</File>
-		<File>Europe/Denmark/Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_Berzerker_DeathFromHeroAttackA</File>
-		<File>Europe/Denmark/Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_Horseman_BipedalDeathMeleeA</File>
-		<File>Europe/Denmark/Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_Impr_HeroDeath</File>
-		<File>Europe/Denmark/Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_Infantry_DeathB</File>
-		<File>Europe/Denmark/Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_Pikeman_DeathA</File>
-		<File>Europe/Denmark/Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_Pikeman_DeathB</File>
-		<File>Europe/Denmark/Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_Redcoat_AttackA</File>
-		<File>Europe/Denmark/Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_Redcoat_BlockB</File>
-		<File>Europe/Denmark/Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_Redcoat_BraceB</File>
-		<File>Europe/Denmark/Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_Redcoat_BraceC</File>
-		<File>Europe/Denmark/Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_Redcoat_DeathA</File>
-		<File>Europe/Denmark/Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_Redcoat_Dodge_Duck</File>
-		<File>Europe/Denmark/Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_Redcoat_HeroicA</File>
-		<File>Europe/Denmark/Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_Redcoat_HeroicA_Death</File>
-		<File>Europe/Denmark/Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_Redcoat_IdleC</File>
-		<File>Europe/Denmark/Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_Redcoat_MarchFwdA</File>
-		<File>Europe/Denmark/Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_Redcoat_RunFwdA</File>
-		<File>Europe/Denmark/Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_Redcoat_StrafeBackB</File>
-		<File>Europe/Denmark/Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_Scout_DeathA</File>
-		<File>Europe/Denmark/Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_Scout_DeathB</File>
-		<File>Europe/Denmark/Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_Slinger_DeathA</File>
-		<File>Europe/Denmark/Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_Spearman_DeathFlyBackA</File>
-		<File>Europe/Denmark/Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_Spearman_DeathFromJumpStabFlipUnitInAir</File>
-		<File>Europe/Denmark/Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_Tank_MainGunDeathA</File>
-		<File>Europe/Denmark/Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_UnitHeavy_Death_HitToHeadA</File>
-		<File>Europe/Denmark/Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_UnitMedium_BreathingA</File>
-		<File>Europe/Denmark/Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_UnitMedium_CorkscrewDeathFromSwordsmanHeroA</File>
-		<File>Europe/Denmark/Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_UnitMedium_Death_LegionHeroAttackA</File>
-		<File>Europe/Denmark/Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_UnitMedium_Death_SamuraiHeroAttackA</File>
-		<File>Europe/Denmark/Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_UnitMedium_ProjectileDeathFlyBackA</File>
-		<File>Europe/Denmark/Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_WarriorMonk_Death</File>
-		<File>Europe/Denmark/Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_WarriorMonk_HeroDeath</File>
-		<File>Europe/Denmark/Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_Warrior_DeathMeleeA</File>
-		<File>Europe/Denmark/Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_Warrior_DeathMeleeB</File>
-		<File>Europe/Denmark/Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_Burn_BaseColor</File>
-		<File>Europe/Denmark/Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_Burn_G</File>
-		<File>Europe/Denmark/Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_Decals_Parts_Ancient_01_B</File>
-		<File>Europe/Denmark/Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_Decals_Parts_Ancient_01_FOW</File>
-		<File>Europe/Denmark/Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_Decals_Parts_Ancient_01_H</File>
-		<File>Europe/Denmark/Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_Decals_Parts_Ancient_PIL_B</File>
-		<File>Europe/Denmark/Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_Decals_Parts_Ancient_PIL_H</File>
-		<File>Europe/Denmark/Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_DiffuseTint_Decals_Parts_Ancient_01_B_null</File>
-		<File>Europe/Denmark/Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_DiffuseTint_Decals_Parts_Ancient_PIL_B_null</File>
-		<File>Europe/Denmark/Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_DiffuseTint_DIS_Harbor_Base_B_null</File>
-		<File>Europe/Denmark/Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_DiffuseTint_DIS_HBR_RNY_Base_B_null</File>
-		<File>Europe/Denmark/Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_DiffuseTint_Fodfolket_Armor_a_null</File>
-		<File>Europe/Denmark/Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_DiffuseTint_fodfolk_hat_null</File>
-		<File>Europe/Denmark/Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_DiffuseTint_IMP_Fort_B_null</File>
-		<File>Europe/Denmark/Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_DiffuseTint_Pillage_Construction_01_B_null</File>
-		<File>Europe/Denmark/Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_DiffuseTint_Ruin_Debris_Decal_null</File>
-		<File>Europe/Denmark/Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_DiffuseTint_Tojhus_bld_b_null</File>
-		<File>Europe/Denmark/Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_DiffuseTint_TOJHUS_TEX_null</File>
-		<File>Europe/Denmark/Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_DIS_Harbor_Base_A</File>
-		<File>Europe/Denmark/Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_DIS_Harbor_Base_E</File>
-		<File>Europe/Denmark/Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_DIS_Harbor_Base_G</File>
-		<File>Europe/Denmark/Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_DIS_Harbor_Base_L</File>
-		<File>Europe/Denmark/Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_DIS_Harbor_Base_N0</File>
-		<File>Europe/Denmark/Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_DIS_Harbor_Base_N1</File>
-		<File>Europe/Denmark/Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_DIS_HBR_RNY_Base_A</File>
-		<File>Europe/Denmark/Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_DIS_HBR_RNY_Base_G</File>
-		<File>Europe/Denmark/Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_DIS_HBR_RNY_Base_L</File>
-		<File>Europe/Denmark/Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_DIS_HBR_RNY_Base_N0</File>
-		<File>Europe/Denmark/Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_DIS_HBR_RNY_Base_N1</File>
-		<File>Europe/Denmark/Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_DIS_PRD_Base_E</File>
-		<File>Europe/Denmark/Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_DIS_PRD_Base_Variants_A</File>
-		<File>Europe/Denmark/Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_DIS_PRD_Base_Variants_G</File>
-		<File>Europe/Denmark/Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_DIS_PRD_Base_Variants_M</File>
-		<File>Europe/Denmark/Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_DIS_PRD_Base_Variants_N0</File>
-		<File>Europe/Denmark/Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_DIS_PRD_Base_Variants_N1</File>
-		<File>Europe/Denmark/Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_FOW_Ruin_Debris_Decal</File>
-		<File>Europe/Denmark/Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_IMP_Fort_A</File>
-		<File>Europe/Denmark/Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_IMP_Fort_E</File>
-		<File>Europe/Denmark/Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_IMP_Fort_G</File>
-		<File>Europe/Denmark/Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_IMP_Fort_M</File>
-		<File>Europe/Denmark/Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_IMP_Fort_N0</File>
-		<File>Europe/Denmark/Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_IMP_Fort_N1</File>
-		<File>Europe/Denmark/Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_Infantry_Armor_ao</File>
-		<File>Europe/Denmark/Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_Infantry_Armor_g</File>
-		<File>Europe/Denmark/Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_Infantry_Armor_m</File>
-		<File>Europe/Denmark/Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_Infantry_Armor_n0</File>
-		<File>Europe/Denmark/Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_Infantry_Armor_n1</File>
-		<File>Europe/Denmark/Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_Loyalty_Overlay_Denmark</File>
-		<File>Europe/Denmark/Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_Loyalty_Pressure_Denmark</File>
-		<File>Europe/Denmark/Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_Pillage_Construction_01_G</File>
-		<File>Europe/Denmark/Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_Pillage_Construction_01_N0</File>
-		<File>Europe/Denmark/Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_Pillage_Construction_01_N1</File>
-		<File>Europe/Denmark/Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_Pillage_Construction_01_O</File>
-		<File>Europe/Denmark/Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_ProceduralNoiseTexture2D_0x304656c5</File>
-		<File>Europe/Denmark/Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_rifleman_ao</File>
-		<File>Europe/Denmark/Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_rifleman_m</File>
-		<File>Europe/Denmark/Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_rifleman_n0</File>
-		<File>Europe/Denmark/Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_rifleman_n1</File>
-		<File>Europe/Denmark/Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_Ruin_Debris_Decal</File>
-		<File>Europe/Denmark/Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_Ruin_Debris_Decal_H</File>
-		<File>Europe/Denmark/Platforms/Windows/BLPs/Tilebase.blp</File>
-		<File>Europe/Denmark/Platforms/Windows/BLPs/UILensAsset.blp</File>
-		<File>Europe/Denmark/Platforms/Windows/BLPs/UITexture.blp</File>
-		<File>Europe/Denmark/Platforms/Windows/BLPs/Unit.blp</File>
 		<File>Europe/Finland/ArtDefs/Civilizations.artdef</File>
 		<File>Europe/Finland/ArtDefs/Cultures.artdef</File>
 		<File>Europe/Finland/ArtDefs/FallbackLeaders.artdef</File>
@@ -1847,167 +1620,6 @@
 		<File>Europe/GaulVercingetorix/Platforms/Windows/BLPs/UITextures.blp</File>
 		<File>Europe/GaulVercingetorix/Platforms/Windows/BLPs/units/units.blp</File>
 		<File>Europe/GaulVercingetorix/Sukritact's Vercingetorix (Gauls).dep</File>
-		<File>Europe/Switzerland/ArtDefs/Buildings.artdef</File>
-		<File>Europe/Switzerland/ArtDefs/Civilizations.artdef</File>
-		<File>Europe/Switzerland/ArtDefs/Cultures.artdef</File>
-		<File>Europe/Switzerland/ArtDefs/Landmarks.artdef</File>
-		<File>Europe/Switzerland/ArtDefs/Overlay.artdef</File>
-		<File>Europe/Switzerland/ArtDefs/StrategicView.artdef</File>
-		<File>Europe/Switzerland/ArtDefs/Units.artdef</File>
-		<File>Europe/Switzerland/ArtDefs/Unit_Bins.artdef</File>
-		<File>Europe/Switzerland/ArtDefs/UserInterface.artdef</File>
-		<File>Europe/Switzerland/CIVITAS [ICON_Government] Switzerland.dep</File>
-		<File>Europe/Switzerland/Core/Archive/Switzerland_UI.sql</File>
-		<File>Europe/Switzerland/Core/Archive/Switzerland_UP.lua</File>
-		<File>Europe/Switzerland/Core/Archive/Switzerland_UP.sql</File>
-		<File>Europe/Switzerland/Core/Switzerland_Civilization.sql</File>
-		<File>Europe/Switzerland/Core/Switzerland_Civilization_XP2.sql</File>
-		<File>Europe/Switzerland/Core/Switzerland_Colors.sql</File>
-		<File>Europe/Switzerland/Core/Switzerland_Icons.sql</File>
-		<File>Europe/Switzerland/Core/Switzerland_Localisation.sql</File>
-		<File>Europe/Switzerland/Core/Switzerland_ModSupport.sql</File>
-		<File>Europe/Switzerland/Core/Switzerland_Scripts.lua</File>
-		<File>Europe/Switzerland/Core/Switzerland_UA.sql</File>
-		<File>Europe/Switzerland/Core/Switzerland_UA_XP2.sql</File>
-		<File>Europe/Switzerland/Core/Switzerland_UI.sql</File>
-		<File>Europe/Switzerland/Core/Switzerland_UU.sql</File>
-		<File>Europe/Switzerland/Core/Switzerland_Validation.sql</File>
-		<File>Europe/Switzerland/Core/Translation/Switzerland_Localisation_de_DE.sql</File>
-		<File>Europe/Switzerland/Platforms/Windows/BLPs/landmarks/tilebases.blp</File>
-		<File>Europe/Switzerland/Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_Berzerker_DeathA</File>
-		<File>Europe/Switzerland/Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_Berzerker_DeathFromHeroAttackA</File>
-		<File>Europe/Switzerland/Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_Horseman_BipedalDeathMeleeA</File>
-		<File>Europe/Switzerland/Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_Impr_HeroDeath</File>
-		<File>Europe/Switzerland/Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_Infantry_DeathB</File>
-		<File>Europe/Switzerland/Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_Pikeman_Block</File>
-		<File>Europe/Switzerland/Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_Pikeman_BraceA</File>
-		<File>Europe/Switzerland/Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_Pikeman_BraceB</File>
-		<File>Europe/Switzerland/Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_Pikeman_BraceC</File>
-		<File>Europe/Switzerland/Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_Pikeman_BreathingCombatIdleA</File>
-		<File>Europe/Switzerland/Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_Pikeman_BreathingCombatIdleB</File>
-		<File>Europe/Switzerland/Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_Pikeman_DeathA</File>
-		<File>Europe/Switzerland/Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_Pikeman_DeathB</File>
-		<File>Europe/Switzerland/Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_Pikeman_DodgeBack</File>
-		<File>Europe/Switzerland/Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_Pikeman_IdleA</File>
-		<File>Europe/Switzerland/Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_Pikeman_Run</File>
-		<File>Europe/Switzerland/Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_Pikeman_RunStopCombatA</File>
-		<File>Europe/Switzerland/Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_Pikeman_RunStopCombatB</File>
-		<File>Europe/Switzerland/Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_Pikeman_Spawn</File>
-		<File>Europe/Switzerland/Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_Pikeman_WalkBack</File>
-		<File>Europe/Switzerland/Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_Pikeman_WalkForward</File>
-		<File>Europe/Switzerland/Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_Pikemen_AttackCavalry</File>
-		<File>Europe/Switzerland/Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_Pikemen_AttackInfantry</File>
-		<File>Europe/Switzerland/Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_Pikemen_Charge</File>
-		<File>Europe/Switzerland/Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_Pikemen_DefendCavalry</File>
-		<File>Europe/Switzerland/Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_Pikemen_DefendInfantry</File>
-		<File>Europe/Switzerland/Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_RedcoatGun_Idle</File>
-		<File>Europe/Switzerland/Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_Redcoat_DeathA</File>
-		<File>Europe/Switzerland/Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_Redcoat_HeroicA_Death</File>
-		<File>Europe/Switzerland/Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_Scout_DeathA</File>
-		<File>Europe/Switzerland/Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_Scout_DeathB</File>
-		<File>Europe/Switzerland/Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_Slinger_DeathA</File>
-		<File>Europe/Switzerland/Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_Spearman_DeathFlyBackA</File>
-		<File>Europe/Switzerland/Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_Spearman_DeathFromJumpStabFlipUnitInAir</File>
-		<File>Europe/Switzerland/Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_Tank_MainGunDeathA</File>
-		<File>Europe/Switzerland/Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_UnitHeavy_Death_HitToHeadA</File>
-		<File>Europe/Switzerland/Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_UnitMedium_CorkscrewDeathFromSwordsmanHeroA</File>
-		<File>Europe/Switzerland/Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_UnitMedium_Death_LegionHeroAttackA</File>
-		<File>Europe/Switzerland/Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_UnitMedium_Death_SamuraiHeroAttackA</File>
-		<File>Europe/Switzerland/Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_UnitMedium_ProjectileDeathFlyBackA</File>
-		<File>Europe/Switzerland/Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_WarriorMonk_Death</File>
-		<File>Europe/Switzerland/Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_WarriorMonk_HeroDeath</File>
-		<File>Europe/Switzerland/Platforms/Windows/BLPs/SHARED_DATA/ANIMATION_Warrior_DeathMeleeB</File>
-		<File>Europe/Switzerland/Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_Burn_BaseColor</File>
-		<File>Europe/Switzerland/Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_Burn_G</File>
-		<File>Europe/Switzerland/Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_Burn_M</File>
-		<File>Europe/Switzerland/Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_Conquistador_g</File>
-		<File>Europe/Switzerland/Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_Conquistador_m</File>
-		<File>Europe/Switzerland/Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_Conquistador_n0</File>
-		<File>Europe/Switzerland/Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_Conquistador_n1</File>
-		<File>Europe/Switzerland/Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_CVS_Overlay_Switzerland</File>
-		<File>Europe/Switzerland/Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_CVS_Pressure_Switzerland</File>
-		<File>Europe/Switzerland/Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_CVS_SWITZERLAND_UI_Building_O</File>
-		<File>Europe/Switzerland/Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_CVS_SWITZERLAND_UI_Building_Palace_M</File>
-		<File>Europe/Switzerland/Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_Decals_Parts_Ancient_01_B</File>
-		<File>Europe/Switzerland/Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_Decals_Parts_Ancient_01_FOW</File>
-		<File>Europe/Switzerland/Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_Decals_Parts_Ancient_01_H</File>
-		<File>Europe/Switzerland/Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_Decals_Parts_Ancient_02_B</File>
-		<File>Europe/Switzerland/Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_Decals_Parts_Ancient_02_FOW</File>
-		<File>Europe/Switzerland/Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_Decals_Parts_Ancient_02_H</File>
-		<File>Europe/Switzerland/Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_Decals_Parts_Ancient_PIL_B</File>
-		<File>Europe/Switzerland/Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_Decals_Parts_Ancient_PIL_H</File>
-		<File>Europe/Switzerland/Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_Decals_Parts_Classical_01_B</File>
-		<File>Europe/Switzerland/Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_Decals_Parts_Classical_01_H</File>
-		<File>Europe/Switzerland/Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_Decals_Parts_Classical_PIL_B</File>
-		<File>Europe/Switzerland/Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_Decals_Parts_Classical_PIL_H</File>
-		<File>Europe/Switzerland/Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_Decals_Parts_Industrial_01_FOW</File>
-		<File>Europe/Switzerland/Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_DiffuseTint_CVS_SWITZERLAND_UI_Buildings_B2_null</File>
-		<File>Europe/Switzerland/Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_DiffuseTint_CVS_SWITZERLAND_UI_Building_Palace_B6_null</File>
-		<File>Europe/Switzerland/Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_DiffuseTint_Decals_Parts_Ancient_01_B_null</File>
-		<File>Europe/Switzerland/Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_DiffuseTint_Decals_Parts_Ancient_02_B_null</File>
-		<File>Europe/Switzerland/Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_DiffuseTint_Decals_Parts_Ancient_PIL_B_null</File>
-		<File>Europe/Switzerland/Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_DiffuseTint_Decals_Parts_Classical_01_B_null</File>
-		<File>Europe/Switzerland/Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_DiffuseTint_Decals_Parts_Classical_PIL_B_null</File>
-		<File>Europe/Switzerland/Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_DiffuseTint_DIS_COM_Base_B_null</File>
-		<File>Europe/Switzerland/Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_DiffuseTint_DIS_CTY_AW_Grounds_B_null</File>
-		<File>Europe/Switzerland/Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_DiffuseTint_DIS_CTY_RMED_VAR_B_null</File>
-		<File>Europe/Switzerland/Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_DiffuseTint_Foliage_Bld_B_null</File>
-		<File>Europe/Switzerland/Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_DiffuseTint_Foundation_Brick_Gray_B_null</File>
-		<File>Europe/Switzerland/Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_DiffuseTint_Pillaged_Foliage_B_null</File>
-		<File>Europe/Switzerland/Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_DiffuseTint_Pillage_Construction_01_B_null</File>
-		<File>Europe/Switzerland/Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_DiffuseTint_Ruin_Debris_Decal_Light_null</File>
-		<File>Europe/Switzerland/Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_DiffuseTint_Ruin_Debris_Decal_null</File>
-		<File>Europe/Switzerland/Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_DiffuseTint_SwissGuard_a2_SwissGuard_t</File>
-		<File>Europe/Switzerland/Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_DIS_COM_Base_A</File>
-		<File>Europe/Switzerland/Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_DIS_COM_Base_E</File>
-		<File>Europe/Switzerland/Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_DIS_COM_Base_G</File>
-		<File>Europe/Switzerland/Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_DIS_COM_Base_M</File>
-		<File>Europe/Switzerland/Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_DIS_COM_Base_N0</File>
-		<File>Europe/Switzerland/Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_DIS_COM_Base_N1</File>
-		<File>Europe/Switzerland/Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_DIS_CTY_AW_Grounds_G</File>
-		<File>Europe/Switzerland/Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_DIS_CTY_AW_Grounds_N0</File>
-		<File>Europe/Switzerland/Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_DIS_CTY_AW_Grounds_N1</File>
-		<File>Europe/Switzerland/Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_DIS_CTY_RAM_Palace_A</File>
-		<File>Europe/Switzerland/Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_DIS_CTY_RAM_Palace_G</File>
-		<File>Europe/Switzerland/Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_DIS_CTY_RAM_Palace_N0</File>
-		<File>Europe/Switzerland/Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_DIS_CTY_RAM_Palace_N1</File>
-		<File>Europe/Switzerland/Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_DIS_CTY_RE_BaseA_A</File>
-		<File>Europe/Switzerland/Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_DIS_CTY_RE_B_E</File>
-		<File>Europe/Switzerland/Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_DIS_CTY_RMED_Bld_A</File>
-		<File>Europe/Switzerland/Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_DIS_CTY_RMED_E</File>
-		<File>Europe/Switzerland/Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_DIS_CTY_RMED_G</File>
-		<File>Europe/Switzerland/Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_DIS_CTY_RMED_M</File>
-		<File>Europe/Switzerland/Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_DIS_CTY_RMED_N0</File>
-		<File>Europe/Switzerland/Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_DIS_CTY_RMED_N1</File>
-		<File>Europe/Switzerland/Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_DIS_CTY_RMED_VAR_G</File>
-		<File>Europe/Switzerland/Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_DIS_CTY_RMED_VAR_M</File>
-		<File>Europe/Switzerland/Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_DIS_CTY_RMED_VAR_N0</File>
-		<File>Europe/Switzerland/Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_DIS_CTY_RMED_VAR_N1</File>
-		<File>Europe/Switzerland/Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_Foliage_Bld_G</File>
-		<File>Europe/Switzerland/Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_Foliage_Bld_N0</File>
-		<File>Europe/Switzerland/Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_Foliage_Bld_N1</File>
-		<File>Europe/Switzerland/Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_Foundation_Brick_Gray_G</File>
-		<File>Europe/Switzerland/Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_Foundation_Brick_Gray_N0</File>
-		<File>Europe/Switzerland/Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_Foundation_Brick_Gray_N1</File>
-		<File>Europe/Switzerland/Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_FOW_Ruin_Debris_Decal</File>
-		<File>Europe/Switzerland/Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_FOW_Ruin_Debris_Decal_Light</File>
-		<File>Europe/Switzerland/Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_IMP_Chateau_AO</File>
-		<File>Europe/Switzerland/Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_Pillaged_Foliage_O</File>
-		<File>Europe/Switzerland/Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_Pillage_Construction_01_G</File>
-		<File>Europe/Switzerland/Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_Pillage_Construction_01_N0</File>
-		<File>Europe/Switzerland/Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_Pillage_Construction_01_N1</File>
-		<File>Europe/Switzerland/Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_Pillage_Construction_01_O</File>
-		<File>Europe/Switzerland/Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_Ruin_Debris_Decal</File>
-		<File>Europe/Switzerland/Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_Ruin_Debris_Decal_H</File>
-		<File>Europe/Switzerland/Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_Ruin_Debris_Decal_Light</File>
-		<File>Europe/Switzerland/Platforms/Windows/BLPs/SHARED_DATA/TEXTURE_SwissGuard_ao</File>
-		<File>Europe/Switzerland/Platforms/Windows/BLPs/UI/Icons.blp</File>
-		<File>Europe/Switzerland/Platforms/Windows/BLPs/UI/LensAssets.blp</File>
-		<File>Europe/Switzerland/Platforms/Windows/BLPs/units/units.blp</File>
-		<File>Europe/Switzerland/XLPs/Icons.xlp</File>
-		<File>Europe/Switzerland/XLPs/LensAssets.xlp</File>
-		<File>Europe/Switzerland/XLPs/Tilebases.xlp</File>
-		<File>Europe/Switzerland/XLPs/Units.xlp</File>
 		<File>Mediterranean/MacedonOlympias/ArtDefs/FallbackLeaders.artdef</File>
 		<File>Mediterranean/MacedonOlympias/ArtDefs/Leaders.artdef</File>
 		<File>Mediterranean/MacedonOlympias/Core/MacedonOlympias_Config.sql</File>
