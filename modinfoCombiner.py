@@ -23,7 +23,7 @@ def get_mod_folders():
         # 'Europe/Denmark',
         'Europe/Finland',
         'Europe/GaulVercingetorix',
-        # 'Europe/Switzerland',
+        'Europe/Switzerland',
         'Mediterranean/MacedonOlympias',
         'Mediterranean/PhoeniciaAhiram',
         'Meso/Argentina',
