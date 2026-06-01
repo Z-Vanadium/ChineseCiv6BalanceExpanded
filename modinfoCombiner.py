@@ -31,7 +31,7 @@ def get_mod_folders():
         'Meso/Argentina',
         'Meso/MayaTeKinichII',
         'Meso/TheoticuanasTeotihuacan',
-        'MoarUniqueUnits',
+        # 'MoarUniqueUnits',
         'NorthAmerica/ThuleKiviuq',
         'NorthAmerica/CCBThuleWhalemaker',
         'Platforms',
