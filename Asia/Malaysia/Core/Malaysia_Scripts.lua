@@ -51,4 +51,4 @@ function CPG_Malaysia_QuestEnvoy(CityStatePlayerID, CompletedQuestPlayerID)
 	end
 end		
 
-Events.QuestChanged.Add(CPG_Malaysia_QuestEnvoy);
+-- Events.QuestChanged.Add(CPG_Malaysia_QuestEnvoy);
